@@ -267,12 +267,21 @@ class DashboardController extends Controller
 
         // dd($pemdesa);
 
-        if ($kumum->semester == 1) {
-            $sem = "Januari - Juni " . date_format(date_create($kumum->tanggal), "Y");
-        } else {
-            $sem = "Juli - Desember " . date_format(date_create($kumum->tanggal), "Y");
-        }
 
+        if ($kumum) {
+            if ($kumum->semester == 1) {
+                $sem = "Januari - Juni " . date_format(date_create($kumum->tanggal), "Y");
+            } else {
+                $sem = "Juli - Desember " . date_format(date_create($kumum->tanggal), "Y");
+            }
+        } else {
+            if ($semester == 1) {
+                $semx = "Januari - Juni " . date_format(date_create($request->tanggal), "Y");
+            } else {
+                $semx = "Juli - Desember " . date_format(date_create($request->tanggal), "Y");
+            }
+            return redirect('/dashboard')->with('error', 'Data ' . $semx . ' belum lengkap');;
+        }
 
         if ($kumum) {
             if ($ldaerah) {

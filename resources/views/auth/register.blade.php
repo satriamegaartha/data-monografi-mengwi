@@ -59,7 +59,7 @@
                                     <span class="help-block">{{$errors->first('password_confirmation')}}</span>
                                     @endif
                                 </div>
-                                <div class="form-group {{$errors->has('role') ? 'has-error' : ''}} ">
+                                {{-- <div class="form-group {{$errors->has('role') ? 'has-error' : ''}} ">
                                     <select class="form-control" id="role" name="role">
                                         <option value="" {{(old('') == '') ? ' selected' : '' }}>Pilih Jabatan</option>
                                         <option value="Kadis" {{(old('role') == 'Kadis') ? ' selected' : '' }}>Kepala Dinas</option>
@@ -69,7 +69,7 @@
                                     @if ($errors->has('role'))
                                     <span class="help-block">{{$errors->first('role')}}</span>
                                     @endif
-                                </div>
+                                </div> --}}
                                 <div class="form-group {{$errors->has('alamat') ? 'has-error' : ''}} ">
                                     <input name="alamat" type="text" class="form-control" id="alamat" aria-describedby="" placeholder="Alamat" value="{{old('alamat')}}">
                                     {{-- <textarea name="alamat" class="form-control" id="alamat" rows="3"> {{old('alamat')}} </textarea> --}}

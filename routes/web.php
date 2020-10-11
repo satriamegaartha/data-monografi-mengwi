@@ -17,13 +17,17 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'FrontController@index');
+Route::get('/front/exportpdf', 'FrontController@exportpdf');
+Route::post('/', 'FrontController@chart');
+
 Route::get('/login', 'AuthController@login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/register', 'AuthController@register');
 Route::post('/postregister', 'AuthController@postregister');
 Route::get('/logout', 'AuthController@logout');
 
-Route::group(['middleware' => ['auth', 'checkRole:Petugas,Kadis,Masyarakat']], function () {
+// Route::group(['middleware' => ['auth', 'checkRole:Petugas,Kadis,Masyarakat']], function () {
+Route::group(['middleware' => ['auth', 'checkRole:Petugas']], function () {
     Route::get('/dashboard', 'DashboardController@index');
     Route::get('/dashboard/exportpdf', 'DashboardController@exportpdf');
     Route::post('/dashboard', 'DashboardController@chart');

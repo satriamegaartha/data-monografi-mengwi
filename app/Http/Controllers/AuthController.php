@@ -35,7 +35,7 @@ class AuthController extends Controller
             'nama' => 'required|min:5',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:5',
-            'role' => 'required',
+            // 'role' => 'required',
             'alamat' => 'required',
 
         ]);
@@ -44,7 +44,8 @@ class AuthController extends Controller
         $user->name = $request->nama;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
-        $user->role = $request->role;
+        // $user->role = $request->role;
+        $user->role = 'Petugas';
         $user->alamat = $request->alamat;
         $user->remember_token = Str::random(60);
         $user->save();

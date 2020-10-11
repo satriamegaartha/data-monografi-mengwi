@@ -21,6 +21,9 @@
   <!-- Custom CSS -->
   <link href="{{asset('frontend/css/stylish-portfolio.min.css')}}" rel="stylesheet">
 
+  {{-- TOASTR --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 
 <body id="page-top">
@@ -64,7 +67,15 @@
     <div class="container">
       <div class="content-section-heading">        
         <h3 class="text-secondary mb-0">Data Penduduk</h3>
-        <h4 class="mb-5">Periode : {{$sem}}</h4>
+        <h4 class="">Periode : {{$sem}}</h4>
+        <div class="row mb-5 justify-content-center">
+          <a type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#chartModal">
+            Pilih Grafik
+          </a>
+          <a type="button" class="btn btn-light btn-sm text-dark" data-toggle="modal" data-target="#exportpdfModal">
+            Laporan Monografi
+          </a>
+        </div>
       </div>
       <div class="row">
                                    
@@ -115,6 +126,81 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exportpdfModal" tabindex="-1" aria-labelledby="exportpdfModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exportpdfModalLabel">Laporan Data Monografi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="GET" action="/front/exportpdf">
+          @csrf                     
+              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+                      <label for="tanggal">Tanggal</label>
+                      <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
+                      @if ($errors->has('tanggal'))
+                      <span class="help-block">{{$errors->first('tanggal')}}</span>
+                      @endif                                    
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          
+        <button type="submit" class="btn btn-primary">Laporan</button>                                     
+      </div>
+          </form>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chartModalLabel">Choose Chart Period</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="/">
+          @csrf                     
+              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+                      <label for="tanggal">Tanggal</label>
+                      <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
+                      @if ($errors->has('tanggal'))
+                      <span class="help-block">{{$errors->first('tanggal')}}</span>
+                      @endif                                    
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          
+        <button type="submit" class="btn btn-primary">Submit</button>                                     
+      </div>
+          </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Footer -->
   <footer class="footer bg-primary text-center">
@@ -224,6 +310,18 @@
         }]
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script>
+		@if(Session::has('message'))
+		toastr.success("{{Session::get('message')}}", "Success")
+		@endif
+		@if(Session::has('error'))
+		toastr.error("{{Session::get('error')}}", "Error")
+		@endif
+		@if(Session::has('delete'))
+		toastr.error("{{Session::get('delete')}}", "Success")
+		@endif
+	</script>
 </body>
 
 </html>
