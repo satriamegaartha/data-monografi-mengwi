@@ -146,12 +146,23 @@
       <div class="modal-body">
         <form method="GET" action="/front/exportpdf">
           @csrf                     
-              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+              {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
                       <label for="tanggal">Tanggal</label>
                       <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
                       @if ($errors->has('tanggal'))
                       <span class="help-block">{{$errors->first('tanggal')}}</span>
                       @endif                                    
+              </div> --}}
+              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+                <label for="tanggal">Tanggal</label>
+                <select class="form-control" name="tanggal" id="tanggal">                            
+                    @foreach ($periode as $p)                            
+                    <option value="{{$p[0]}}">{{$p[1]}}</option>
+                    @endforeach
+                </select>                        
+                @if ($errors->has('tanggal'))
+                <span class="help-block">{{$errors->first('tanggal')}}</span>
+                @endif                                    
               </div>
       </div>
       <div class="modal-footer">
@@ -175,12 +186,23 @@
       <div class="modal-body">
         <form method="POST" action="/">
           @csrf                     
-              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+              {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
                       <label for="tanggal">Tanggal</label>
                       <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
                       @if ($errors->has('tanggal'))
                       <span class="help-block">{{$errors->first('tanggal')}}</span>
                       @endif                                    
+              </div> --}}
+              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
+                <label for="tanggal">Tanggal</label>
+                <select class="form-control" name="tanggal" id="tanggal">                            
+                    @foreach ($periode as $p)                            
+                    <option value="{{$p[0]}}">{{$p[1]}}</option>
+                    @endforeach
+                </select>                        
+                @if ($errors->has('tanggal'))
+                <span class="help-block">{{$errors->first('tanggal')}}</span>
+                @endif                                    
               </div>
       </div>
       <div class="modal-footer">

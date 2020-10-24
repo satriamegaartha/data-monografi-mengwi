@@ -25,6 +25,28 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+
+        $periode = [];
+        foreach ($tanggal as $t) {
+            $temp = [];
+            $bulan = intval(date_format(date_create($t->tanggal), "m"));
+            if ($bulan <= 6) {
+                $semester = 1;
+            } else {
+                $semester = 2;
+            }
+            if ($semester == 1) {
+                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+            } else {
+                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+            }
+
+            array_push($temp, $t->tanggal);
+            array_push($temp, $sem);
+            array_push($periode, $temp);
+        }
+
 
         $data_chart = Kependudukan::get()->first();
         $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
@@ -60,31 +82,7 @@ class DashboardController extends Controller
             $data_chart->jml_b_35_39,
             $data_chart->jml_b_40_up,
         ];
-        // $categories_pekerjaan = [
-        //     'Petani pemilik tanah',
-        //     'Petani Penggarap tanah',
-        //     'Petani penggarap/penyekap',
-        //     'Buruh tani',
-        //     'Nelayan',
-        //     'Pengusaha sedang/besar',
-        //     'Pengrajin/industri kecil',
-        //     'Buruh Industri',
-        //     'Buruh Bangunan',
-        //     'Buruh Pertambangan',
-        //     'Buruh perkebunan (besar+kecil)',
-        //     'Pedagang',
-        //     'Pengangkutan',
-        //     'Pegawai Negeri Sipil',
-        //     'ABRI',
-        //     'Pensiun (PEGNEG/pensiun)',
-        //     'Peternak Sapi Perah',
-        //     'Peternak Sapi Biasa',
-        //     'Peternak Kerbau',
-        //     'Peternak Kambing',
-        //     'Peternak Domba',
-        //     'Peternak Kuda',
-        //     'Lain-lain',
-        // ];
+
         $categories_pekerjaan = [
             'Petani pemilik tanah',
             'Petani Penggarap tanah',
@@ -124,14 +122,51 @@ class DashboardController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('dashboard.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem'));
+        return view('dashboard.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
     }
 
     public function chart(Request $request)
     {
+        // $tanggal = Kumum::get('tanggal');
+        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+        $periode = [];
+        foreach ($tanggal as $t) {
+            $temp = [];
+            $bulan = intval(date_format(date_create($t->tanggal), "m"));
+            if ($bulan <= 6) {
+                $semester = 1;
+            } else {
+                $semester = 2;
+            }
+            if ($semester == 1) {
+                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+            } else {
+                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+            }
+
+            array_push($temp, $t->tanggal);
+            array_push($temp, $sem);
+            array_push($periode, $temp);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         $this->validate($request, [
             'tanggal' => 'required|date',
         ]);
+        // dd($request->tanggal);
         $bulan = intval(date_format(date_create($request->tanggal), "m"));
         if ($bulan <= 6) {
             $semester = 1;
@@ -149,9 +184,11 @@ class DashboardController extends Controller
             ['semester', '=', $semester],
         ];
         $data_chart = Kependudukan::where($matchThese)->first();
+
         if ($data_chart) {
         } else {
-            $data_chart = Kependudukan::get()->first();
+            // $data_chart = Kependudukan::get()->first();
+            return redirect('/dashboard')->with('delete', 'Data belum lengkap');;
         }
         $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
         if ($bulan <= 6) {
@@ -225,12 +262,14 @@ class DashboardController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('dashboard.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem'));
+
+        return view('dashboard.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
     }
 
 
     public function exportpdf(Request $request)
     {
+
         $this->validate($request, [
             'tanggal' => 'required|date',
         ]);

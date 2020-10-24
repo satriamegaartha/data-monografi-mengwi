@@ -27,6 +27,31 @@ class FrontController extends Controller
 {
     public function index()
     {
+        // $tanggal = Kumum::get('tanggal');
+        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+        $periode = [];
+        foreach ($tanggal as $t) {
+            $temp = [];
+            $bulan = intval(date_format(date_create($t->tanggal), "m"));
+            if ($bulan <= 6) {
+                $semester = 1;
+            } else {
+                $semester = 2;
+            }
+            if ($semester == 1) {
+                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+            } else {
+                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+            }
+
+            array_push($temp, $t->tanggal);
+            array_push($temp, $sem);
+            array_push($periode, $temp);
+        }
+
+
+
+
         $data_chart = Kependudukan::get()->first();
         $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
         if ($bulan <= 6) {
@@ -100,12 +125,36 @@ class FrontController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem'));
+        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
         // return view('front.index');
     }
 
     public function chart(Request $request)
     {
+        // $tanggal = Kumum::get('tanggal');
+        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+        $periode = [];
+        foreach ($tanggal as $t) {
+            $temp = [];
+            $bulan = intval(date_format(date_create($t->tanggal), "m"));
+            if ($bulan <= 6) {
+                $semester = 1;
+            } else {
+                $semester = 2;
+            }
+            if ($semester == 1) {
+                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+            } else {
+                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+            }
+
+            array_push($temp, $t->tanggal);
+            array_push($temp, $sem);
+            array_push($periode, $temp);
+        }
+
+
+
         $this->validate($request, [
             'tanggal' => 'required|date',
         ]);
@@ -128,7 +177,8 @@ class FrontController extends Controller
         $data_chart = Kependudukan::where($matchThese)->first();
         if ($data_chart) {
         } else {
-            $data_chart = Kependudukan::get()->first();
+            // $data_chart = Kependudukan::get()->first();
+            return redirect('/')->with('delete', 'Data chart belum lengkap');;
         }
         $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
         if ($bulan <= 6) {
@@ -202,7 +252,7 @@ class FrontController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem'));
+        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
     }
 
     public function exportpdf(Request $request)
