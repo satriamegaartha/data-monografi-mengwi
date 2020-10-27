@@ -154,7 +154,7 @@
                       @endif                                    
               </div> --}}
               <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                <label for="tanggal">Tanggal</label>
+                <label for="tanggal">Periode</label>
                 <select class="form-control" name="tanggal" id="tanggal">                            
                     @foreach ($periode as $p)                            
                     <option value="{{$p[0]}}">{{$p[1]}}</option>
@@ -194,7 +194,7 @@
                       @endif                                    
               </div> --}}
               <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                <label for="tanggal">Tanggal</label>
+                <label for="tanggal">Periode</label>
                 <select class="form-control" name="tanggal" id="tanggal">                            
                     @foreach ($periode as $p)                            
                     <option value="{{$p[0]}}">{{$p[1]}}</option>
