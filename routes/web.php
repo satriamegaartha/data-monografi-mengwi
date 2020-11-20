@@ -34,6 +34,14 @@ Route::group(['middleware' => ['auth', 'checkRole:Petugas']], function () {
 });
 
 Route::group(['middleware' => ['auth', 'checkRole:Petugas']], function () {
+    Route::get('/periode', 'PeriodeController@index');
+    Route::get('/periode/{periode}/show', 'PeriodeController@show');
+    Route::get('/periode/create', 'PeriodeController@create');
+    Route::post('/periode/store', 'PeriodeController@store');
+    Route::get('/periode/{periode}/edit', 'PeriodeController@edit');
+    Route::post('/periode/{periode}/update', 'PeriodeController@update');
+    Route::get('/periode/{periode}/destroy', 'PeriodeController@destroy');
+
     Route::get('/statis/kumum', 'KumumController@index');
     Route::get('/statis/kumum/{id}/viewdata', 'KumumController@viewdata');
     Route::get('/statis/kumum/add', 'KumumController@add');

@@ -15,7 +15,8 @@
 
   <!-- Custom Fonts -->
   <link href="{{asset('frontend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
   <link href="{{asset('frontend/vendor/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet">
 
   <!-- Custom CSS -->
@@ -33,7 +34,7 @@
     <i class="fas fa-bars"></i>
   </a>
   <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">     
+    <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
@@ -61,11 +62,11 @@
     <div class="overlay"></div>
   </header>
 
- 
+
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
-      <div class="content-section-heading">        
+      <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Data Penduduk</h3>
         <h4 class="">Periode : {{$sem}}</h4>
         <div class="row mb-5 justify-content-center">
@@ -78,14 +79,14 @@
         </div>
       </div>
       <div class="row">
-                                   
-        <div class="col-md-6">
-            <div id="chartUsia">
 
-            </div>
+        <div class="col-md-6">
+          <div id="chartUsia">
+
+          </div>
         </div>
-        <div class="col-md-6">          
-          <div id="chartPekerjaan" >
+        <div class="col-md-6">
+          <div id="chartPekerjaan">
 
           </div>
         </div>
@@ -98,7 +99,7 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-5">Informasi Pemeritahan</h3>
-        
+
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -123,7 +124,7 @@
             </div>
             <img class="img-fluid" src="{{asset('frontend/img/bbb1.jpg')}}" alt="">
           </a>
-        </div>        
+        </div>
       </div>
     </div>
   </section>
@@ -133,86 +134,88 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exportpdfModal" tabindex="-1" aria-labelledby="exportpdfModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exportpdfModalLabel">Laporan Data Monografi</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="GET" action="/front/exportpdf">
-          @csrf                     
-              {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                      <label for="tanggal">Tanggal</label>
-                      <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
-                      @if ($errors->has('tanggal'))
-                      <span class="help-block">{{$errors->first('tanggal')}}</span>
-                      @endif                                    
-              </div> --}}
-              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                <label for="tanggal">Periode</label>
-                <select class="form-control" name="tanggal" id="tanggal">                            
-                    @foreach ($periode as $p)                            
-                    <option value="{{$p[0]}}">{{$p[1]}}</option>
-                    @endforeach
-                </select>                        
-                @if ($errors->has('tanggal'))
-                <span class="help-block">{{$errors->first('tanggal')}}</span>
-                @endif                                    
-              </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          
-        <button type="submit" class="btn btn-primary">Laporan</button>                                     
-      </div>
-          </form>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="chartModalLabel">Choose Chart Period</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="POST" action="/">
-          @csrf                     
-              {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                      <label for="tanggal">Tanggal</label>
-                      <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
-                      @if ($errors->has('tanggal'))
-                      <span class="help-block">{{$errors->first('tanggal')}}</span>
-                      @endif                                    
-              </div> --}}
-              <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">                                   
-                <label for="tanggal">Periode</label>
-                <select class="form-control" name="tanggal" id="tanggal">                            
-                    @foreach ($periode as $p)                            
-                    <option value="{{$p[0]}}">{{$p[1]}}</option>
-                    @endforeach
-                </select>                        
-                @if ($errors->has('tanggal'))
-                <span class="help-block">{{$errors->first('tanggal')}}</span>
-                @endif                                    
-              </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exportpdfModal" tabindex="-1" aria-labelledby="exportpdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exportpdfModalLabel">Laporan Data Monografi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="GET" action="/front/exportpdf">
+            @csrf
+            {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+            <label for="tanggal">Tanggal</label>
+            <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder=""
+              value="{{old('tanggal')}}">
+            @if ($errors->has('tanggal'))
+            <span class="help-block">{{$errors->first('tanggal')}}</span>
+            @endif
+        </div> --}}
+        <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+          <label for="tanggal">Periode</label>
+          <select class="form-control" name="tanggal" id="tanggal">
+            @foreach ($periode as $p)
+            <option value="{{$p->id}}">{{$p->periode}}</option>
+            @endforeach
+          </select>
+          @if ($errors->has('tanggal'))
+          <span class="help-block">{{$errors->first('tanggal')}}</span>
+          @endif
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          
-        <button type="submit" class="btn btn-primary">Submit</button>                                     
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Laporan</button>
       </div>
-          </form>
+      </form>
     </div>
   </div>
-</div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chartModalLabel">Choose Chart Period</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="/">
+            @csrf
+            {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+            <label for="tanggal">Tanggal</label>
+            <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder=""
+              value="{{old('tanggal')}}">
+            @if ($errors->has('tanggal'))
+            <span class="help-block">{{$errors->first('tanggal')}}</span>
+            @endif
+        </div> --}}
+        <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+          <label for="tanggal">Periode</label>
+          <select class="form-control" name="tanggal" id="tanggal">
+            @foreach ($periode as $p)
+            <option value="{{$p->id}}">{{$p->periode}}</option>
+            @endforeach
+          </select>
+          @if ($errors->has('tanggal'))
+          <span class="help-block">{{$errors->first('tanggal')}}</span>
+          @endif
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
 
 
 
@@ -227,7 +230,7 @@
 
   <!-- Footer -->
   <footer class="footer bg-primary text-center">
-    <div class="container">     
+    <div class="container">
       <p class="small mb-0 text-white">Copyright &copy; Kecamatan Mengwi 2020</p>
     </div>
   </footer>
@@ -246,7 +249,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="{{asset('frontend/js/stylish-portfolio.min.js')}}"></script>
- 
+
   {{-- CHART --}}
   <script src="https://code.highcharts.com/highcharts.js"></script>
 
@@ -334,17 +337,17 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-	<script>
-		@if(Session::has('message'))
+  <script>
+    @if(Session::has('message'))
 		toastr.success("{{Session::get('message')}}", "Success")
 		@endif
 		@if(Session::has('error'))
 		toastr.error("{{Session::get('error')}}", "Error")
 		@endif
 		@if(Session::has('delete'))
-		toastr.error("{{Session::get('delete')}}", "Success")
+		toastr.error("{{Session::get('delete')}}", "Error")
 		@endif
-	</script>
+  </script>
 </body>
 
 </html>

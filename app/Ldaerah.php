@@ -10,6 +10,7 @@ class Ldaerah extends Model
 
     protected $fillable = [
         'user_id',
+        'periode_id',
         'tanggal',
         'semester',
         'tanah_sawah',

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Kumum;
+use App\Periode;
+use App\Rules\CheckYear;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redis;
-use App\Rules\CheckYear;
-
-use App\Kumum;
 
 class KumumController extends Controller
 {
@@ -33,7 +34,7 @@ class KumumController extends Controller
     {
         $this->validate($request, [
             'tanggal' => 'required|date',
-            'tanggal' => new CheckYear,
+            // 'tanggal' => new CheckYear,
         ]);
         $bulan = intval(date_format(date_create($request->tanggal), "m"));
         if ($bulan <= 6) {
@@ -42,7 +43,12 @@ class KumumController extends Controller
             $semester = 2;
         }
         $user_id = auth()->user()->id;
-        $request->request->add(['semester' => $semester, 'user_id' => $user_id]);
+        $matchThese = [
+            ['tanggal_mulai', '<=', $request->tanggal],
+            ['tanggal_selesai', '>=', $request->tanggal],
+        ];
+        $periode = Periode::where($matchThese)->first();
+        $request->request->add(['semester' => $semester, 'user_id' => $user_id, 'periode_id' => $periode->id]);
         $kumum = \App\Kumum::create($request->all());
 
         return redirect('/statis/kumum')->with('message', 'Data berhasil ditambahkan');
@@ -58,7 +64,7 @@ class KumumController extends Controller
     {
         $this->validate($request, [
             'tanggal' => 'required|date',
-            'tanggal' => new CheckYear,
+            // 'tanggal' => new CheckYear,
         ]);
         $bulan = intval(date_format(date_create($request->tanggal), "m"));
         if ($bulan <= 6) {
@@ -66,7 +72,16 @@ class KumumController extends Controller
         } else {
             $semester = 2;
         }
-        $request->request->add(['semester' => $semester]);
+        $matchThese = [
+            ['tanggal_mulai', '<=', $request->tanggal],
+            ['tanggal_selesai', '>=', $request->tanggal],
+        ];
+        $periode = Periode::where($matchThese)->first();
+        // dd($periode->id);
+        $request->request->add([
+            'semester' => $semester,
+            'periode_id' => $periode->id
+        ]);
 
         $kumum = Kumum::find($id);
         $kumum->update($request->all());

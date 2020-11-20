@@ -10,6 +10,7 @@ class Pemdesa extends Model
 
     protected $fillable = [
         'user_id',
+        'periode_id',
         'tanggal',
         'semester',
         'desa',

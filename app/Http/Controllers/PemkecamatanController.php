@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Periode;
 
 use App\Pemkecamatan;
 use App\Rules\CheckYear;
+use Illuminate\Http\Request;
 
 class PemkecamatanController extends Controller
 {
@@ -40,7 +41,12 @@ class PemkecamatanController extends Controller
             $semester = 2;
         }
         $user_id = auth()->user()->id;
-        $request->request->add(['semester' => $semester, 'user_id' => $user_id]);
+        $matchThese = [
+            ['tanggal_mulai', '<=', $request->tanggal],
+            ['tanggal_selesai', '>=', $request->tanggal],
+        ];
+        $periode = Periode::where($matchThese)->first();
+        $request->request->add(['semester' => $semester, 'user_id' => $user_id, 'periode_id' => $periode->id]);
         $pemkecamatan = \App\Pemkecamatan::create($request->all());
 
         return redirect('/dinamis/pemkecamatan')->with('message', 'Data berhasil ditambahkan');
@@ -64,7 +70,12 @@ class PemkecamatanController extends Controller
         } else {
             $semester = 2;
         }
-        $request->request->add(['semester' => $semester]);
+        $matchThese = [
+            ['tanggal_mulai', '<=', $request->tanggal],
+            ['tanggal_selesai', '>=', $request->tanggal],
+        ];
+        $periode = Periode::where($matchThese)->first();
+        $request->request->add(['semester' => $semester, 'periode_id' => $periode->id]);
 
         $pemkecamatan = Pemkecamatan::find($id);
         $pemkecamatan->update($request->all());

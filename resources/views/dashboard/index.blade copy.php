@@ -61,21 +61,32 @@
             <div class="modal-body">
                 <form method="GET" action="/dashboard/exportpdf">
                     @csrf
-                    <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
-                        <label for="tanggal">Tanggal</label>
-                        <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
-                        @if ($errors->has('tanggal'))
-                        <span class="help-block">{{$errors->first('tanggal')}}</span>
-                        @endif
-                    </div>
+                    {{-- <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+                    <label for="tanggal">Tanggal</label>
+                    <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
+                    @if ($errors->has('tanggal'))
+                    <span class="help-block">{{$errors->first('tanggal')}}</span>
+                    @endif
+            </div> --}}
+            <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
+                <label for="tanggal">Periode</label>
+                <select class="form-control" name="tanggal" id="tanggal">
+                    @foreach ($periode as $p)
+                    <option value="{{$p[0]}}">{{$p[1]}}</option>
+                    @endforeach
+                </select>
+                @if ($errors->has('tanggal'))
+                <span class="help-block">{{$errors->first('tanggal')}}</span>
+                @endif
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Export PDF</button>
-            </div>
-            </form>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Export PDF</button>
+        </div>
+        </form>
     </div>
+</div>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
@@ -91,12 +102,18 @@
                 <form method="POST" action="/dashboard">
                     @csrf
                     <div class="form-group {{$errors->has('tanggal') ? 'has-error' : ''}} ">
-                        <label for="tanggal">Tanggal</label>
-                        <input name="tanggal" type="date" class="form-control" id="tanggal" aria-describedby="" placeholder="" value="{{old('tanggal')}}">
+                        <label for="tanggal">Periode</label>
+                        <select class="form-control" name="tanggal" id="tanggal">
+                            @foreach ($periode as $p)
+                            <option value="{{$p[0]}}">{{$p[1]}}</option>
+                            @endforeach
+                        </select>
                         @if ($errors->has('tanggal'))
                         <span class="help-block">{{$errors->first('tanggal')}}</span>
                         @endif
                     </div>
+
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

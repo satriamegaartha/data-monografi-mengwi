@@ -2,64 +2,70 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
+use PDF;
 use App\Kumum;
+
+use App\Pemkec;
 use App\Ldaerah;
 use App\Pemdesa;
-use App\Prasarana;
-use App\Pemkec;
-use App\Pengangkutan;
-use App\Pjgjalan;
-use App\Perekonomian;
-use App\Jumlahusaha;
-use App\Saranasosbud;
-use App\Pemkecamatan;
-use App\Kependudukan;
-use App\Keagrariaan;
+use App\Periode;
 use App\Tanaman;
-use PDF;
+use App\Pjgjalan;
+use App\Prasarana;
+use App\Jumlahusaha;
+use App\Keagrariaan;
+use App\Kependudukan;
+use App\Pemkecamatan;
+use App\Pengangkutan;
+use App\Perekonomian;
+use App\Saranasosbud;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+        // $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
 
-        $periode = [];
-        foreach ($tanggal as $t) {
-            $temp = [];
-            $bulan = intval(date_format(date_create($t->tanggal), "m"));
-            if ($bulan <= 6) {
-                $semester = 1;
-            } else {
-                $semester = 2;
-            }
-            if ($semester == 1) {
-                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
-            } else {
-                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
-            }
+        // $periode = [];
+        // foreach ($tanggal as $t) {
+        //     $temp = [];
+        //     $bulan = intval(date_format(date_create($t->tanggal), "m"));
+        //     if ($bulan <= 6) {
+        //         $semester = 1;
+        //     } else {
+        //         $semester = 2;
+        //     }
+        //     if ($semester == 1) {
+        //         $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+        //     } else {
+        //         $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+        //     }
 
-            array_push($temp, $t->tanggal);
-            array_push($temp, $sem);
-            array_push($periode, $temp);
-        }
+        //     array_push($temp, $t->tanggal);
+        //     array_push($temp, $sem);
+        //     array_push($periode, $temp);
+        // }
 
+        $periode = Periode::orderBy('tanggal_mulai', 'asc')->get();
+        // dd($periode);
 
         $data_chart = Kependudukan::get()->first();
-        $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
-        if ($bulan <= 6) {
-            $semester = 1;
-        } else {
-            $semester = 2;
-        }
-        if ($semester == 1) {
-            $sem = "Januari - Juni " . date_format(date_create($data_chart->tanggal), "Y");
-        } else {
-            $sem = "Juli - Desember " . date_format(date_create($data_chart->tanggal), "Y");
-        }
+        // $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
+        // if ($bulan <= 6) {
+        //     $semester = 1;
+        // } else {
+        //     $semester = 2;
+        // }
+        // if ($semester == 1) {
+        //     $sem = "Januari - Juni " . date_format(date_create($data_chart->tanggal), "Y");
+        // } else {
+        //     $sem = "Juli - Desember " . date_format(date_create($data_chart->tanggal), "Y");
+        // }
+        $periode_id = $data_chart['periode_id'];
+        $sem = Periode::find($periode_id)->periode;
+
         $categories_usia = [
             '0 - 4 tahun',
             '5 - 9 tahun',
@@ -128,28 +134,26 @@ class DashboardController extends Controller
     public function chart(Request $request)
     {
         // $tanggal = Kumum::get('tanggal');
-        $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
-        $periode = [];
-        foreach ($tanggal as $t) {
-            $temp = [];
-            $bulan = intval(date_format(date_create($t->tanggal), "m"));
-            if ($bulan <= 6) {
-                $semester = 1;
-            } else {
-                $semester = 2;
-            }
-            if ($semester == 1) {
-                $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
-            } else {
-                $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
-            }
+        // $tanggal = Kumum::orderBy('tanggal', 'asc')->get('tanggal');
+        // $periode = [];
+        // foreach ($tanggal as $t) {
+        //     $temp = [];
+        //     $bulan = intval(date_format(date_create($t->tanggal), "m"));
+        //     if ($bulan <= 6) {
+        //         $semester = 1;
+        //     } else {
+        //         $semester = 2;
+        //     }
+        //     if ($semester == 1) {
+        //         $sem = "Januari - Juni " . date_format(date_create($t->tanggal), "Y");
+        //     } else {
+        //         $sem = "Juli - Desember " . date_format(date_create($t->tanggal), "Y");
+        //     }
 
-            array_push($temp, $t->tanggal);
-            array_push($temp, $sem);
-            array_push($periode, $temp);
-        }
-
-
+        //     array_push($temp, $t->tanggal);
+        //     array_push($temp, $sem);
+        //     array_push($periode, $temp);
+        // }
 
 
 
@@ -159,29 +163,34 @@ class DashboardController extends Controller
 
 
 
+
+
+        $periode = Periode::orderBy('tanggal_mulai', 'asc')->get();
 
 
 
 
         $this->validate($request, [
-            'tanggal' => 'required|date',
+            'tanggal' => 'required',
         ]);
         // dd($request->tanggal);
-        $bulan = intval(date_format(date_create($request->tanggal), "m"));
-        if ($bulan <= 6) {
-            $semester = 1;
-        } else {
-            $semester = 2;
-        }
+        // $bulan = intval(date_format(date_create($request->tanggal), "m"));
+        // if ($bulan <= 6) {
+        //     $semester = 1;
+        // } else {
+        //     $semester = 2;
+        // }
 
-        $year = date_format(date_create($request->tanggal), "Y");
-        $begin_date = $year . "-01-01";
-        $end_date = $year . "-12-31";
+        // $year = date_format(date_create($request->tanggal), "Y");
+        // $begin_date = $year . "-01-01";
+        // $end_date = $year . "-12-31";
+        $tanggal = Periode::find($request->tanggal);
+        $begin_date = $tanggal->tanggal_mulai;
+        $end_date = $tanggal->tanggal_selesai;
 
         $matchThese = [
             ['tanggal', '>=', $begin_date],
             ['tanggal', '<=', $end_date],
-            ['semester', '=', $semester],
         ];
         $data_chart = Kependudukan::where($matchThese)->first();
 
@@ -190,17 +199,18 @@ class DashboardController extends Controller
             // $data_chart = Kependudukan::get()->first();
             return redirect('/dashboard')->with('delete', 'Data belum lengkap');;
         }
-        $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
-        if ($bulan <= 6) {
-            $semester = 1;
-        } else {
-            $semester = 2;
-        }
-        if ($semester == 1) {
-            $sem = "Januari - Juni " . date_format(date_create($data_chart->tanggal), "Y");
-        } else {
-            $sem = "Juli - Desember " . date_format(date_create($data_chart->tanggal), "Y");
-        }
+        // $bulan = intval(date_format(date_create($data_chart->tanggal), "m"));
+        // if ($bulan <= 6) {
+        //     $semester = 1;
+        // } else {
+        //     $semester = 2;
+        // }
+        // if ($semester == 1) {
+        //     $sem = "Januari - Juni " . date_format(date_create($data_chart->tanggal), "Y");
+        // } else {
+        //     $sem = "Juli - Desember " . date_format(date_create($data_chart->tanggal), "Y");
+        // }
+        $sem = $tanggal->periode;
         $categories_usia = [
             '0 - 4 tahun',
             '5 - 9 tahun',
@@ -269,26 +279,34 @@ class DashboardController extends Controller
 
     public function exportpdf(Request $request)
     {
+        $periode = Periode::orderBy('tanggal_mulai', 'asc')->get();
 
         $this->validate($request, [
-            'tanggal' => 'required|date',
+            'tanggal' => 'required',
         ]);
-        $bulan = intval(date_format(date_create($request->tanggal), "m"));
-        if ($bulan <= 6) {
-            $semester = 1;
-        } else {
-            $semester = 2;
-        }
+        // $bulan = intval(date_format(date_create($request->tanggal), "m"));
+        // if ($bulan <= 6) {
+        //     $semester = 1;
+        // } else {
+        //     $semester = 2;
+        // }
 
-        $year = date_format(date_create($request->tanggal), "Y");
-        $begin_date = $year . "-01-01";
-        $end_date = $year . "-12-31";
+        // $year = date_format(date_create($request->tanggal), "Y");
+        // $begin_date = $year . "-01-01";
+        // $end_date = $year . "-12-31";
+        $tanggal = Periode::find($request->tanggal);
+        $begin_date = $tanggal->tanggal_mulai;
+        $end_date = $tanggal->tanggal_selesai;
 
         $matchThese = [
             ['tanggal', '>=', $begin_date],
             ['tanggal', '<=', $end_date],
-            ['semester', '=', $semester],
         ];
+        // $matchThese = [
+        //     ['tanggal', '>=', $begin_date],
+        //     ['tanggal', '<=', $end_date],
+        //     ['semester', '=', $semester],
+        // ];
         $kumum = Kumum::where($matchThese)->first();
         $ldaerah = Ldaerah::where($matchThese)->first();
         $pemdesa = Pemdesa::where($matchThese)->first();
@@ -308,17 +326,19 @@ class DashboardController extends Controller
 
 
         if ($kumum) {
-            if ($kumum->semester == 1) {
-                $sem = "Januari - Juni " . date_format(date_create($kumum->tanggal), "Y");
-            } else {
-                $sem = "Juli - Desember " . date_format(date_create($kumum->tanggal), "Y");
-            }
+            // if ($kumum->semester == 1) {
+            //     $sem = "Januari - Juni " . date_format(date_create($kumum->tanggal), "Y");
+            // } else {
+            //     $sem = "Juli - Desember " . date_format(date_create($kumum->tanggal), "Y");
+            // }
+            $sem = $tanggal->periode;
         } else {
-            if ($semester == 1) {
-                $semx = "Januari - Juni " . date_format(date_create($request->tanggal), "Y");
-            } else {
-                $semx = "Juli - Desember " . date_format(date_create($request->tanggal), "Y");
-            }
+            // if ($semester == 1) {
+            //     $semx = "Januari - Juni " . date_format(date_create($request->tanggal), "Y");
+            // } else {
+            //     $semx = "Juli - Desember " . date_format(date_create($request->tanggal), "Y");
+            // }
+            $semx = $tanggal->periode;
             return redirect('/dashboard')->with('error', 'Data ' . $semx . ' belum lengkap');;
         }
 

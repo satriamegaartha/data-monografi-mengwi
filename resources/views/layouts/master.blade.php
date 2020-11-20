@@ -57,7 +57,8 @@
 
 	{{-- <script src="{{asset('education/js/ckeditor.js')}}"></script> --}}
 
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
+	</script>
 
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -70,11 +71,24 @@
 		toastr.error("{{Session::get('error')}}", "Error")
 		@endif
 		@if(Session::has('delete'))
-		toastr.error("{{Session::get('delete')}}", "Success")
+		toastr.error("{{Session::get('delete')}}", "Error")
 		@endif
 	</script>
 	@yield('footer')
 
+	{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script>
+		@if(Session::has('message'))
+		toastr.success("{{Session::get('message')}}", "Success")
+	@endif
+	@if(Session::has('error'))
+	toastr.error("{{Session::get('error')}}", "Error")
+	@endif
+	@if(Session::has('delete'))
+	toastr.error("{{Session::get('delete')}}", "Success")
+	@endif
+	</script> --}}
+	@yield('footer')
 </body>
 
 </html>
