@@ -18,7 +18,7 @@
                     <div class="panel">
                         <div class="panel-heading">
                             <h3 class="panel-title">Data Pemerintahan Desa/Kelurahan</h3>
-                            <h4>{{date_format(date_create($pemdesa->tanggal),"d F Y")}}</h4>
+
                         </div>
                         <div class="panel-body">
                             <form method="POST" action="/statis/pemdesa/{{$pemdesa->id}}/update">

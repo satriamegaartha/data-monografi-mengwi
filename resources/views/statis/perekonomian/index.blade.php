@@ -25,7 +25,7 @@
                                     <table class="table table-hover" id="datatable">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
+                                                <th scope="col">No</th>
                                                 <th scope="col">Tanggal</th>
                                                 <th scope="col">Semester</th>
                                                 <th scope="col">Aksi</th>
@@ -39,20 +39,16 @@
                                             @foreach ($perekonomian as $p)
                                             <tr>
                                                 <th scope="row">{{$i++}}</th>
-                                                <td><a
-                                                        href="/statis/perekonomian/{{$p->id}}/viewdata">{{date_format(date_create($p->tanggal),"d F Y")}}</a>
+                                                <td>{{date_format(date_create($p->tanggal),"d F Y")}}
                                                 </td>
-                                                <td><a
-                                                        href="/statis/perekonomian/{{$p->id}}/viewdata">{{$p->semester}}</a>
+                                                <td>{{$p->semester}}
                                                 </td>
                                                 <td>
                                                     <a href="/statis/perekonomian/{{$p->id}}/viewdata"
                                                         class="btn btn-primary btn-sm">View</a>
                                                     <a href="/statis/perekonomian/{{$p->id}}/edit"
                                                         class="btn btn-warning btn-sm">Edit</a>
-                                                    <a href="/statis/perekonomian/{{$p->id}}/delete"
-                                                        class="btn btn-danger btn-sm"
-                                                        onclick="return confirm('Data akan dihapus?')">Delete</a>
+
                                                 </td>
                                             </tr>
                                             @endforeach
