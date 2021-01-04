@@ -132,7 +132,41 @@ class FrontController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
+        $categories_mutasi = [
+            'Pindah',
+            'Datang',
+            'Lahir',
+            'Mati',
+            'Mati < 5 Th',
+            'Mati > 5 Th ',
+        ];
+        $data_mutasi_l = [
+            $data_chart->pindah_l,
+            $data_chart->datang_l,
+            $data_chart->lahir_l,
+            $data_chart->mati_l,
+            $data_chart->matikurang5_l,
+            $data_chart->matilebih5_l,
+        ];
+        $data_mutasi_p = [
+            $data_chart->pindah_p,
+            $data_chart->datang_p,
+            $data_chart->lahir_p,
+            $data_chart->mati_p,
+            $data_chart->matikurang5_p,
+            $data_chart->matilebih5_p,
+        ];
+        $data_mutasi_jml = [
+            $data_chart->pindah_jml,
+            $data_chart->datang_jml,
+            $data_chart->lahir_jml,
+            $data_chart->mati_jml,
+            $data_chart->matikurang5_jml,
+            $data_chart->matilebih5_jml,
+        ];
+
+
+        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'categories_mutasi', 'data_mutasi_l', 'data_mutasi_p', 'data_mutasi_jml', 'sem', 'periode'));
         // return view('front.index');
     }
 
@@ -253,7 +287,41 @@ class FrontController extends Controller
             $data_chart->pensiun,
             $data_chart->lain,
         ];
-        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'sem', 'periode'));
+        $categories_mutasi = [
+            'Pindah',
+            'Datang',
+            'Lahir',
+            'Mati',
+            'Mati < 5 Th',
+            'Mati > 5 Th ',
+        ];
+        $data_mutasi_l = [
+            $data_chart->pindah_l,
+            $data_chart->datang_l,
+            $data_chart->lahir_l,
+            $data_chart->mati_l,
+            $data_chart->matikurang5_l,
+            $data_chart->matilebih5_l,
+        ];
+        $data_mutasi_p = [
+            $data_chart->pindah_p,
+            $data_chart->datang_p,
+            $data_chart->lahir_p,
+            $data_chart->mati_p,
+            $data_chart->matikurang5_p,
+            $data_chart->matilebih5_p,
+        ];
+        $data_mutasi_jml = [
+            $data_chart->pindah_jml,
+            $data_chart->datang_jml,
+            $data_chart->lahir_jml,
+            $data_chart->mati_jml,
+            $data_chart->matikurang5_jml,
+            $data_chart->matilebih5_jml,
+        ];
+
+
+        return view('front.index', compact('categories_usia', 'data_usia', 'categories_pekerjaan', 'data_pekerjaan', 'categories_mutasi', 'data_mutasi_l', 'data_mutasi_p', 'data_mutasi_jml',  'sem', 'periode'));
     }
 
     public function exportpdf(Request $request)

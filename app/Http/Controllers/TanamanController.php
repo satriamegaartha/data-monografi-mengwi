@@ -12,7 +12,7 @@ class TanamanController extends Controller
     public function index()
     {
         // $tanaman = Tanaman::all()->sortByDesc('tanggal');
-        $tanaman = Tanaman::orderBy('tanggal', 'desc')->paginate(2);
+        $tanaman = Tanaman::orderBy('tanggal', 'desc')->paginate(10);
         return view('dinamis.tanaman.index', compact('tanaman'));
     }
 

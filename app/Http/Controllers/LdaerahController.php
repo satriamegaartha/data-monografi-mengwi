@@ -12,7 +12,7 @@ class LdaerahController extends Controller
     public function index()
     {
         // $ldaerah = Ldaerah::all()->sortByDesc('tanggal');
-        $ldaerah = Ldaerah::orderBy('tanggal', 'desc')->paginate(2);
+        $ldaerah = Ldaerah::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.ldaerah.index', compact('ldaerah'));
     }
 

@@ -12,7 +12,7 @@ class PemdesaController extends Controller
     public function index()
     {
         // $pemdesa = Pemdesa::all()->sortByDesc('tanggal');
-        $pemdesa = Pemdesa::orderBy('tanggal', 'desc')->paginate(2);
+        $pemdesa = Pemdesa::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.pemdesa.index', compact('pemdesa'));
     }
 

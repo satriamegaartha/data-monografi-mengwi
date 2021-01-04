@@ -12,7 +12,7 @@ class KeagrariaanController extends Controller
     public function index()
     {
         // $keagrariaan = Keagrariaan::all()->sortByDesc('tanggal');
-        $keagrariaan = Keagrariaan::orderBy('tanggal', 'desc')->paginate(2);
+        $keagrariaan = Keagrariaan::orderBy('tanggal', 'desc')->paginate(10);
         return view('dinamis.keagrariaan.index', compact('keagrariaan'));
     }
 

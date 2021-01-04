@@ -12,7 +12,7 @@ class PengangkutanController extends Controller
     public function index()
     {
         // $pengangkutan = Pengangkutan::all()->sortByDesc('tanggal');
-        $pengangkutan = Pengangkutan::orderBy('tanggal', 'desc')->paginate(2);
+        $pengangkutan = Pengangkutan::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.pengangkutan.index', compact('pengangkutan'));
     }
 

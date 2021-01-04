@@ -12,7 +12,7 @@ class PerekonomianController extends Controller
     public function index()
     {
         // $perekonomian = Perekonomian::all()->sortByDesc('tanggal');
-        $perekonomian = Perekonomian::orderBy('tanggal', 'desc')->paginate(2);
+        $perekonomian = Perekonomian::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.perekonomian.index', compact('perekonomian'));
     }
 

@@ -13,7 +13,7 @@ class JumlahusahaController extends Controller
     public function index()
     {
         // $jumlahusaha = Jumlahusaha::all()->sortByDesc('tanggal');
-        $jumlahusaha = Jumlahusaha::orderBy('tanggal', 'desc')->paginate(2);
+        $jumlahusaha = Jumlahusaha::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.jumlahusaha.index', compact('jumlahusaha'));
     }
 

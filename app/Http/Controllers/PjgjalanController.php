@@ -13,7 +13,7 @@ class PjgjalanController extends Controller
     public function index()
     {
         // $pjgjalan = Pjgjalan::all()->sortByDesc('tanggal');
-        $pjgjalan = Pjgjalan::orderBy('tanggal', 'desc')->paginate(2);
+        $pjgjalan = Pjgjalan::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.pjgjalan.index', compact('pjgjalan'));
     }
 

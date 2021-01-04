@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2020 at 04:10 AM
+-- Generation Time: Jan 04, 2021 at 08:14 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -186,16 +186,35 @@ CREATE TABLE `kependudukan` (
   `peternak_kuda` int(11) DEFAULT NULL,
   `lain` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `pindah_l` int(11) DEFAULT NULL,
+  `pindah_p` int(11) DEFAULT NULL,
+  `pindah_jml` int(11) DEFAULT NULL,
+  `datang_l` int(11) DEFAULT NULL,
+  `datang_p` int(11) DEFAULT NULL,
+  `datang_jml` int(11) DEFAULT NULL,
+  `lahir_l` int(11) DEFAULT NULL,
+  `lahir_p` int(11) DEFAULT NULL,
+  `lahir_jml` int(11) DEFAULT NULL,
+  `mati_l` int(11) DEFAULT NULL,
+  `mati_p` int(11) DEFAULT NULL,
+  `mati_jml` int(11) DEFAULT NULL,
+  `matikurang5_l` int(11) DEFAULT NULL,
+  `matikurang5_p` int(11) DEFAULT NULL,
+  `matikurang5_jml` int(11) DEFAULT NULL,
+  `matilebih5_l` int(11) DEFAULT NULL,
+  `matilebih5_p` int(11) DEFAULT NULL,
+  `matilebih5_jml` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `kependudukan`
 --
 
-INSERT INTO `kependudukan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `jml_kepala_keluarga`, `jml_laki`, `jml_perempuan`, `jml_wni_laki`, `jml_wni_perempuan`, `jml_wna_laki`, `jml_wna_perempuan`, `jml_islam`, `jml_katholik`, `jml_protestan`, `jml_hindu`, `jml_budha`, `jml_penganut_aliran`, `jml_b_0_4`, `jml_b_5_9`, `jml_b_10_14`, `jml_b_15_19`, `jml_b_20_24`, `jml_b_25_29`, `jml_b_30_34`, `jml_b_35_39`, `jml_b_40_up`, `kepadatan`, `petani_pemilik`, `petani_penggarap`, `petani_penyekap`, `petani_buruh`, `nelayan`, `pengusaha_sedang`, `pengrajin`, `buruh_industri`, `buruh_bangunan`, `buruh_pertambangan`, `buruh_perkebunan`, `pedagang`, `pengangkutan`, `pns`, `abri`, `pensiun`, `peternak_sapi_perah`, `peternak_sapi_biasa`, `peternak_kerbau`, `peternak_kambing`, `peternak_domba`, `peternak_kuda`, `lain`, `created_at`, `updated_at`) VALUES
-(2, 1, 1, '2020-09-12', '2', 28096, 57233, 57807, 57286, 57757, 5, 3, NULL, NULL, NULL, NULL, NULL, NULL, 9830, 10750, 10100, 9080, 8880, 9470, 10030, 11020, NULL, '1403 per Km2', 24, 25, 26, 27, 28, 10, 300, 300, 500, NULL, NULL, 1602, NULL, 3381, 173, 2306, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-11 20:47:51', '2020-11-19 01:22:19'),
-(3, 1, 0, '2020-05-08', '1', 11, 22, 33, 44, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11, 22, 44, 99, 77, 66, 55, 44, 99, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 20:53:36', '2020-09-12 21:39:15');
+INSERT INTO `kependudukan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `jml_kepala_keluarga`, `jml_laki`, `jml_perempuan`, `jml_wni_laki`, `jml_wni_perempuan`, `jml_wna_laki`, `jml_wna_perempuan`, `jml_islam`, `jml_katholik`, `jml_protestan`, `jml_hindu`, `jml_budha`, `jml_penganut_aliran`, `jml_b_0_4`, `jml_b_5_9`, `jml_b_10_14`, `jml_b_15_19`, `jml_b_20_24`, `jml_b_25_29`, `jml_b_30_34`, `jml_b_35_39`, `jml_b_40_up`, `kepadatan`, `petani_pemilik`, `petani_penggarap`, `petani_penyekap`, `petani_buruh`, `nelayan`, `pengusaha_sedang`, `pengrajin`, `buruh_industri`, `buruh_bangunan`, `buruh_pertambangan`, `buruh_perkebunan`, `pedagang`, `pengangkutan`, `pns`, `abri`, `pensiun`, `peternak_sapi_perah`, `peternak_sapi_biasa`, `peternak_kerbau`, `peternak_kambing`, `peternak_domba`, `peternak_kuda`, `lain`, `created_at`, `updated_at`, `pindah_l`, `pindah_p`, `pindah_jml`, `datang_l`, `datang_p`, `datang_jml`, `lahir_l`, `lahir_p`, `lahir_jml`, `mati_l`, `mati_p`, `mati_jml`, `matikurang5_l`, `matikurang5_p`, `matikurang5_jml`, `matilebih5_l`, `matilebih5_p`, `matilebih5_jml`) VALUES
+(2, 1, 1, '2020-09-12', '2', 28096, 57233, 57807, 57286, 57757, 5, 3, NULL, NULL, NULL, NULL, NULL, NULL, 9830, 10750, 10100, 9080, 8880, 9470, 10030, 11020, NULL, '1403 per Km2', 24, 25, 26, 27, 28, 10, 300, 300, 500, NULL, NULL, 1602, NULL, 3381, 173, 2306, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-11 20:47:51', '2021-01-02 18:53:15', 20, 10, 30, 1, 2, 3, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19),
+(3, 1, 0, '2020-05-08', '1', 11, 22, 33, 44, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11, 22, 44, 99, 77, 66, 55, 44, 99, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 20:53:36', '2020-09-12 21:39:15', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(5, 1, 3, '2021-01-03', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-02 18:24:11', '2021-01-02 19:00:51', 12, 2, 14, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19, 1, 12, 13);
 
 -- --------------------------------------------------------
 
@@ -1229,7 +1248,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `email`, `email_verified_at`, `password`, `alamat`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Petugas', 'Administrator', 'admin@gmail.com', NULL, '$2y$10$ghY4BC4mZr.1L0OiHSUw5./KLtx4R6NkS1cjXl3jBEQghqEDnOX8i', 'Mengwi', 'tOlI9IJVlMiHgqCni6FTAJPMBj2is5e2AVlvqsTCU2sZmHbjzmjKI435RNKO', '2020-09-07 23:57:33', '2020-09-07 23:57:33'),
+(1, 'Petugas', 'Administrator', 'admin@gmail.com', NULL, '$2y$10$ghY4BC4mZr.1L0OiHSUw5./KLtx4R6NkS1cjXl3jBEQghqEDnOX8i', 'Mengwi', 'OxGzDACdXyPNbnJfKu4dDk3FgYbZvRifMvlhVUyJDhstlgYx1l6pkhvDK78s', '2020-09-07 23:57:33', '2020-09-07 23:57:33'),
 (2, 'Kadis', 'Kepala Dinas', 'kadis@gmail.com', NULL, '$2y$10$zm6IXOd3zuoQ/f9DusCmr.D.IbksHGlr/pGnpw6pL5JxwjdqiCDcq', 'Mengwi', 'rWX6HnDBL89q4jwDEPsrzsXGs0yHkNNUlPjpeyno9afDiUDmbF6FfJHtD0Uz', '2020-09-13 06:43:35', '2020-09-13 06:43:35'),
 (3, 'Masyarakat', 'Masyarakat Umum', 'masumum@gmail.com', NULL, '$2y$10$DBvJ0XfgPoQvPx7Y3aw7i.8F10jSZBFErZRlBuhOYw12arbQCdOVS', 'Mengwi', 'gVvG69S58K0ZTL90CA4SDV2zJx6cR0F0r99vkg6GelKRL21rlnsDuD59riZm', '2020-09-13 06:46:12', '2020-09-13 06:46:12'),
 (4, 'Petugas', 'Testing', 'testing@gmail.com', NULL, '$2y$10$VRA.uU44Qan4z.2BVLjkSuHwgWY7xOLDMdIvI8mdbBfrTxqKDy7PK', 'testing alamat', 'WbBK2sl5EDMwENJSVwMJJD2DFNO6JNuDuiZdYNfTUV8qi9HKSMKmBKMbHIGu', '2020-09-13 06:50:04', '2020-09-13 06:50:04'),
@@ -1453,7 +1472,7 @@ ALTER TABLE `keagrariaan`
 -- AUTO_INCREMENT for table `kependudukan`
 --
 ALTER TABLE `kependudukan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `kumum`

@@ -13,7 +13,7 @@ class PrasaranaController extends Controller
     public function index()
     {
         // $prasarana = Prasarana::all()->sortByDesc('tanggal');
-        $prasarana = Prasarana::orderBy('tanggal', 'desc')->paginate(2);
+        $prasarana = Prasarana::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.prasarana.index', compact('prasarana'));
     }
 

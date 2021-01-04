@@ -12,7 +12,7 @@ class PemkecController extends Controller
     public function index()
     {
         // $pemkec = Pemkec::all()->sortByDesc('tanggal');
-        $pemkec = Pemkec::orderBy('tanggal', 'desc')->paginate(2);
+        $pemkec = Pemkec::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.pemkec.index', compact('pemkec'));
     }
 

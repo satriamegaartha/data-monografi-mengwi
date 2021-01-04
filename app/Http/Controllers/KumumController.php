@@ -15,7 +15,7 @@ class KumumController extends Controller
     public function index()
     {
         // $kumum = Kumum::all()->sortByDesc('tanggal');
-        $kumum = Kumum::orderBy('tanggal', 'desc')->paginate(2);
+        $kumum = Kumum::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.kumum.index', compact('kumum'));
     }
 

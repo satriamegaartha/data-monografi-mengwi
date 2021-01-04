@@ -91,6 +91,13 @@
           </div>
         </div>
       </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <div id="chartmutasi">
+
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -335,6 +342,58 @@
             color: '#ffd429'
         }]
     });
+  </script>
+  <script>
+    Highcharts.chart('chartmutasi', {
+          chart: {
+              type: 'column',
+              backgroundColor: '#e8ffff'
+          },
+          title: {
+              text: 'Data Mutasi Penduduk'
+          },        
+          xAxis: {
+              categories: {!! json_encode($categories_mutasi) !!},
+              crosshair: true
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: 'Jumlah'
+              }
+          },
+          tooltip: {
+              headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+              pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                  '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+              useHTML: true
+          },
+          plotOptions: {
+              column: {
+                  pointPadding: 0.2,
+                  borderWidth: 0
+              }
+          },
+          series: [{
+              name: 'Laki-Laki',
+              data: {!! json_encode($data_mutasi_l) !!},
+              color: '#f3eac2'
+          } , {
+              name: 'Perempuan',
+              data: {!! json_encode($data_mutasi_p) !!},
+              color: '#f5b461'
+          } , {
+              name: 'Jumlah',
+              data: {!! json_encode($data_mutasi_jml) !!},
+              color: '#ec524b'
+          }]
+  
+  
+  
+         
+      });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>

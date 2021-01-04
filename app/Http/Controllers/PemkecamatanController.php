@@ -13,7 +13,7 @@ class PemkecamatanController extends Controller
     public function index()
     {
         // $pemkecamatan = Pemkecamatan::all()->sortByDesc('tanggal');
-        $pemkecamatan = Pemkecamatan::orderBy('tanggal', 'desc')->paginate(2);
+        $pemkecamatan = Pemkecamatan::orderBy('tanggal', 'desc')->paginate(10);
         return view('dinamis.pemkecamatan.index', compact('pemkecamatan'));
     }
 

@@ -13,7 +13,7 @@ class SaranasosbudController extends Controller
     public function index()
     {
         // $saranasosbud = Saranasosbud::all()->sortByDesc('tanggal');
-        $saranasosbud = Saranasosbud::orderBy('tanggal', 'desc')->paginate(2);
+        $saranasosbud = Saranasosbud::orderBy('tanggal', 'desc')->paginate(10);
         return view('statis.saranasosbud.index', compact('saranasosbud'));
     }
 
