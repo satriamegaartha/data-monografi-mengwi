@@ -1195,116 +1195,12 @@
             </tr>
             <tr>
                 <td></td>
-                <td colspan="5">6. PRASARANA PENGAIRAN</td>
+                <td colspan="5">6. PRASARANA/SARANA PENGANGKUTAN DAN KOMUNIKASI</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td> 6.1.</td>
-                <td> Waduk dengan kondisi </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Baik </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Rusak dapat dipakai</td>
-                <td>: </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Rusak sama sekali</td>
-                <td>: </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.2.</td>
-                <td>DAM</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.3.</td>
-                <td>Kincir Air</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.4.</td>
-                <td>Pompa Air</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.5.</td>
-                <td>Air terjun dengan minimal lebar 2M dan Tinggi 10 M</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.6.</td>
-                <td>Sungai</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="5">7. SARANA KAPAL/PERAHU </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>7.1.</td>
-                <td>Kapal </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>7.2.</td>
-                <td>Perahu Motor Tempel</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>7.3.</td>
-                <td>Perahu</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="5">8. PRASARANA/SARANA PENGANGKUTAN DAN KOMUNIKASI</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>8.1.</td>
+                <td>6.1.</td>
                 <td>- Lalu Lintas melalui darat di Kecamatan </td>
                 <td> : </td>
                 <td>{{$pengangkutan->darat}}</td>
@@ -1320,7 +1216,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>8.2.</td>
+                <td>6.2.</td>
                 <td>Apabila melalui Air/Laut/Sungai, Jumlah Dermaga</td>
                 <td> : </td>
                 <td>{{$pengangkutan->dermaga}}</td>
@@ -1328,7 +1224,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>8.3.</td>
+                <td>6.3.</td>
                 <td>Lalu Lintas darat Melalui</td>
                 <td> : </td>
                 <td></td>
@@ -1360,7 +1256,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>8.4.</td>
+                <td>6.4.</td>
                 <td>Sarana Umum yang dapat digunakan oleh Penduduk Kecamatan : </td>
                 <td> : </td>
                 <td></td>
@@ -1405,16 +1301,119 @@
                 <td> : </td>
                 <td>{{$pengangkutan->jumlah}}</td>
             </tr>
-
-
             <tr>
                 <td></td>
-                <td colspan="5">9. PANJANG JALAN DAN JEMBATAN</td>
+                <td colspan="5">7. PRASARANA PENGAIRAN</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>9.1.</td>
+                <td> 7.1.</td>
+                <td> Waduk dengan kondisi </td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>a. Baik </td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>b. Rusak dapat dipakai</td>
+                <td>: </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>c. Rusak sama sekali</td>
+                <td>: </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.2.</td>
+                <td>DAM</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.3.</td>
+                <td>Kincir Air</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.4.</td>
+                <td>Pompa Air</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.5.</td>
+                <td>Air terjun dengan minimal lebar 2M dan Tinggi 10 M</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.6.</td>
+                <td>Sungai</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            {{-- <tr>
+                <td></td>
+                <td colspan="5">7. SARANA KAPAL/PERAHU </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.1.</td>
+                <td>Kapal </td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.2.</td>
+                <td>Perahu Motor Tempel</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>7.3.</td>
+                <td>Perahu</td>
+                <td> : </td>
+                <td></td>
+            </tr>
+             --}}
+            <tr>
+                <td></td>
+                <td colspan="5">8. PANJANG JALAN DAN JEMBATAN</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>8.1.</td>
                 <td>Jenis Jalan</td>
                 <td> : </td>
                 <td></td>
@@ -1462,7 +1461,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>9.2.</td>
+                <td>8.2.</td>
                 <td>Kelas Jalan</td>
                 <td> : </td>
                 <td></td>
@@ -1539,7 +1538,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>9.3.</td>
+                <td>8.3.</td>
                 <td>Jembatan</td>
                 <td> : </td>
                 <td>{{$pjgjalan->jembatan}}</td>
@@ -1579,12 +1578,12 @@
 
             <tr>
                 <td></td>
-                <td colspan="5">10. SARANA PEREKONOMIAN </td>
+                <td colspan="5">9. SARANA PEREKONOMIAN </td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.1.</td>
+                <td>9.1.</td>
                 <td>Koperasi</td>
                 <td> : </td>
                 <td></td>
@@ -1656,7 +1655,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.2.</td>
+                <td>9.2.</td>
                 <td>Jumlah Pasar Selapan/Umum</td>
                 <td> : </td>
                 <td></td>
@@ -1688,7 +1687,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.3.</td>
+                <td>9.3.</td>
                 <td>Pasar Bangunan Permanen/Semi Permanen</td>
                 <td> : </td>
                 <td>{{$perekonomian->pasar_bangunan_permanen}}</td>
@@ -1696,7 +1695,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.4.</td>
+                <td>9.4.</td>
                 <td>Pasar tanpa bangunan semi permanen</td>
                 <td> : </td>
                 <td>{{$perekonomian->pasar_tanpa_bangunan_permanen}}</td>
@@ -1704,7 +1703,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.5.</td>
+                <td>9.5.</td>
                 <td>Jumlah toko/kios/warung</td>
                 <td> : </td>
                 <td>{{$perekonomian->jumlah_toko}}</td>
@@ -1712,7 +1711,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.6.</td>
+                <td>9.6.</td>
                 <td>Bank</td>
                 <td> : </td>
                 <td>{{$perekonomian->bank}}</td>
@@ -1720,7 +1719,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.7.</td>
+                <td>9.7.</td>
                 <td>Jumlah Lumbung Desa</td>
                 <td> : </td>
                 <td>{{$perekonomian->jumlah_lumbung_desa}}</td>
@@ -1728,7 +1727,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.8.</td>
+                <td>9.8.</td>
                 <td>Stasiun Kapal Udara</td>
                 <td> : </td>
                 <td>{{$perekonomian->stasiun_udara}}</td>
@@ -1736,7 +1735,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.9.</td>
+                <td>9.9.</td>
                 <td>Stasiun Kapal Laut</td>
                 <td> : </td>
                 <td>{{$perekonomian->stasiun_laut}}</td>
@@ -1744,7 +1743,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.10.</td>
+                <td>9.10.</td>
                 <td>Stasiun Kereta Api</td>
                 <td> : </td>
                 <td>{{$perekonomian->stasiun_kereta}}</td>
@@ -1752,7 +1751,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.11.</td>
+                <td>9.11.</td>
                 <td>Stasiun Bis</td>
                 <td> : </td>
                 <td>{{$perekonomian->stasiun_bis}}</td>
@@ -1760,7 +1759,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.12.</td>
+                <td>9.12.</td>
                 <td>Stasiun Oplet/Bemo/Taksi</td>
                 <td> : </td>
                 <td>{{$perekonomian->stasiun_oplet}}</td>
@@ -1768,7 +1767,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>10.13.</td>
+                <td>9.13.</td>
                 <td>Jumlah Telepon Umum</td>
                 <td> : </td>
                 <td>{{$perekonomian->jumlah_telp_umum}}</td>
@@ -1777,13 +1776,13 @@
 
             <tr>
                 <td></td>
-                <td colspan="5">11. JUMLAH PERUSAHAAN/USAHA</td>
+                <td colspan="5">10. JUMLAH PERUSAHAAN/USAHA</td>
             </tr>
 
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.1 </td>
+                <td>10.1 </td>
                 <td>Industri </td>
                 <td> : </td>
                 <td></td>
@@ -1839,7 +1838,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.2. </td>
+                <td>10.2. </td>
                 <td>Perhotelan/Losmen/Penginapan</td>
                 <td> : </td>
                 <td>{{$jumlahusaha->hotel}}</td>
@@ -1855,7 +1854,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.3. </td>
+                <td>10.3. </td>
                 <td>Rumah Makan/Warung Makan</td>
                 <td> : </td>
                 <td>{{$jumlahusaha->rm_makan}}</td>
@@ -1871,7 +1870,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.4. </td>
+                <td>10.4. </td>
                 <td>Perdagangan </td>
                 <td> : </td>
                 <td>{{$jumlahusaha->perdagangan}}</td>
@@ -1887,7 +1886,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.5.</td>
+                <td>10.5.</td>
                 <td>Angkutan</td>
                 <td> : </td>
                 <td>{{$jumlahusaha->angkutan}}</td>
@@ -1903,7 +1902,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>11.6.</td>
+                <td>10.6.</td>
                 <td>Lain-lain</td>
                 <td> : </td>
                 <td>{{$jumlahusaha->lain}}</td>
@@ -1918,7 +1917,7 @@
             </tr>
 
 
-            <tr>
+            {{-- <tr>
                 <td></td>
                 <td colspan="5">12. FASILITAS PERKREDITAN </td>
             </tr>
@@ -1995,11 +1994,7 @@
                 <td></td>
             </tr>
 
-
-
-
-
-
+ --}}
 
 
 
@@ -2009,12 +2004,12 @@
 
             <tr>
                 <td></td>
-                <td colspan="5">13. SARANA SOSIAL/BUDAYA</td>
+                <td colspan="5">11. SARANA SOSIAL/BUDAYA</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>13.1.</td>
+                <td>11.1.</td>
                 <td>Pendidikan</td>
                 <td></td>
                 <td></td>
@@ -2024,7 +2019,15 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>13.1.1. TK </td>
+                <td>11.1.1. TK </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaa</span>a. TK Negeri : </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -2034,7 +2037,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
                 <td>:</td>
-                <td>{{$saranasosbud->tk_sekolah}}</td>
+                <td>{{$saranasosbud->tkn_sekolah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2042,7 +2045,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
                 <td>:</td>
-                <td>{{$saranasosbud->tk_murid}}</td>
+                <td>{{$saranasosbud->tkn_murid}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2050,7 +2053,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
                 <td>:</td>
-                <td>{{$saranasosbud->tk_guru}}</td>
+                <td>{{$saranasosbud->tkn_guru}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2058,7 +2061,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
                 <td>:</td>
-                <td>{{$saranasosbud->tk_prasarana}}</td>
+                <td>{{$saranasosbud->tkn_prasarana}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2066,15 +2069,62 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Perpustakaan</td>
                 <td>:</td>
-                <td>{{$saranasosbud->tk_perpustakaan}}</td>
+                <td>{{$saranasosbud->tkn_perpustakaan}}</td>
             </tr>
-
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaa</span>b. TK Swasta Umum : </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
+                <td>:</td>
+                <td>{{$saranasosbud->tksu_sekolah}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
+                <td>:</td>
+                <td>{{$saranasosbud->tksu_murid}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
+                <td>:</td>
+                <td>{{$saranasosbud->tksu_guru}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
+                <td>:</td>
+                <td>{{$saranasosbud->tksu_prasarana}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
+                <td>:</td>
+                <td>{{$saranasosbud->tksu_perpustakaan}}</td>
+            </tr>
 
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>13.1.2. Sekolah Dasar</td>
+                <td>11.1.2. Sekolah Dasar</td>
                 <td></td>
                 <td></td>
             </tr>
@@ -2126,19 +2176,11 @@
                 <td>:</td>
                 <td>{{$saranasosbud->sdn_perpustakaan}}</td>
             </tr>
-
-
-
-
-
-
-
-
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span>b. SD Inpres</td>
+                <td><span class="white">aaaa</span>b. Sekolah Dasar Swasta Umum : </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -2148,7 +2190,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
                 <td>:</td>
-                <td>0 Buah</td>
+                <td>{{$saranasosbud->sdsu_sekolah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2156,7 +2198,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
                 <td>:</td>
-                <td>0 Orang</td>
+                <td>{{$saranasosbud->sdsu_murid}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2164,7 +2206,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
                 <td>:</td>
-                <td>0 Orang</td>
+                <td>{{$saranasosbud->sdsu_guru}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2172,7 +2214,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
                 <td>:</td>
-                <td>0 Lokal</td>
+                <td>{{$saranasosbud->sdsu_prasarana}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2180,396 +2222,13 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Perpustakaan</td>
                 <td>:</td>
-                <td>0 Buah</td>
+                <td>{{$saranasosbud->sdsu_perpustakaan}}</td>
             </tr>
 
 
 
 
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>c. Madrasah/Ibtidaiyah Negeri</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>d. SD Swasta Umum</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>e. SD Swasta Islam</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>f. SD Swasta Protestan </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>g. SD Swasta Katholik </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>h. SD Swasta HIndu</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>i. SD Swasta Budha </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span> j. SLB ( Sekolah Luar Biasa) </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
+
 
 
 
@@ -2580,7 +2239,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>13.1.3. Sekolah Lanjutan Pertama (SLTP) </td>
+                <td>11.1.3. Sekolah Lanjutan Pertama (SLTP) </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -2632,61 +2291,12 @@
                 <td>:</td>
                 <td>{{$saranasosbud->smtpn_perpustakaan}}</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span> b. Madrasah/Tsanawiah Negeri </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-
 
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span>c. SMTP Swasta Umum </td>
+                <td><span class="white">aaaa</span>b. SMTP Swasta Umum </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -2696,7 +2306,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
                 <td>:</td>
-                <td>{{$saranasosbud->smtpsusekolah}}</td>
+                <td>{{$saranasosbud->smtpsu_sekolah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2704,7 +2314,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
                 <td>:</td>
-                <td>{{$saranasosbud->smtpsumurid}}</td>
+                <td>{{$saranasosbud->smtpsu_murid}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2712,7 +2322,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
                 <td>:</td>
-                <td>{{$saranasosbud->smtpsuguru}}</td>
+                <td>{{$saranasosbud->smtpsu_guru}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2720,7 +2330,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
                 <td>:</td>
-                <td>{{$saranasosbud->smtpsuprasarana}}</td>
+                <td>{{$saranasosbud->smtpsu_prasarana}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -2728,349 +2338,14 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Perpustakaan</td>
                 <td>:</td>
-                <td>{{$saranasosbud->smtpsuperpustakaan}}</td>
+                <td>{{$saranasosbud->smtpsu_perpustakaan}}</td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span> d. SMTP Swasta Islam</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>e. SMTP Swasta Protestan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span> f. SMTP Swasta Katolik</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span> g. SMTP Swasta Hindu</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>h. SMTP Swasta Budha </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>i. SMTP Kejuruan Negeri</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>j. SMTP Kejuruan Swasta </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td>0 Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td>0 Lokal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td>0 Buah</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>13.1.4. Sekolah Menengah Tingkat Atas</td>
+                <td>11.1.4. Sekolah Menengah Tingkat Atas</td>
                 <td></td>
                 <td></td>
             </tr>
@@ -3130,67 +2405,12 @@
                 <td>:</td>
                 <td>{{$saranasosbud->smtan_perpustakaan}}</td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span> b. Madrasah/Aliyah Negeri </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>c. SMTA Swasta Umum</td>
+                <td><span class="white">aaaa</span>b. SMTA Swasta Umum</td>
                 <td></td>
                 <td></td>
             </tr>
@@ -3242,355 +2462,21 @@
                 <td>:</td>
                 <td>{{$saranasosbud->smtasu_perpustakaan}}</td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span> d. SMTA Swasta Islam</td>
+                <td>11.1.5. Perguruan Tinggi:</td>
                 <td></td>
                 <td></td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span> e. SMTA Swasta Protestan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>f. SMTA Swasta Katholik </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>g. SMTA Swasta Hindu </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>h. SMTA Kejuruan Negeri </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>i. SMTA Kejuruan Swasta-</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Sekolah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Murid </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Guru/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>13.1.5. Perguruan Tinggi/Akademi :</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>a. Akademi Negeri </td>
+                <td><span class="white">aaaa</span>a. Perguruan Tinggi Negeri </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -3600,7 +2486,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_jumlah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3608,7 +2494,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Mahasiswa </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_mahasiswa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3616,7 +2502,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Dosen/Pengajar </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_dosen}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3624,7 +2510,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_prasarana}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3632,7 +2518,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_lab}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3640,13 +2526,14 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Perpustakaan</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptn_perpustakaan}}</td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aaaa</span>b. Akademi Swasta</td>
+                <td><span class="white">aaaa</span>b. Perguruan Tinggi Swasta </td>
                 <td></td>
                 <td></td>
             </tr>
@@ -3656,7 +2543,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_jumlah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3664,7 +2551,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Mahasiswa </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_mahasiswa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3672,7 +2559,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Jumlah Dosen/Pengajar </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_dosen}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3680,7 +2567,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_prasarana}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3688,7 +2575,7 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_lab}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -3696,180 +2583,15 @@
                 <td></td>
                 <td><span class="white">aaaaaa</span>- Perpustakaan</td>
                 <td>:</td>
-                <td></td>
+                <td>{{$saranasosbud->ptsu_perpustakaan}}</td>
             </tr>
+
+
+
             <tr>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>c. Perguruan Tinggi Negeri </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Mahasiswa </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Dosen/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>d. Perguruan Tinggi Swasta </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Mahasiswa </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Dosen/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaa</span>e. Kursus-kursus Keterampilan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Mahasiswa </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Jumlah Dosen/Pengajar </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Prasarana fisik </td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Fasilitas Laboratorium</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaaaaa</span>- Perpustakaan</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>13.2. </td>
+                <td>11.2. </td>
                 <td>Jumlah tempat ibadah</td>
                 <td></td>
                 <td></td>
@@ -3907,10 +2629,10 @@
                 <td>{{$saranasosbud->kuil}}</td>
             </tr>
 
-            <tr>
+            {{-- <tr>
                 <td></td>
                 <td></td>
-                <td>13.3. </td>
+                <td>11.3. </td>
                 <td>Banyaknya Rumah Penduduk </td>
                 <td></td>
                 <td></td>
@@ -4002,12 +2724,12 @@
                 <td><span class="white">aa</span>b.3. Tipe C</td>
                 <td> : </td>
                 <td> - Buah </td>
-            </tr>
+            </tr> --}}
 
             <tr>
                 <td></td>
                 <td></td>
-                <td> 13.4. </td>
+                <td> 11.4. </td>
                 <td>Pariwisata </td>
                 <td></td>
                 <td></td>
@@ -4139,7 +2861,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td> 13.5. </td>
+                <td> 11.5. </td>
                 <td>Kesehatan </td>
                 <td></td>
                 <td></td>
@@ -4552,7 +3274,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>13.6. </td>
+                <td>11.6. </td>
                 <td>Keluarga Berencana (KB) </td>
                 <td></td>
                 <td></td>
@@ -4656,7 +3378,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td>13.7. </td>
+                <td>11.7. </td>
                 <td>Penderita Cacat </td>
                 <td></td>
                 <td></td>
@@ -4678,373 +3400,7 @@
                 <td>{{$saranasosbud->cacat_mental}}</td>
             </tr>
 
-            <tr>
-                <td></td>
-                <td colspan="5">14. PEMBANGUNAN </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>14.1.</td>
-                <td>Jumlah proyek fisik yang dibangun Di kecamatan dalam tahun 2015</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Sektor Pertanian dan Pengairan</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Sektor Industri</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Sektor Pertambangan dan Energi</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>d. Sektor Perhubungan dan Pariwisata</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>e. Sektor Perdagangan dan Koperasi </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>f. Sektor Tenaga Kerja dan Transmigrasi </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>g. Sektor Pembangunan Daerah Desa dan Kota </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>h. Sektor Agama</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>i. Sektor Pendidikan, Generasi Muda, Kebudayaan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span> Nasional dan Kepercayaan Terhadap</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Tuhan Yang Maha Esa </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>j. Sektor Kesehatan, Kesejahteraan Sosial,</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Peranan Wanita, Kependudukan </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>dan Keluarga Berencana</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>k. Sektor Perumahan Rakyat dan Pemukiman</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>l. Sektor Hukum</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>m. Sektor Pertahanan dan Keamanan Nasional</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>n. Sektor Penerangan, Pers dan Komunikasi Sosial </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>o. Sektor Ilmu Pengetahuan, Teknologi dan Penelitian</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>p. Sektor Aparatur Pemerintah </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>q. Sektor Pengembangan Dunia Usaha </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>r. Sektor Sumber Alam dan Lingkungan Hidup </td>
-                <td> : </td>
-                <td>...Buah</td>
-            </tr>
 
-            <tr>
-                <td></td>
-                <td></td>
-                <td>14.2.</td>
-                <td>Pembiayaan Pembangunan Proyek di Kecamatan dalam tahun 2015 (dalam Jutaan Rupiah)</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Biaya dari Pusat</td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Biaya dari Propinsi</td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Biaya dari Kota</td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>d. Swadaya penduduk yg berbentuk</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>barang & tenaga (dinilai dg uang)</td>
-                <td> : </td>
-                <td> Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>e. Biaya dari Bantuan luar negeri </td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td> f. Biaya lain-lain </td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Jumlah</td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td>14.3. </td>
-                <td>Pajak Bumi dan Bangunan (PBB) (Dalam Ribuan Rupiah) </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Jumlah Wajib PBB</td>
-                <td> : </td>
-                <td>Orang</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Target PBB (Pedesaan/Perkotaan)</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Jumlah Pokok Ketetapan PBB tahun yang bersangkutan</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>d. Tunggakan PBB tahun yang lewat </td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>e. Realisasi PBB tahun yang bersangkutan</td>
-                <td> : </td>
-                <td>Rp.-</td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td>14.4. </td>
-                <td>Inventarisasi bidang Teknologi tepat guna yang telah dimanfaatkan</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Bidang Energi </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Bidang Pangan </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Bidang Pertanian </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>d. Bidang Konstruksi </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>e. Bidang Material </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>f. Bidang Kerajinan/Industri </td>
-                <td> : </td>
-                <td></td>
-            </tr>
 
 
 
@@ -5439,70 +3795,14 @@
                 <td> : </td>
                 <td></td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. 0 - 6 tahun</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>7 - 12 tahun </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>13 - 18 tahun </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>19 - 24 tahun</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>25 - 55 tahun</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>56 - 79 tahun </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>80 tahun ke atas </td>
-                <td> : </td>
-                <td></td>
-            </tr>
 
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>b. 0 - 4 tahun </td>
+                <td><span class="white">aa</span>0 - 4 tahun </td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_0_4, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_0_4, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5510,7 +3810,7 @@
                 <td></td>
                 <td><span class="white">aa</span>5 - 9 tahun</td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_5_9, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_5_9, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5518,7 +3818,7 @@
                 <td></td>
                 <td><span class="white">aa</span>10 - 14 tahun </td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_10_14, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_10_14, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5526,7 +3826,7 @@
                 <td></td>
                 <td><span class="white">aa</span>15 - 19 tahun </td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_15_19, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_15_19, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5534,7 +3834,7 @@
                 <td></td>
                 <td><span class="white">aa</span>20 - 24 tahun</td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_20_24, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_20_24, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5542,7 +3842,7 @@
                 <td></td>
                 <td><span class="white">aa</span>25 - 29 tahun </td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_25_29, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_25_29, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5550,7 +3850,7 @@
                 <td></td>
                 <td><span class="white">aa</span>30 - 34 tahun</td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_30_34, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_30_34, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5558,16 +3858,77 @@
                 <td></td>
                 <td><span class="white">aa</span>35 - 39 tahun</td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_35_39, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_35_39, 0, '.', '.')}}</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span class="white">aa</span>40 tahun ke atas </td>
+                <td><span class="white">aa</span>40 - 44 tahun</td>
                 <td> : </td>
-                <td>{{ number_format($kependudukan->jml_b_40_up, 0, '.', '.')}}</td>
+                <td>{{ number_format($kependudukan->jml_40_44, 0, '.', '.')}}</td>
             </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>45 - 49 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_45_49, 0, '.', '.')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>50 - 54 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_50_54, 0, '.', '.')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>55 - 59 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_55_59, 0, '.', '.')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>60 - 64 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_60_64, 0, '.', '.')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>65 - 69 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_65_69, 0, '.', '.')}}</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>70 - 74 tahun</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_70_74, 0, '.', '.')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="white">aa</span>75 tahun ke atas</td>
+                <td> : </td>
+                <td>{{ number_format($kependudukan->jml_75_up, 0, '.', '.')}}</td>
+            </tr>
+
+
+
+
 
             <tr>
                 <td></td>
@@ -5678,226 +4039,7 @@
                 </td>
 
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>8. </td>
-                <td>Penduduk WNA </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td colspan="4">
-                    <table class="table-add">
-                        <tr>
-                            <td rowspan="2">No.</td>
-                            <td rowspan="2">Asal kewarganegaraan</td>
-                            <td colspan="2">Dewasa 17 th ke atas</td>
-                            <td colspan="2">Anak- anak 0 – 17 th</td>
-                            <td rowspan="2">Jumlah</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center">L</td>
-                            <td style="text-align: center">P</td>
-                            <td style="text-align: center">L</td>
-                            <td style="text-align: center">P</td>
-                        </tr>
-                        <tr>
-                            <td>1.</td>
-                            <td>Cina RRC</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Cina Taiwan</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Cina Stateles</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Arab</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>India</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6.</td>
-                            <td>Pakistan</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>7.</td>
-                            <td>Belanda</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>8.</td>
-                            <td>Jepang</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>9.</td>
-                            <td>Lain-Lain</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>9. </td>
-                <td>Penduduk WNI Keturunan Asing </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td colspan="4">
-                    <table class="table-add">
-                        <tr>
-                            <td rowspan="2">No.</td>
-                            <td rowspan="2">Asal kewarganegaraan</td>
-                            <td colspan="2">Dewasa 17 th ke atas</td>
-                            <td colspan="2">Anak- anak 0 – 17 th</td>
-                            <td rowspan="2">Jumlah</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center">L</td>
-                            <td style="text-align: center">P</td>
-                            <td style="text-align: center">L</td>
-                            <td style="text-align: center">P</td>
-                        </tr>
-                        <tr>
-                            <td>1.</td>
-                            <td>Cina RRC</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Cina Taiwan</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Cina Stateles</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Arab</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>India</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6.</td>
-                            <td>Pakistan</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>7.</td>
-                            <td>Belanda</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>8.</td>
-                            <td>Jepang</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>9.</td>
-                            <td>Lain-Lain</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+
             <tr>
                 <td></td>
                 <td></td>
@@ -5912,7 +4054,7 @@
                 <td>11.</td>
                 <td> Penyebaran Penduduk</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$kependudukan->penyebaran}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5928,7 +4070,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Nikah </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$kependudukan->ntcr_nikah}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5936,7 +4078,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Talak </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$kependudukan->ntcr_talak}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5944,7 +4086,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Cerai </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$kependudukan->ntcr_cerai}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -5952,7 +4094,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Rujuk </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$kependudukan->ntcr_rujuk}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6294,90 +4436,11 @@
                 <td> : </td>
                 <td>{{$keagrariaan->tanah_adat}}</td>
             </tr>
+
             <tr>
                 <td></td>
                 <td></td>
-                <td>2.</td>
-                <td>Luas tanah yang belum bersertifikat sampai dengan tahun........-.......</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>3.</td>
-                <td>Jumlah tanah yang sudah bersertifikat sampai dengan tahun .... -........... </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Tanah Sawah </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Tanah Kering</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>4.</td>
-                <td>Jumlah Sertifikat tanah yang diperoleh</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Tanah Sawah </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Tanah Kering</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>5. </td>
-                <td>Jumlah sertifikat tanah yang diperoleh melalui biasa/non prona sampai dengan tahun........... </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Tanah Sawah </td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Tanah Kering</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6. </td>
+                <td>2. </td>
                 <td>Perubahan penggunaan tanah </td>
                 <td> : </td>
                 <td></td>
@@ -6396,7 +4459,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perumahan </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->sawah_perumahan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6404,7 +4467,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Industri </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->sawah_industri}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6412,7 +4475,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Jasa </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->sawah_jasa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6420,7 +4483,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perusahaan dan lain-lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->sawah_perusahaan_dll}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6436,7 +4499,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perumahan </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tegalan_perumahan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6444,7 +4507,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Industri </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tegalan_industri}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6452,7 +4515,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Jasa </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tegalan_jasa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6460,7 +4523,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perusahaan dan lain-lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tegalan_perusahaan_dll}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6476,7 +4539,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perumahan </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->perkebunan_perumahan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6484,7 +4547,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Industri </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->perkebunan_industri}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6492,7 +4555,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Jasa </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->perkebunan_jasa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6500,7 +4563,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perusahaan dan lain-lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->perkebunan_perusahaan_dll}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6516,7 +4579,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perumahan </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->hutan_perumahan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6524,7 +4587,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Industri </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->hutan_industri}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6532,7 +4595,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Jasa </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->hutan_jasa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6540,7 +4603,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perusahaan dan lain-lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->hutan_perusahaan_dll}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6556,7 +4619,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perumahan </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tambak_perumahan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6564,7 +4627,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Industri </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tambak_industri}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6572,7 +4635,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Jasa </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tambak_jasa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6580,7 +4643,7 @@
                 <td></td>
                 <td><span class="white">aa</span>- Perusahaan dan lain-lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$keagrariaan->tambak_perusahaan_dll}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6721,74 +4784,75 @@
                         <tr>
                             <td>1</td>
                             <td>Cengkeh</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->cengkeh_blm_produksi}}</td>
+                            <td>{{$tanaman->cengkeh_produksi}}</td>
+                            <td>{{$tanaman->cengkeh_tak_produksi}}</td>
+                            <td>{{$tanaman->cengkeh_jml_produksi}}</td>
+
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Pala</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->pala_blm_produksi}}</td>
+                            <td>{{$tanaman->pala_produksi}}</td>
+                            <td>{{$tanaman->pala_tak_produksi}}</td>
+                            <td>{{$tanaman->pala_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Tembakau</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->tembakau_blm_produksi}}</td>
+                            <td>{{$tanaman->tembakau_produksi}}</td>
+                            <td>{{$tanaman->tembakau_tak_produksi}}</td>
+                            <td>{{$tanaman->tembakau_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Kelapa</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->kelapa_blm_produksi}}</td>
+                            <td>{{$tanaman->kelapa_produksi}}</td>
+                            <td>{{$tanaman->kelapa_tak_produksi}}</td>
+                            <td>{{$tanaman->kelapa_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>Kelapa Sawit</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->kelapa_sawit_blm_produksi}}</td>
+                            <td>{{$tanaman->kelapa_sawit_produksi}}</td>
+                            <td>{{$tanaman->kelapa_sawit_tak_produksi}}</td>
+                            <td>{{$tanaman->kelapa_sawit_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>Kopi</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->kopi_blm_produksi}}</td>
+                            <td>{{$tanaman->kopi_produksi}}</td>
+                            <td>{{$tanaman->kopi_tak_produksi}}</td>
+                            <td>{{$tanaman->kopi_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>Coklat</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->coklat_blm_produksi}}</td>
+                            <td>{{$tanaman->coklat_produksi}}</td>
+                            <td>{{$tanaman->coklat_tak_produksi}}</td>
+                            <td>{{$tanaman->coklat_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>8</td>
                             <td>Panili</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->panili_blm_produksi}}</td>
+                            <td>{{$tanaman->panili_produksi}}</td>
+                            <td>{{$tanaman->panili_tak_produksi}}</td>
+                            <td>{{$tanaman->panili_jml_produksi}}</td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td>Lain-Lain</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$tanaman->lain_blm_produksi}}</td>
+                            <td>{{$tanaman->lain_produksi}}</td>
+                            <td>{{$tanaman->lain_tak_produksi}}</td>
+                            <td>{{$tanaman->lain_jml_produksi}}</td>
                         </tr>
                     </table>
                 </td>
@@ -6802,7 +4866,7 @@
                 <td>1.</td>
                 <td>Luas Tambah Tanam Bimas Padi Insus</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_bimas_padi_insus}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6810,7 +4874,7 @@
                 <td>2.</td>
                 <td>Luas Tambah Tanam Binas Padi Inmum</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_bimas_padi_inmum}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6818,7 +4882,7 @@
                 <td>3.</td>
                 <td>Luas Tambah Tanam Inmas Padi Insus</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_inmas_padi_insus}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6826,7 +4890,7 @@
                 <td>4.</td>
                 <td>Luas Tambah Tanam Inmas Padi Inmum</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_inmas_padi_inmum}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6834,7 +4898,7 @@
                 <td>5.</td>
                 <td>Luas Tambah Panen Areal Padi Intensifikasi</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_padi_intensifikasi}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6842,7 +4906,7 @@
                 <td>6.</td>
                 <td>Luas Serangan Hama Wereng</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_hama_wereng}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6850,7 +4914,7 @@
                 <td>7.</td>
                 <td>Luas Serangan Hama Tikus</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_hama_tikus}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6858,7 +4922,7 @@
                 <td>8.</td>
                 <td>Luas Serangan Hama/Penyakit Lainnya</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_hama_lainnya}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6866,7 +4930,7 @@
                 <td>9.</td>
                 <td>Luas Tambah Areal Puso karena wereng</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_puso_wereng}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6874,7 +4938,7 @@
                 <td>10.</td>
                 <td>Luas Tambah Areal Puso Karena Tikus</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_puso_tikus}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6882,7 +4946,7 @@
                 <td>11.</td>
                 <td>Luas Tambah Areal Puso Karena Banjir</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_puso_banjir}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6890,7 +4954,7 @@
                 <td>12.</td>
                 <td>Luas Tambah Areal Puso Karena Kekeringan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->luas_puso_kekeringan}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6898,7 +4962,7 @@
                 <td>13.</td>
                 <td>Penyalur Urea Lini IV dalam Minggu Pelaporan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->penyalur_urea}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6906,7 +4970,7 @@
                 <td>14.</td>
                 <td>Penyalur TPS Lini IV Dalam Minggu Pelaporan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->penyalur_tps}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6914,7 +4978,7 @@
                 <td>15.</td>
                 <td>Penyalur Insektisida Lini IV Dalam Minggu Pelaporan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->penyalur_insektisida}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -6922,61 +4986,11 @@
                 <td>16.</td>
                 <td>Penyalur Rodentisida Lini IV Dalam Minggu Pelaporan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$pangan->penyalur_rodentisida}}</td>
             </tr>
+
             <tr>
-                <td colspan="6">F. PERTAMBANGAN</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>1.</td>
-                <td>Pertambangan Golongan A</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white"></span>Jenis Bahan Tambang</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>2.</td>
-                <td>Pertambangan Golongan B</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white"></span>Jenis Bahan Tambang</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>3.</td>
-                <td>Pertambangan Golongan C</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white"></span>Jenis Bahan Tambang</td>
-                <td> : </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="6">G. PERIKANAN</td>
+                <td colspan="6">F. PERIKANAN</td>
             </tr>
             <tr>
                 <td></td>
@@ -6990,46 +5004,40 @@
                             <td>Hasil/Tahun</td>
                         </tr>
                         <tr>
-                            <td style="text-align: center">1</td>
-                            <td style="text-align: center">2</td>
-                            <td style="text-align: center">3</td>
-                            <td style="text-align: center">4</td>
-                        </tr>
-                        <tr>
                             <td>1.</td>
                             <td>Bandeng</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
+                            <td>{{$perikanan->bandeng_luas}}</td>
+                            <td>{{$perikanan->bandeng_hasil}}</td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td>Udang</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
+                            <td>{{$perikanan->udang_luas}}</td>
+                            <td>{{$perikanan->udang_hasil}}</td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>Buaya</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
+                            <td>{{$perikanan->buaya_luas}}</td>
+                            <td>{{$perikanan->buaya_hasil}}</td>
                         </tr>
                         <tr>
                             <td>4.</td>
                             <td>Kura-Kura</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
+                            <td>{{$perikanan->kurakura_luas}}</td>
+                            <td>{{$perikanan->kurakura_hasil}}</td>
                         </tr>
                         <tr>
                             <td>5.</td>
                             <td>Lain-Lain</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
-                            <td class="white">aaaaaaaaaaaaaaaa</td>
+                            <td>{{$perikanan->lainnya_luas}}</td>
+                            <td>{{$perikanan->lainnya_hasil}}</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td colspan="6">H. TRANSPORTASI</td>
+                <td colspan="6">G. TRANSPORTASI</td>
             </tr>
             <tr>
                 <td></td>
@@ -7045,7 +5053,7 @@
                 <td></td>
                 <td>1.1. Sepeda</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->sepeda}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7053,7 +5061,7 @@
                 <td></td>
                 <td>1.2. Dokar/Delman</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->dokar}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7061,7 +5069,7 @@
                 <td></td>
                 <td>1.3. Gerobak/Cikar</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->gerobak}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7069,7 +5077,7 @@
                 <td></td>
                 <td>1.4. Becak</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->becak}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7077,7 +5085,7 @@
                 <td></td>
                 <td>1.5. Kendaran Bermotor Roda 3</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->roda3}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7085,7 +5093,7 @@
                 <td></td>
                 <td>1.6. Sepeda Motor</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->motor}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7093,7 +5101,7 @@
                 <td></td>
                 <td>1.7. Oplet/Mikrolet</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->oplet}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7101,7 +5109,7 @@
                 <td></td>
                 <td>1.8. Taksi</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->taksi}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7109,7 +5117,7 @@
                 <td></td>
                 <td>1.9. Mobil Dinas</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->mobil_dinas}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7117,7 +5125,7 @@
                 <td></td>
                 <td>1.10. Mobil Pribadi</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->mobil_pribadi}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7125,7 +5133,7 @@
                 <td></td>
                 <td>1.11. Truck</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->truck}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7133,7 +5141,7 @@
                 <td></td>
                 <td>1.12. Bus Umum</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->bus_umum}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7141,7 +5149,7 @@
                 <td></td>
                 <td>1.13. Bus Kota</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->bus_kota}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7149,7 +5157,7 @@
                 <td></td>
                 <td>1.14. Perahu Dayung/Sampan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->perahu_dayung}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7157,7 +5165,7 @@
                 <td></td>
                 <td>1.15. Perahu Motor</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->perahu_motor}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7165,7 +5173,7 @@
                 <td></td>
                 <td>1.16. Perahu Layar</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->perahu_layar}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7173,7 +5181,7 @@
                 <td></td>
                 <td>1.17. Lain-Lain</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->lainnya}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7189,7 +5197,7 @@
                 <td></td>
                 <td>2.1. TV Umum</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->tv_umum}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7197,7 +5205,7 @@
                 <td></td>
                 <td>2.2. Telepon Umum</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->telp_umum}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7205,7 +5213,7 @@
                 <td></td>
                 <td>2.3. Kantor Pos/Kantor Pos Pembantu </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->kantor_pos}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7213,7 +5221,7 @@
                 <td></td>
                 <td>2.4. ORARI/KRAP </td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->orari}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7221,7 +5229,7 @@
                 <td></td>
                 <td>2.5. Pemancar Radio</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->pemancar_radio}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7245,7 +5253,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- Listrik PLN</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->listrik_pln}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7253,7 +5261,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- Listrik Non PLN</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->listrik_non_pln}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7277,7 +5285,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- PDM</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->pdm}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7285,7 +5293,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- Badan Pengelola Air</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->badan_pengelola_air}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7293,7 +5301,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- Pompa Jet/Pompa Tangan</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->pompa}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7301,7 +5309,7 @@
                 <td></td>
                 <td><span class="white">aaaa</span>- Sumur</td>
                 <td> : </td>
-                <td></td>
+                <td>{{$transportasi->sumur}}</td>
             </tr>
             <tr>
                 <td></td>
@@ -7326,53 +5334,48 @@
                             <td>Banyak Kejadian</td>
                             <td>Kerugian <span class="white">aaaaaaa</span></td>
                         </tr>
-                        <tr>
-                            <td style="text-align: center">1</td>
-                            <td style="text-align: center">2</td>
-                            <td style="text-align: center">3</td>
-                            <td style="text-align: center">4</td>
-                        </tr>
+
                         <tr>
                             <td>1.1.</td>
                             <td>Pencurian</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$polkam->pencurian_banyak}}</td>
+                            <td>{{$polkam->pencurian_kerugian}}</td>
                         </tr>
                         <tr>
                             <td>1.2.</td>
                             <td>Perampokan</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$polkam->perampokan_banyak}}</td>
+                            <td>{{$polkam->perampokan_kerugian}}</td>
                         </tr>
                         <tr>
                             <td>1.3.</td>
                             <td>Pembunuhan</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$polkam->pembunuhan_banyak}}</td>
+                            <td>{{$polkam->pembunuhan_kerugian}}</td>
                         </tr>
                         <tr>
                             <td>1.4.</td>
                             <td>Pemerkosaan</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$polkam->pemerkosaan_banyak}}</td>
+                            <td>{{$polkam->pemerkosaan_kerugian}}</td>
                         </tr>
                         <tr>
                             <td>1.5.</td>
-                            <td>Pelanggaran Narkotika</td>
-                            <td></td>
-                            <td></td>
+                            <td>Pelanggaran Narkotika/Obat Terlarang</td>
+                            <td>{{$polkam->narkoba_banyak}}</td>
+                            <td>{{$polkam->narkoba_kerugian}}</td>
                         </tr>
-                        <tr>
+                        {{-- <tr>
                             <td class="white">1.5.</td>
                             <td>Obat Terlarang</td>
                             <td></td>
                             <td></td>
-                        </tr>
+                        </tr> --}}
                         <tr>
                             <td>1.6.</td>
                             <td>Lain-lain</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$polkam->lainnya_banyak}}</td>
+                            <td>{{$polkam->lainnya_kerugian}}</td>
                         </tr>
                     </table>
                 </td>
@@ -7390,577 +5393,35 @@
                 <td></td>
                 <td></td>
                 <td>2.1. Jumlah Anggota Hansip se Kecamatan</td>
-                <td></td>
-                <td></td>
+                <td>:</td>
+                <td>{{$polkam->jumlah_hansip}}</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>2.2. Jumlah Anggota Menwa se Kecamatan</td>
-                <td></td>
-                <td></td>
+                <td>:</td>
+                <td>{{$polkam->jumlah_menwa}}</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>2.3. Jumlah Anggota Kemra se Kecmatan</td>
-                <td></td>
-                <td></td>
+                <td>:</td>
+                <td>{{$polkam->jumlah_kemra}}</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>2.4. Jumlah Pos Kambling/Pos Ronda</td>
-                <td></td>
-                <td></td>
+                <td>:</td>
+                <td>{{$polkam->jumlah_pos_kamling}}</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>3.</td>
-                <td>Pembinaan Kesatuan Bangsa</td>
-                <td> </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>3.1 Jumlah Penduduk WNI</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Sudah Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Belum Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>3.2 Jumlah Pegawai Negeri Sipil</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Sudah Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Belum Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>3.3 Jumlah Pegawai Daerah</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Sudah Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">3.1a</span>- Yang Belum Ditatar P4</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>4.</td>
-                <td>Pembinaan Masyarakat</td>
-                <td> </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4.1 Komisaris Organisasi Kekuatan Sosial Politik</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Partai Persatuan Pembangunan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>a.1. Komisaris PPP Kecamatan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>a.2. Komisaris PPP Desa</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>a.3. Komisaris PPP Kelurahan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Golongan Karya ( Golkar )</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>b.1. Komisaris Golkar Kecamatan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>b.2. Komisaris Golkar Desa</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>b.3. Komisaris Golkar Kelurahan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Partai Demokrasi Indonesia</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>c.1. Komisaris PDI Kecamatan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>c.2. Komisaris PDI Desa</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>c.3. Komisaris PDI Kelurahan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4.2. Organisasi Kemasyarakatan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Kesamaan Kegiatan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Kesamaan Profesi</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Kesamaan Fungsi</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>d. Kesamaan Agama</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>d.1. Islam</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>d.2. Kristen Protestan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>d.3. Kristen Katolik</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span>d.4. Hindu</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aaa</span> d.5. Budha</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>e. Kesamaan Kepercayaan Terhadap Tuhan Yang Maha Esa</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4.2. Media Massa Koran Masuk Desa ( KMD )</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>5.</td>
-                <td>Pengalaman Politik</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Jumlah Bekas Tahanan Dan Bekas</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Narapidana G.30S/KPI</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>6.</td>
-                <td>Pelintas Batas antara Negara RI</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Dengan Negara Tetangga</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>a. Penduduk WNRI yang Menjadi</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Pelintas Batas ke Negara Tetangga</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>b. Penduduk WNA yang menjadi</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Pelintas Batas ke Wilayah RI</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>c. Beberapa Desa/Kelurahan yang</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Berbatasan langsung dengan</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><span class="white">aa</span>Negara Tetangga</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="5">J. PEMILU</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>1.</td>
-                <td>Jumlah Pemilih Yang Terdaftar pada Pemilu</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1.1. Pemilih Pemula</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1.2. Pemilih Non Pemula</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>2.</td>
-                <td>Jumlah Penduduk yang menggunakan Hak Pilihnya</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2.1. Pemilih Pemula yang menggunakan Hak Pilihnya </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2.2 Pemilih Non Pemula yang Menggunakan Hak Pilihnya</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>3.</td>
-                <td>Hasil Pemilu, menurut OPP dan prosentasenya untuk Pemilu</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>4.</td>
-                <td>Jumlah OT dan OT1 untuk</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <table class="">
-                        <tr>
-                            <td>Pemilu</td>
-                            <td>OT</td>
-                            <td>:</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>OT.1</td>
-                            <td>:</td>
-                        </tr>
-                        <tr>
-                            <td>Pemilu</td>
-                            <td>OT</td>
-                            <td>:</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>OT.1</td>
-                            <td>:</td>
-                        </tr>
-                        <tr>
-                            <td>Pemilu</td>
-                            <td>OT</td>
-                            <td>:</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>OT.1</td>
-                            <td>:</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>5. </td>
-                <td>Jumlah Pemilih yang menggunakan Formulir Model AB</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>K. Lain-lain</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
 
-        <pre class="white">
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-        a
-    </pre>
-        <h1 class="center">DATA MONOGRAFI</h1>
-        <h1 class="center">KEC. MENGWI</h1>
-        <h1 class="center">{{date_format(date_create($kumum->tanggal), "Y")}}</h1>
+        </table>
 
 
 

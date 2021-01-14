@@ -499,7 +499,464 @@
 
 
 
+                                <hr style="border: 2px solid grey">
+                                <label for="">
+                                    <h5>2. Tanaman Perdagangan </h5>
+                                </label>
+                                <br>
+                                <label for="">
+                                    <h5><strong>Cengkeh</strong></h5>
+                                </label>
+                                <div
+                                    class="form-group row {{$errors->has('cengkeh_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="cengkeh_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="cengkeh_blm_produksi" type="text" class="form-control"
+                                            id="cengkeh_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->cengkeh_blm_produksi}}">
+                                        @if ($errors->has('cengkeh_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('cengkeh_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="cengkeh_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="cengkeh_produksi" type="text" class="form-control"
+                                            id="cengkeh_produksi" aria-describedby=""
+                                            value="{{$tanaman->cengkeh_produksi}}">
+                                        @if ($errors->has('cengkeh_produksi'))
+                                        <span class="help-block">{{$errors->first('cengkeh_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="cengkeh_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="cengkeh_tak_produksi" type="text" class="form-control"
+                                            id="cengkeh_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->cengkeh_tak_produksi}}">
+                                        @if ($errors->has('cengkeh_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('cengkeh_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="cengkeh_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="cengkeh_jml_produksi" type="text" class="form-control"
+                                            id="cengkeh_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->cengkeh_jml_produksi}}">
+                                        @if ($errors->has('cengkeh_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('cengkeh_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
+                                <label for="">
+                                    <h5><strong>Pala</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('pala_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="pala_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="pala_blm_produksi" type="text" class="form-control"
+                                            id="pala_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->pala_blm_produksi}}">
+                                        @if ($errors->has('pala_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('pala_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="pala_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="pala_produksi" type="text" class="form-control" id="pala_produksi"
+                                            aria-describedby="" value="{{$tanaman->pala_produksi}}">
+                                        @if ($errors->has('pala_produksi'))
+                                        <span class="help-block">{{$errors->first('pala_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="pala_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="pala_tak_produksi" type="text" class="form-control"
+                                            id="pala_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->pala_tak_produksi}}">
+                                        @if ($errors->has('pala_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('pala_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="pala_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="pala_jml_produksi" type="text" class="form-control"
+                                            id="pala_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->pala_jml_produksi}}">
+                                        @if ($errors->has('pala_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('pala_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <label for="">
+                                    <h5><strong>Tembakau</strong></h5>
+                                </label>
+                                <div
+                                    class="form-group row {{$errors->has('tembakau_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="tembakau_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="tembakau_blm_produksi" type="text" class="form-control"
+                                            id="tembakau_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->tembakau_blm_produksi}}">
+                                        @if ($errors->has('tembakau_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('tembakau_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="tembakau_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="tembakau_produksi" type="text" class="form-control"
+                                            id="tembakau_produksi" aria-describedby=""
+                                            value="{{$tanaman->tembakau_produksi}}">
+                                        @if ($errors->has('tembakau_produksi'))
+                                        <span class="help-block">{{$errors->first('tembakau_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="tembakau_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="tembakau_tak_produksi" type="text" class="form-control"
+                                            id="tembakau_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->tembakau_tak_produksi}}">
+                                        @if ($errors->has('tembakau_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('tembakau_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="tembakau_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="tembakau_jml_produksi" type="text" class="form-control"
+                                            id="tembakau_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->tembakau_jml_produksi}}">
+                                        @if ($errors->has('tembakau_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('tembakau_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <label for="">
+                                    <h5><strong>Kelapa</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('kelapa_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="kelapa_blm_produksi" type="text" class="form-control"
+                                            id="kelapa_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_blm_produksi}}">
+                                        @if ($errors->has('kelapa_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="kelapa_produksi" type="text" class="form-control"
+                                            id="kelapa_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_produksi}}">
+                                        @if ($errors->has('kelapa_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="kelapa_tak_produksi" type="text" class="form-control"
+                                            id="kelapa_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_tak_produksi}}">
+                                        @if ($errors->has('kelapa_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="kelapa_jml_produksi" type="text" class="form-control"
+                                            id="kelapa_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->kelapa_jml_produksi}}">
+                                        @if ($errors->has('kelapa_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <label for="">
+                                    <h5><strong>Kelapa Sawit</strong></h5>
+                                </label>
+                                <div
+                                    class="form-group row {{$errors->has('kelapa_sawit_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_sawit_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="kelapa_sawit_blm_produksi" type="text" class="form-control"
+                                            id="kelapa_sawit_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_sawit_blm_produksi}}">
+                                        @if ($errors->has('kelapa_sawit_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_sawit_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_sawit_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="kelapa_sawit_produksi" type="text" class="form-control"
+                                            id="kelapa_sawit_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_sawit_produksi}}">
+                                        @if ($errors->has('kelapa_sawit_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_sawit_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_sawit_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="kelapa_sawit_tak_produksi" type="text" class="form-control"
+                                            id="kelapa_sawit_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->kelapa_sawit_tak_produksi}}">
+                                        @if ($errors->has('kelapa_sawit_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_sawit_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kelapa_sawit_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="kelapa_sawit_jml_produksi" type="text" class="form-control"
+                                            id="kelapa_sawit_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->kelapa_sawit_jml_produksi}}">
+                                        @if ($errors->has('kelapa_sawit_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('kelapa_sawit_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <label for="">
+                                    <h5><strong>Kopi</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('kopi_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="kopi_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="kopi_blm_produksi" type="text" class="form-control"
+                                            id="kopi_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->kopi_blm_produksi}}">
+                                        @if ($errors->has('kopi_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('kopi_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kopi_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="kopi_produksi" type="text" class="form-control" id="kopi_produksi"
+                                            aria-describedby="" value="{{$tanaman->kopi_produksi}}">
+                                        @if ($errors->has('kopi_produksi'))
+                                        <span class="help-block">{{$errors->first('kopi_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kopi_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="kopi_tak_produksi" type="text" class="form-control"
+                                            id="kopi_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->kopi_tak_produksi}}">
+                                        @if ($errors->has('kopi_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('kopi_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="kopi_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="kopi_jml_produksi" type="text" class="form-control"
+                                            id="kopi_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->kopi_jml_produksi}}">
+                                        @if ($errors->has('kopi_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('kopi_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <label for="">
+                                    <h5><strong>Coklat</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('coklat_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="coklat_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="coklat_blm_produksi" type="text" class="form-control"
+                                            id="coklat_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->coklat_blm_produksi}}">
+                                        @if ($errors->has('coklat_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('coklat_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="coklat_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="coklat_produksi" type="text" class="form-control"
+                                            id="coklat_produksi" aria-describedby=""
+                                            value="{{$tanaman->coklat_produksi}}">
+                                        @if ($errors->has('coklat_produksi'))
+                                        <span class="help-block">{{$errors->first('coklat_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="coklat_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="coklat_tak_produksi" type="text" class="form-control"
+                                            id="coklat_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->coklat_tak_produksi}}">
+                                        @if ($errors->has('coklat_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('coklat_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="coklat_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="coklat_jml_produksi" type="text" class="form-control"
+                                            id="coklat_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->coklat_jml_produksi}}">
+                                        @if ($errors->has('coklat_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('coklat_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <label for="">
+                                    <h5><strong>Panili</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('panili_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="panili_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="panili_blm_produksi" type="text" class="form-control"
+                                            id="panili_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->panili_blm_produksi}}">
+                                        @if ($errors->has('panili_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('panili_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="panili_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="panili_produksi" type="text" class="form-control"
+                                            id="panili_produksi" aria-describedby=""
+                                            value="{{$tanaman->panili_produksi}}">
+                                        @if ($errors->has('panili_produksi'))
+                                        <span class="help-block">{{$errors->first('panili_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="panili_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="panili_tak_produksi" type="text" class="form-control"
+                                            id="panili_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->panili_tak_produksi}}">
+                                        @if ($errors->has('panili_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('panili_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="panili_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="panili_jml_produksi" type="text" class="form-control"
+                                            id="panili_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->panili_jml_produksi}}">
+                                        @if ($errors->has('panili_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('panili_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <label for="">
+                                    <h5><strong>Lain</strong></h5>
+                                </label>
+                                <div class="form-group row {{$errors->has('lain_blm_produksi') ? 'has-error' : ''}} ">
+                                    <div class="col-sm-3">
+                                        <label for="lain_blm_produksi">
+                                            <h5>Belum Produksi/muda</h5>
+                                        </label>
+                                        <input name="lain_blm_produksi" type="text" class="form-control"
+                                            id="lain_blm_produksi" aria-describedby=""
+                                            value="{{$tanaman->lain_blm_produksi}}">
+                                        @if ($errors->has('lain_blm_produksi'))
+                                        <span class="help-block">{{$errors->first('lain_blm_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="lain_produksi">
+                                            <h5>Berproduksi</h5>
+                                        </label>
+                                        <input name="lain_produksi" type="text" class="form-control" id="lain_produksi"
+                                            aria-describedby="" value="{{$tanaman->lain_produksi}}">
+                                        @if ($errors->has('lain_produksi'))
+                                        <span class="help-block">{{$errors->first('lain_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="lain_tak_produksi">
+                                            <h5>Tak Berproduksi</h5>
+                                        </label>
+                                        <input name="lain_tak_produksi" type="text" class="form-control"
+                                            id="lain_tak_produksi" aria-describedby=""
+                                            value="{{$tanaman->lain_tak_produksi}}">
+                                        @if ($errors->has('lain_tak_produksi'))
+                                        <span class="help-block">{{$errors->first('lain_tak_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="lain_jml_produksi">
+                                            <h5>Jumlah Produksi</h5>
+                                        </label>
+                                        <input name="lain_jml_produksi" type="text" class="form-control"
+                                            id="lain_jml_produksi" aria-describedby="" placeholder=""
+                                            value="{{$tanaman->lain_jml_produksi}}">
+                                        @if ($errors->has('lain_jml_produksi'))
+                                        <span class="help-block">{{$errors->first('lain_jml_produksi')}}</span>
+                                        @endif
+                                    </div>
+                                </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>

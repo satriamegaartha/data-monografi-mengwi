@@ -154,6 +154,38 @@ Route::group(['middleware' => ['auth', 'checkRole:Petugas']], function () {
     Route::get('/dinamis/tanaman/{id}/edit', 'TanamanController@edit');
     Route::post('/dinamis/tanaman/{id}/update', 'TanamanController@update');
     Route::get('/dinamis/tanaman/{id}/delete', 'TanamanController@delete');
+
+    Route::get('/dinamis/pangan', 'PanganController@index');
+    Route::get('/dinamis/pangan/{id}/viewdata', 'PanganController@viewdata');
+    Route::get('/dinamis/pangan/add', 'PanganController@add');
+    Route::post('/dinamis/pangan/create', 'PanganController@create');
+    Route::get('/dinamis/pangan/{id}/edit', 'PanganController@edit');
+    Route::post('/dinamis/pangan/{id}/update', 'PanganController@update');
+    Route::get('/dinamis/pangan/{id}/delete', 'PanganController@delete');
+
+    Route::get('/dinamis/perikanan', 'PerikananController@index');
+    Route::get('/dinamis/perikanan/{id}/viewdata', 'PerikananController@viewdata');
+    Route::get('/dinamis/perikanan/add', 'PerikananController@add');
+    Route::post('/dinamis/perikanan/create', 'PerikananController@create');
+    Route::get('/dinamis/perikanan/{id}/edit', 'PerikananController@edit');
+    Route::post('/dinamis/perikanan/{id}/update', 'PerikananController@update');
+    Route::get('/dinamis/perikanan/{id}/delete', 'PerikananController@delete');
+
+    Route::get('/dinamis/transportasi', 'TransportasiController@index');
+    Route::get('/dinamis/transportasi/{id}/viewdata', 'TransportasiController@viewdata');
+    Route::get('/dinamis/transportasi/add', 'TransportasiController@add');
+    Route::post('/dinamis/transportasi/create', 'TransportasiController@create');
+    Route::get('/dinamis/transportasi/{id}/edit', 'TransportasiController@edit');
+    Route::post('/dinamis/transportasi/{id}/update', 'TransportasiController@update');
+    Route::get('/dinamis/transportasi/{id}/delete', 'TransportasiController@delete');
+
+    Route::get('/dinamis/polkam', 'PolkamController@index');
+    Route::get('/dinamis/polkam/{id}/viewdata', 'PolkamController@viewdata');
+    Route::get('/dinamis/polkam/add', 'PolkamController@add');
+    Route::post('/dinamis/polkam/create', 'PolkamController@create');
+    Route::get('/dinamis/polkam/{id}/edit', 'PolkamController@edit');
+    Route::post('/dinamis/polkam/{id}/update', 'PolkamController@update');
+    Route::get('/dinamis/polkam/{id}/delete', 'PolkamController@delete');
 });
 
 //

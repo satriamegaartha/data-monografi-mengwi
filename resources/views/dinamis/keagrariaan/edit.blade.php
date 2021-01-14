@@ -137,9 +137,254 @@
                                     @endif
                                 </div>
 
+                                <label for="">
+                                    <h5><strong> 2. Perubahan penggunaan tanah </strong></h5>
+                                </label>
+                                <label for="">
+                                    <h5><strong>a. Sawah berubah menjadi</strong></h5>
+                                </label>
+                                <div class="form-group {{$errors->has('sawah_perumahan') ? 'has-error' : ''}} ">
+                                    <label for="sawah_perumahan">
+                                        <h5>- Perumahan</h5>
+                                    </label>
+                                    <input name="sawah_perumahan" type="text" class="form-control" id="sawah_perumahan"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->sawah_perumahan}}">
+                                    @if ($errors->has('sawah_perumahan'))
+                                    <span class="help-block">{{$errors->first('sawah_perumahan')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('sawah_industri') ? 'has-error' : ''}} ">
+                                    <label for="sawah_industri">
+                                        <h5>- Industri</h5>
+                                    </label>
+                                    <input name="sawah_industri" type="text" class="form-control" id="sawah_industri"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->sawah_industri}}">
+                                    @if ($errors->has('sawah_industri'))
+                                    <span class="help-block">{{$errors->first('sawah_industri')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('sawah_jasa') ? 'has-error' : ''}} ">
+                                    <label for="sawah_jasa">
+                                        <h5>- Jasa</h5>
+                                    </label>
+                                    <input name="sawah_jasa" type="text" class="form-control" id="sawah_jasa"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->sawah_jasa}}">
+                                    @if ($errors->has('sawah_jasa'))
+                                    <span class="help-block">{{$errors->first('sawah_jasa')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('sawah_perusahaan_dll') ? 'has-error' : ''}} ">
+                                    <label for="sawah_perusahaan_dll">
+                                        <h5>- Perusahaan dan lain-lain</h5>
+                                    </label>
+                                    <input name="sawah_perusahaan_dll" type="text" class="form-control"
+                                        id="sawah_perusahaan_dll" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->sawah_perusahaan_dll}}">
+                                    @if ($errors->has('sawah_perusahaan_dll'))
+                                    <span class="help-block">{{$errors->first('sawah_perusahaan_dll')}}</span>
+                                    @endif
+                                </div>
 
 
 
+
+
+
+                                <label for="">
+                                    <h5><strong>b. Tegalan berubah menjadi</strong></h5>
+                                </label>
+                                <div class="form-group {{$errors->has('tegalan_perumahan') ? 'has-error' : ''}} ">
+                                    <label for="tegalan_perumahan">
+                                        <h5>- Perumahan</h5>
+                                    </label>
+                                    <input name="tegalan_perumahan" type="text" class="form-control"
+                                        id="tegalan_perumahan" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->tegalan_perumahan}}">
+                                    @if ($errors->has('tegalan_perumahan'))
+                                    <span class="help-block">{{$errors->first('tegalan_perumahan')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tegalan_industri') ? 'has-error' : ''}} ">
+                                    <label for="tegalan_industri">
+                                        <h5>- Industri</h5>
+                                    </label>
+                                    <input name="tegalan_industri" type="text" class="form-control"
+                                        id="tegalan_industri" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->tegalan_industri}}">
+                                    @if ($errors->has('tegalan_industri'))
+                                    <span class="help-block">{{$errors->first('tegalan_industri')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tegalan_jasa') ? 'has-error' : ''}} ">
+                                    <label for="tegalan_jasa">
+                                        <h5>- Jasa</h5>
+                                    </label>
+                                    <input name="tegalan_jasa" type="text" class="form-control" id="tegalan_jasa"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->tegalan_jasa}}">
+                                    @if ($errors->has('tegalan_jasa'))
+                                    <span class="help-block">{{$errors->first('tegalan_jasa')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tegalan_perusahaan_dll') ? 'has-error' : ''}} ">
+                                    <label for="tegalan_perusahaan_dll">
+                                        <h5>- Perusahaan dan lain-lain</h5>
+                                    </label>
+                                    <input name="tegalan_perusahaan_dll" type="text" class="form-control"
+                                        id="tegalan_perusahaan_dll" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->tegalan_perusahaan_dll}}">
+                                    @if ($errors->has('tegalan_perusahaan_dll'))
+                                    <span class="help-block">{{$errors->first('tegalan_perusahaan_dll')}}</span>
+                                    @endif
+                                </div>
+
+
+
+
+
+
+                                <label for="">
+                                    <h5><strong>c. Perkebunan berubah menjadi</strong></h5>
+                                </label>
+                                <div class="form-group {{$errors->has('perkebunan_perumahan') ? 'has-error' : ''}} ">
+                                    <label for="perkebunan_perumahan">
+                                        <h5>- Perumahan</h5>
+                                    </label>
+                                    <input name="perkebunan_perumahan" type="text" class="form-control"
+                                        id="perkebunan_perumahan" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->perkebunan_perumahan}}">
+                                    @if ($errors->has('perkebunan_perumahan'))
+                                    <span class="help-block">{{$errors->first('perkebunan_perumahan')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('perkebunan_industri') ? 'has-error' : ''}} ">
+                                    <label for="perkebunan_industri">
+                                        <h5>- Industri</h5>
+                                    </label>
+                                    <input name="perkebunan_industri" type="text" class="form-control"
+                                        id="perkebunan_industri" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->perkebunan_industri}}">
+                                    @if ($errors->has('perkebunan_industri'))
+                                    <span class="help-block">{{$errors->first('perkebunan_industri')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('perkebunan_jasa') ? 'has-error' : ''}} ">
+                                    <label for="perkebunan_jasa">
+                                        <h5>- Jasa</h5>
+                                    </label>
+                                    <input name="perkebunan_jasa" type="text" class="form-control" id="perkebunan_jasa"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->perkebunan_jasa}}">
+                                    @if ($errors->has('perkebunan_jasa'))
+                                    <span class="help-block">{{$errors->first('perkebunan_jasa')}}</span>
+                                    @endif
+                                </div>
+                                <div
+                                    class="form-group {{$errors->has('perkebunan_perusahaan_dll') ? 'has-error' : ''}} ">
+                                    <label for="perkebunan_perusahaan_dll">
+                                        <h5>- Perusahaan dan lain-lain</h5>
+                                    </label>
+                                    <input name="perkebunan_perusahaan_dll" type="text" class="form-control"
+                                        id="perkebunan_perusahaan_dll" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->perkebunan_perusahaan_dll}}">
+                                    @if ($errors->has('perkebunan_perusahaan_dll'))
+                                    <span class="help-block">{{$errors->first('perkebunan_perusahaan_dll')}}</span>
+                                    @endif
+                                </div>
+
+
+
+
+
+                                <label for="">
+                                    <h5><strong>d. Hutan berubah menjadi</strong></h5>
+                                </label>
+                                <div class="form-group {{$errors->has('hutan_perumahan') ? 'has-error' : ''}} ">
+                                    <label for="hutan_perumahan">
+                                        <h5>- Perumahan</h5>
+                                    </label>
+                                    <input name="hutan_perumahan" type="text" class="form-control" id="hutan_perumahan"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->hutan_perumahan}}">
+                                    @if ($errors->has('hutan_perumahan'))
+                                    <span class="help-block">{{$errors->first('hutan_perumahan')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('hutan_industri') ? 'has-error' : ''}} ">
+                                    <label for="hutan_industri">
+                                        <h5>- Industri</h5>
+                                    </label>
+                                    <input name="hutan_industri" type="text" class="form-control" id="hutan_industri"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->hutan_industri}}">
+                                    @if ($errors->has('hutan_industri'))
+                                    <span class="help-block">{{$errors->first('hutan_industri')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('hutan_jasa') ? 'has-error' : ''}} ">
+                                    <label for="hutan_jasa">
+                                        <h5>- Jasa</h5>
+                                    </label>
+                                    <input name="hutan_jasa" type="text" class="form-control" id="hutan_jasa"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->hutan_jasa}}">
+                                    @if ($errors->has('hutan_jasa'))
+                                    <span class="help-block">{{$errors->first('hutan_jasa')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('hutan_perusahaan_dll') ? 'has-error' : ''}} ">
+                                    <label for="hutan_perusahaan_dll">
+                                        <h5>- Perusahaan dan lain-lain</h5>
+                                    </label>
+                                    <input name="hutan_perusahaan_dll" type="text" class="form-control"
+                                        id="hutan_perusahaan_dll" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->hutan_perusahaan_dll}}">
+                                    @if ($errors->has('hutan_perusahaan_dll'))
+                                    <span class="help-block">{{$errors->first('hutan_perusahaan_dll')}}</span>
+                                    @endif
+                                </div>
+
+
+                                <label for="">
+                                    <h5><strong>e. tambak berubah menjadi</strong></h5>
+                                </label>
+                                <div class="form-group {{$errors->has('tambak_perumahan') ? 'has-error' : ''}} ">
+                                    <label for="tambak_perumahan">
+                                        <h5>- Perumahan</h5>
+                                    </label>
+                                    <input name="tambak_perumahan" type="text" class="form-control"
+                                        id="tambak_perumahan" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->tambak_perumahan}}">
+                                    @if ($errors->has('tambak_perumahan'))
+                                    <span class="help-block">{{$errors->first('tambak_perumahan')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tambak_industri') ? 'has-error' : ''}} ">
+                                    <label for="tambak_industri">
+                                        <h5>- Industri</h5>
+                                    </label>
+                                    <input name="tambak_industri" type="text" class="form-control" id="tambak_industri"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->tambak_industri}}">
+                                    @if ($errors->has('tambak_industri'))
+                                    <span class="help-block">{{$errors->first('tambak_industri')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tambak_jasa') ? 'has-error' : ''}} ">
+                                    <label for="tambak_jasa">
+                                        <h5>- Jasa</h5>
+                                    </label>
+                                    <input name="tambak_jasa" type="text" class="form-control" id="tambak_jasa"
+                                        aria-describedby="" placeholder="M" value="{{$keagrariaan->tambak_jasa}}">
+                                    @if ($errors->has('tambak_jasa'))
+                                    <span class="help-block">{{$errors->first('tambak_jasa')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{$errors->has('tambak_perusahaan_dll') ? 'has-error' : ''}} ">
+                                    <label for="tambak_perusahaan_dll">
+                                        <h5>- Perusahaan dan lain-lain</h5>
+                                    </label>
+                                    <input name="tambak_perusahaan_dll" type="text" class="form-control"
+                                        id="tambak_perusahaan_dll" aria-describedby="" placeholder="M"
+                                        value="{{$keagrariaan->tambak_perusahaan_dll}}">
+                                    @if ($errors->has('tambak_perusahaan_dll'))
+                                    <span class="help-block">{{$errors->first('tambak_perusahaan_dll')}}</span>
+                                    @endif
+                                </div>
 
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>

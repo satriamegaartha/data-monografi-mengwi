@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2021 at 08:14 PM
+-- Generation Time: Jan 14, 2021 at 08:43 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -116,6 +116,26 @@ CREATE TABLE `keagrariaan` (
   `tanah_hak_guna_bangunan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `tanah_hak_guna_usaha` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `tanah_adat` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sawah_perumahan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sawah_industri` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sawah_jasa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sawah_perusahaan_dll` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tegalan_perumahan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tegalan_industri` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tegalan_jasa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tegalan_perusahaan_dll` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `perkebunan_perumahan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `perkebunan_industri` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `perkebunan_jasa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `perkebunan_perusahaan_dll` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hutan_perumahan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hutan_industri` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hutan_jasa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hutan_perusahaan_dll` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tambak_perumahan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tambak_industri` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tambak_jasa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tambak_perusahaan_dll` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -124,8 +144,9 @@ CREATE TABLE `keagrariaan` (
 -- Dumping data for table `keagrariaan`
 --
 
-INSERT INTO `keagrariaan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `tm_sertifikat`, `tm_blm_sertifikat`, `tanah_hak_pengelolaan`, `tanah_negara`, `tanah_bebas`, `tanah_hak_pakai`, `tanah_hak_guna_bangunan`, `tanah_hak_guna_usaha`, `tanah_adat`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '2020-09-12', '2', NULL, NULL, '85.734 M', NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 02:05:25', '2020-11-19 01:22:07');
+INSERT INTO `keagrariaan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `tm_sertifikat`, `tm_blm_sertifikat`, `tanah_hak_pengelolaan`, `tanah_negara`, `tanah_bebas`, `tanah_hak_pakai`, `tanah_hak_guna_bangunan`, `tanah_hak_guna_usaha`, `tanah_adat`, `sawah_perumahan`, `sawah_industri`, `sawah_jasa`, `sawah_perusahaan_dll`, `tegalan_perumahan`, `tegalan_industri`, `tegalan_jasa`, `tegalan_perusahaan_dll`, `perkebunan_perumahan`, `perkebunan_industri`, `perkebunan_jasa`, `perkebunan_perusahaan_dll`, `hutan_perumahan`, `hutan_industri`, `hutan_jasa`, `hutan_perusahaan_dll`, `tambak_perumahan`, `tambak_industri`, `tambak_jasa`, `tambak_perusahaan_dll`, `created_at`, `updated_at`) VALUES
+(1, 1, 2, '2020-05-15', '1', NULL, NULL, '85.734 M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 02:05:25', '2021-01-12 20:10:01'),
+(2, 1, 1, '2020-11-13', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '122', '21', '31', '41', '51', '61', '71', '81', '91', '101', '111', '121', '131', '141', '151', '161', '171', '181', '191', '201', '2021-01-12 20:11:03', '2021-01-12 20:15:46');
 
 -- --------------------------------------------------------
 
@@ -152,16 +173,28 @@ CREATE TABLE `kependudukan` (
   `jml_hindu` int(11) DEFAULT NULL,
   `jml_budha` int(11) DEFAULT NULL,
   `jml_penganut_aliran` int(11) DEFAULT NULL,
-  `jml_b_0_4` int(11) DEFAULT NULL,
-  `jml_b_5_9` int(11) DEFAULT NULL,
-  `jml_b_10_14` int(11) DEFAULT NULL,
-  `jml_b_15_19` int(11) DEFAULT NULL,
-  `jml_b_20_24` int(11) DEFAULT NULL,
-  `jml_b_25_29` int(11) DEFAULT NULL,
-  `jml_b_30_34` int(11) DEFAULT NULL,
-  `jml_b_35_39` int(11) DEFAULT NULL,
-  `jml_b_40_up` int(11) DEFAULT NULL,
+  `jml_0_4` int(11) DEFAULT NULL,
+  `jml_5_9` int(11) DEFAULT NULL,
+  `jml_10_14` int(11) DEFAULT NULL,
+  `jml_15_19` int(11) DEFAULT NULL,
+  `jml_20_24` int(11) DEFAULT NULL,
+  `jml_25_29` int(11) DEFAULT NULL,
+  `jml_30_34` int(11) DEFAULT NULL,
+  `jml_35_39` int(11) DEFAULT NULL,
+  `jml_40_44` int(11) DEFAULT NULL,
+  `jml_45_49` int(11) DEFAULT NULL,
+  `jml_50_54` int(11) DEFAULT NULL,
+  `jml_55_59` int(11) DEFAULT NULL,
+  `jml_60_64` int(11) DEFAULT NULL,
+  `jml_65_69` int(11) DEFAULT NULL,
+  `jml_70_74` int(11) DEFAULT NULL,
+  `jml_75_up` int(11) DEFAULT NULL,
   `kepadatan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `penyebaran` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ntcr_nikah` int(11) DEFAULT NULL,
+  `ntcr_talak` int(11) DEFAULT NULL,
+  `ntcr_cerai` int(11) DEFAULT NULL,
+  `ntcr_rujuk` int(11) DEFAULT NULL,
   `petani_pemilik` int(11) DEFAULT NULL,
   `petani_penggarap` int(11) DEFAULT NULL,
   `petani_penyekap` int(11) DEFAULT NULL,
@@ -211,10 +244,12 @@ CREATE TABLE `kependudukan` (
 -- Dumping data for table `kependudukan`
 --
 
-INSERT INTO `kependudukan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `jml_kepala_keluarga`, `jml_laki`, `jml_perempuan`, `jml_wni_laki`, `jml_wni_perempuan`, `jml_wna_laki`, `jml_wna_perempuan`, `jml_islam`, `jml_katholik`, `jml_protestan`, `jml_hindu`, `jml_budha`, `jml_penganut_aliran`, `jml_b_0_4`, `jml_b_5_9`, `jml_b_10_14`, `jml_b_15_19`, `jml_b_20_24`, `jml_b_25_29`, `jml_b_30_34`, `jml_b_35_39`, `jml_b_40_up`, `kepadatan`, `petani_pemilik`, `petani_penggarap`, `petani_penyekap`, `petani_buruh`, `nelayan`, `pengusaha_sedang`, `pengrajin`, `buruh_industri`, `buruh_bangunan`, `buruh_pertambangan`, `buruh_perkebunan`, `pedagang`, `pengangkutan`, `pns`, `abri`, `pensiun`, `peternak_sapi_perah`, `peternak_sapi_biasa`, `peternak_kerbau`, `peternak_kambing`, `peternak_domba`, `peternak_kuda`, `lain`, `created_at`, `updated_at`, `pindah_l`, `pindah_p`, `pindah_jml`, `datang_l`, `datang_p`, `datang_jml`, `lahir_l`, `lahir_p`, `lahir_jml`, `mati_l`, `mati_p`, `mati_jml`, `matikurang5_l`, `matikurang5_p`, `matikurang5_jml`, `matilebih5_l`, `matilebih5_p`, `matilebih5_jml`) VALUES
-(2, 1, 1, '2020-09-12', '2', 28096, 57233, 57807, 57286, 57757, 5, 3, NULL, NULL, NULL, NULL, NULL, NULL, 9830, 10750, 10100, 9080, 8880, 9470, 10030, 11020, NULL, '1403 per Km2', 24, 25, 26, 27, 28, 10, 300, 300, 500, NULL, NULL, 1602, NULL, 3381, 173, 2306, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-11 20:47:51', '2021-01-02 18:53:15', 20, 10, 30, 1, 2, 3, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19),
-(3, 1, 0, '2020-05-08', '1', 11, 22, 33, 44, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11, 22, 44, 99, 77, 66, 55, 44, 99, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 20:53:36', '2020-09-12 21:39:15', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(5, 1, 3, '2021-01-03', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-02 18:24:11', '2021-01-02 19:00:51', 12, 2, 14, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19, 1, 12, 13);
+INSERT INTO `kependudukan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `jml_kepala_keluarga`, `jml_laki`, `jml_perempuan`, `jml_wni_laki`, `jml_wni_perempuan`, `jml_wna_laki`, `jml_wna_perempuan`, `jml_islam`, `jml_katholik`, `jml_protestan`, `jml_hindu`, `jml_budha`, `jml_penganut_aliran`, `jml_0_4`, `jml_5_9`, `jml_10_14`, `jml_15_19`, `jml_20_24`, `jml_25_29`, `jml_30_34`, `jml_35_39`, `jml_40_44`, `jml_45_49`, `jml_50_54`, `jml_55_59`, `jml_60_64`, `jml_65_69`, `jml_70_74`, `jml_75_up`, `kepadatan`, `penyebaran`, `ntcr_nikah`, `ntcr_talak`, `ntcr_cerai`, `ntcr_rujuk`, `petani_pemilik`, `petani_penggarap`, `petani_penyekap`, `petani_buruh`, `nelayan`, `pengusaha_sedang`, `pengrajin`, `buruh_industri`, `buruh_bangunan`, `buruh_pertambangan`, `buruh_perkebunan`, `pedagang`, `pengangkutan`, `pns`, `abri`, `pensiun`, `peternak_sapi_perah`, `peternak_sapi_biasa`, `peternak_kerbau`, `peternak_kambing`, `peternak_domba`, `peternak_kuda`, `lain`, `created_at`, `updated_at`, `pindah_l`, `pindah_p`, `pindah_jml`, `datang_l`, `datang_p`, `datang_jml`, `lahir_l`, `lahir_p`, `lahir_jml`, `mati_l`, `mati_p`, `mati_jml`, `matikurang5_l`, `matikurang5_p`, `matikurang5_jml`, `matilebih5_l`, `matilebih5_p`, `matilebih5_jml`) VALUES
+(2, 1, 3, '2021-02-18', '1', 28096, 57233, 57807, 57286, 57757, 5, 3, NULL, NULL, NULL, NULL, NULL, NULL, 9830, 10750, 10100, 9080, 8880, 9470, 10030, 11020, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1403 per Km2', NULL, NULL, NULL, NULL, NULL, 24, 25, 26, 27, 28, 10, 300, 300, 500, NULL, NULL, 1602, NULL, 3381, 173, 2306, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-11 20:47:51', '2021-01-12 19:49:21', 20, 10, 30, 1, 2, 3, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19),
+(3, 1, 0, '2020-05-08', '1', 11, 22, 33, 44, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11, 22, 44, 99, 77, 66, 55, 44, 99, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 20:53:36', '2020-09-12 21:39:15', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(5, 1, 3, '2021-01-03', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-02 18:24:11', '2021-01-02 19:00:51', 12, 2, 14, 3, 4, 7, 5, 6, 11, 7, 8, 15, 9, 10, 19, 1, 12, 13),
+(6, 1, 3, '2021-01-16', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11, 21, 31, 41, 51, 61, 71, 81, 91, 101, 111, 121, 131, 141, 151, 161, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-12 19:19:45', '2021-01-12 19:49:35', NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0),
+(7, 1, 1, '2020-12-11', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '11', 21, 31, 41, 51, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-12 19:49:54', '2021-01-12 19:50:16', NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -368,7 +403,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (31, '2020_11_20_025402_create_transportasi_table', 20),
 (32, '2020_11_20_025810_create_polkam_table', 20),
 (33, '2020_11_20_030612_create_pemilu_table', 20),
-(34, '2020_11_20_030829_create_lain_lain_table', 20);
+(34, '2020_11_20_030829_create_lain_lain_table', 20),
+(35, '2021_01_13_063618_add_perdagangan_to_tanaman_table', 21);
 
 -- --------------------------------------------------------
 
@@ -401,6 +437,14 @@ CREATE TABLE `pangan` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `pangan`
+--
+
+INSERT INTO `pangan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `luas_bimas_padi_insus`, `luas_bimas_padi_inmum`, `luas_inmas_padi_insus`, `luas_inmas_padi_inmum`, `luas_padi_intensifikasi`, `luas_hama_wereng`, `luas_hama_tikus`, `luas_hama_lainnya`, `luas_puso_wereng`, `luas_puso_tikus`, `luas_puso_banjir`, `luas_puso_kekeringan`, `penyalur_urea`, `penyalur_tps`, `penyalur_insektisida`, `penyalur_rodentisida`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, '2020-12-10', '2', '11', '21', '31', '41', '51', '61', '71', '81', '91', '101', '111', '121', '131', '1411', '151', '161', '2021-01-13 22:05:51', '2021-01-13 22:11:38'),
+(2, 1, 3, '2021-01-07', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-13 22:11:49', '2021-01-13 22:11:49');
 
 -- --------------------------------------------------------
 
@@ -779,6 +823,13 @@ CREATE TABLE `perikanan` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `perikanan`
+--
+
+INSERT INTO `perikanan` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `bandeng_luas`, `bandeng_hasil`, `udang_luas`, `udang_hasil`, `buaya_luas`, `buaya_hasil`, `kurakura_luas`, `kurakura_hasil`, `lainnya_luas`, `lainnya_hasil`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, '2020-11-11', '2', '11', '21', '31', '41', '51', '61', '71', '81', '91', '101', '2021-01-13 22:26:19', '2021-01-13 22:32:04');
+
 -- --------------------------------------------------------
 
 --
@@ -925,42 +976,16 @@ CREATE TABLE `polkam` (
   `jumlah_menwa` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `jumlah_kemra` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `jumlah_pos_kamling` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_wni` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_wni_statar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_wni_btatar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pns` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pns_statar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pns_btatar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pegawai_daerah` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pegawai_daerah_statar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_pegawai_daerah_btatar` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ppp_kecamatan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ppp_desa` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ppp_kelurahan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `golkar_kecamatan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `golkar_desa` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `golkar_kelurahan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pdi_kecamatan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pdi_desa` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pdi_kelurahan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_kegiatan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_profesi` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_fungsi` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_agama_islam` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_agama_kristenp` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_agama_kristenk` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_agama_hindu` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_agama_budha` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `org_kepercayaan` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `media_massa` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `kmd` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `jumlah_bekas_g30spki` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `wnri_pelintas` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `wna_pelintas` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `desa_pelintas` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `polkam`
+--
+
+INSERT INTO `polkam` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `pencurian_banyak`, `pencurian_kerugian`, `perampokan_banyak`, `perampokan_kerugian`, `pembunuhan_banyak`, `pembunuhan_kerugian`, `pemerkosaan_banyak`, `pemerkosaan_kerugian`, `narkoba_banyak`, `narkoba_kerugian`, `lainnya_banyak`, `lainnya_kerugian`, `jumlah_hansip`, `jumlah_menwa`, `jumlah_kemra`, `jumlah_pos_kamling`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, '2020-12-02', '2', '11', '21', '31', '41', '51', '61', '71', '81', '91', '101', '111', '121', '131', '141', '151', '161', '2021-01-13 23:22:21', '2021-01-13 23:24:43');
 
 -- --------------------------------------------------------
 
@@ -1008,16 +1033,26 @@ CREATE TABLE `saranasosbud` (
   `periode_id` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   `semester` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tk_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tk_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tk_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tk_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tk_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tkn_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tkn_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tkn_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tkn_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tkn_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tksu_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tksu_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tksu_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tksu_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tksu_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `sdn_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `sdn_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `sdn_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `sdn_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `sdn_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sdsu_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sdsu_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sdsu_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sdsu_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sdsu_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `smtpn_sekolah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `smtpn_murid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `smtpn_guru` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1040,6 +1075,18 @@ CREATE TABLE `saranasosbud` (
   `smtasu_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `smtasu_lab` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `smtasu_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_jumlah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_mahasiswa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_dosen` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_lab` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptn_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_jumlah` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_mahasiswa` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_dosen` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_prasarana` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_lab` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptsu_perpustakaan` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `masjid` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `surau` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `gereja` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1118,8 +1165,9 @@ CREATE TABLE `saranasosbud` (
 -- Dumping data for table `saranasosbud`
 --
 
-INSERT INTO `saranasosbud` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `tk_sekolah`, `tk_murid`, `tk_guru`, `tk_prasarana`, `tk_perpustakaan`, `sdn_sekolah`, `sdn_murid`, `sdn_guru`, `sdn_prasarana`, `sdn_perpustakaan`, `smtpn_sekolah`, `smtpn_murid`, `smtpn_guru`, `smtpn_prasarana`, `smtpn_perpustakaan`, `smtpsu_sekolah`, `smtpsu_murid`, `smtpsu_guru`, `smtpsu_prasarana`, `smtpsu_perpustakaan`, `smtan_sekolah`, `smtan_murid`, `smtan_guru`, `smtan_prasarana`, `smtan_lab`, `smtan_perpustakaan`, `smtasu_sekolah`, `smtasu_murid`, `smtasu_guru`, `smtasu_prasarana`, `smtasu_lab`, `smtasu_perpustakaan`, `masjid`, `surau`, `gereja`, `kuil`, `taman`, `pantai`, `permandian`, `hutan_lindung`, `tradisional`, `rekreasi_lain`, `cinderamata`, `jml_sanggar`, `jml_budayawan`, `jml_seniman`, `bioskop`, `penginapan`, `restoran`, `rsu_pem`, `rsu_pem_pengunjung1`, `rsu_pem_pengunjung2`, `rsu_sw`, `rsu_sw_pengunjung1`, `rsu_sw_pengunjung2`, `rskp_pem`, `rskp_pem_pengunjung1`, `rskp_pem_pengunjung2`, `rskp_sw`, `rskp_sw_pengunjung1`, `rskp_sw_pengunjung2`, `bersalin`, `bersalin_pem`, `bersalin_pem_pengunjung1`, `bersalin_pem_pengunjung2`, `bersalin_poli`, `bersalin_poli_pengunjung1`, `bersalin_poli_pengunjung2`, `puskesmas`, `puskesmas_pengunjung1`, `puskesmas_pengunjung2`, `puskesmas_pengunjung_dokter`, `puskesmas_pengunjung_perawat`, `puskesmas_pengunjung_bidan`, `puskesmas_pembantu`, `puskesmas_pembantu_dokter`, `puskesmas_pembantu_perawat`, `puskesmas_pembantu_bidan`, `dokter_umum`, `dokter_anak`, `dokter_kandungan`, `dokter_kulit`, `dokter_lain`, `dukun_khitan`, `dukun_bayi`, `sanatorium`, `apotik`, `panti_pijat`, `jumlah_pos_kb`, `jumlah_pus`, `jumlah_pus_kb`, `jumlah_posyandu`, `jumlah_akseptor`, `jumlah_akseptor_pil`, `jumlah_akseptor_iud`, `jumlah_akseptor_kondom`, `jumlah_akseptor_suntik`, `jumlah_akseptor_mop`, `jumlah_akseptor_mow`, `jumlah_akseptor_kbmandiri`, `cacat_fisik`, `cacat_mental`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '2020-09-11', '2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '2221111', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '2020-09-11 04:18:50', '2020-11-19 01:26:14');
+INSERT INTO `saranasosbud` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `tkn_sekolah`, `tkn_murid`, `tkn_guru`, `tkn_prasarana`, `tkn_perpustakaan`, `tksu_sekolah`, `tksu_murid`, `tksu_guru`, `tksu_prasarana`, `tksu_perpustakaan`, `sdn_sekolah`, `sdn_murid`, `sdn_guru`, `sdn_prasarana`, `sdn_perpustakaan`, `sdsu_sekolah`, `sdsu_murid`, `sdsu_guru`, `sdsu_prasarana`, `sdsu_perpustakaan`, `smtpn_sekolah`, `smtpn_murid`, `smtpn_guru`, `smtpn_prasarana`, `smtpn_perpustakaan`, `smtpsu_sekolah`, `smtpsu_murid`, `smtpsu_guru`, `smtpsu_prasarana`, `smtpsu_perpustakaan`, `smtan_sekolah`, `smtan_murid`, `smtan_guru`, `smtan_prasarana`, `smtan_lab`, `smtan_perpustakaan`, `smtasu_sekolah`, `smtasu_murid`, `smtasu_guru`, `smtasu_prasarana`, `smtasu_lab`, `smtasu_perpustakaan`, `ptn_jumlah`, `ptn_mahasiswa`, `ptn_dosen`, `ptn_prasarana`, `ptn_lab`, `ptn_perpustakaan`, `ptsu_jumlah`, `ptsu_mahasiswa`, `ptsu_dosen`, `ptsu_prasarana`, `ptsu_lab`, `ptsu_perpustakaan`, `masjid`, `surau`, `gereja`, `kuil`, `taman`, `pantai`, `permandian`, `hutan_lindung`, `tradisional`, `rekreasi_lain`, `cinderamata`, `jml_sanggar`, `jml_budayawan`, `jml_seniman`, `bioskop`, `penginapan`, `restoran`, `rsu_pem`, `rsu_pem_pengunjung1`, `rsu_pem_pengunjung2`, `rsu_sw`, `rsu_sw_pengunjung1`, `rsu_sw_pengunjung2`, `rskp_pem`, `rskp_pem_pengunjung1`, `rskp_pem_pengunjung2`, `rskp_sw`, `rskp_sw_pengunjung1`, `rskp_sw_pengunjung2`, `bersalin`, `bersalin_pem`, `bersalin_pem_pengunjung1`, `bersalin_pem_pengunjung2`, `bersalin_poli`, `bersalin_poli_pengunjung1`, `bersalin_poli_pengunjung2`, `puskesmas`, `puskesmas_pengunjung1`, `puskesmas_pengunjung2`, `puskesmas_pengunjung_dokter`, `puskesmas_pengunjung_perawat`, `puskesmas_pengunjung_bidan`, `puskesmas_pembantu`, `puskesmas_pembantu_dokter`, `puskesmas_pembantu_perawat`, `puskesmas_pembantu_bidan`, `dokter_umum`, `dokter_anak`, `dokter_kandungan`, `dokter_kulit`, `dokter_lain`, `dukun_khitan`, `dukun_bayi`, `sanatorium`, `apotik`, `panti_pijat`, `jumlah_pos_kb`, `jumlah_pus`, `jumlah_pus_kb`, `jumlah_posyandu`, `jumlah_akseptor`, `jumlah_akseptor_pil`, `jumlah_akseptor_iud`, `jumlah_akseptor_kondom`, `jumlah_akseptor_suntik`, `jumlah_akseptor_mop`, `jumlah_akseptor_mow`, `jumlah_akseptor_kbmandiri`, `cacat_fisik`, `cacat_mental`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, '2021-03-20', '2', '1', '2', '3', '4', '5', NULL, NULL, NULL, NULL, NULL, '6', '7', '8', '9', '10', NULL, NULL, NULL, NULL, NULL, '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '2221111', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '2020-09-11 04:18:50', '2020-11-19 01:26:14'),
+(4, 1, 1, '2020-11-13', '2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '112', '112', '114', '115', '116', '117', '118', '119', '120', '121', '122', '123', '1241321234', '2021-01-12 21:01:50', '2021-01-12 21:05:11');
 
 -- --------------------------------------------------------
 
@@ -1169,16 +1217,53 @@ CREATE TABLE `tanaman` (
   `lain_luas_panen` int(11) DEFAULT NULL,
   `lain_rata2_produksi` int(11) DEFAULT NULL,
   `lain_jumlah` int(11) DEFAULT NULL,
+  `cengkeh_blm_produksi` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `cengkeh_produksi` int(11) DEFAULT NULL,
+  `cengkeh_tak_produksi` int(11) DEFAULT NULL,
+  `cengkeh_jml_produksi` int(11) DEFAULT NULL,
+  `pala_blm_produksi` int(11) DEFAULT NULL,
+  `pala_produksi` int(11) DEFAULT NULL,
+  `pala_tak_produksi` int(11) DEFAULT NULL,
+  `pala_jml_produksi` int(11) DEFAULT NULL,
+  `tembakau_blm_produksi` int(11) DEFAULT NULL,
+  `tembakau_produksi` int(11) DEFAULT NULL,
+  `tembakau_tak_produksi` int(11) DEFAULT NULL,
+  `tembakau_jml_produksi` int(11) DEFAULT NULL,
+  `kelapa_blm_produksi` int(11) DEFAULT NULL,
+  `kelapa_produksi` int(11) DEFAULT NULL,
+  `kelapa_tak_produksi` int(11) DEFAULT NULL,
+  `kelapa_jml_produksi` int(11) DEFAULT NULL,
+  `kelapa_sawit_blm_produksi` int(11) DEFAULT NULL,
+  `kelapa_sawit_produksi` int(11) DEFAULT NULL,
+  `kelapa_sawit_tak_produksi` int(11) DEFAULT NULL,
+  `kelapa_sawit_jml_produksi` int(11) DEFAULT NULL,
+  `kopi_blm_produksi` int(11) DEFAULT NULL,
+  `kopi_produksi` int(11) DEFAULT NULL,
+  `kopi_tak_produksi` int(11) DEFAULT NULL,
+  `kopi_jml_produksi` int(11) DEFAULT NULL,
+  `coklat_blm_produksi` int(11) DEFAULT NULL,
+  `coklat_produksi` int(11) DEFAULT NULL,
+  `coklat_tak_produksi` int(11) DEFAULT NULL,
+  `coklat_jml_produksi` int(11) DEFAULT NULL,
+  `panili_blm_produksi` int(11) DEFAULT NULL,
+  `panili_produksi` int(11) DEFAULT NULL,
+  `panili_tak_produksi` int(11) DEFAULT NULL,
+  `panili_jml_produksi` int(11) DEFAULT NULL,
+  `lain_blm_produksi` int(11) DEFAULT NULL,
+  `lain_produksi` int(11) DEFAULT NULL,
+  `lain_tak_produksi` int(11) DEFAULT NULL,
+  `lain_jml_produksi` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tanaman`
 --
 
-INSERT INTO `tanaman` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `padi_luas_tanaman`, `padi_luas_panen`, `padi_rata2_produksi`, `padi_jumlah`, `jagung_luas_tanaman`, `jagung_luas_panen`, `jagung_rata2_produksi`, `jagung_jumlah`, `ketela_pohon_luas_tanaman`, `ketela_pohon_luas_panen`, `ketela_pohon_rata2_produksi`, `ketela_pohon_jumlah`, `ketela_rambat_luas_tanaman`, `ketela_rambat_luas_panen`, `ketela_rambat_rata2_produksi`, `ketela_rambat_jumlah`, `kacang_tanah_luas_tanaman`, `kacang_tanah_luas_panen`, `kacang_tanah_rata2_produksi`, `kacang_tanah_jumlah`, `kedelai_luas_tanaman`, `kedelai_luas_panen`, `kedelai_rata2_produksi`, `kedelai_jumlah`, `sayur_luas_tanaman`, `sayur_luas_panen`, `sayur_rata2_produksi`, `sayur_jumlah`, `buah_luas_tanaman`, `buah_luas_panen`, `buah_rata2_produksi`, `buah_jumlah`, `lain_luas_tanaman`, `lain_luas_panen`, `lain_rata2_produksi`, `lain_jumlah`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '2020-09-09', '2', 7939, 7997, 53273, NULL, 4, 4, NULL, NULL, 80, 44, 1036, NULL, 2, 1, 20, NULL, 27, 34, 57, NULL, 518, 518, 653, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 02:39:42', '2020-11-19 01:21:16');
+INSERT INTO `tanaman` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `padi_luas_tanaman`, `padi_luas_panen`, `padi_rata2_produksi`, `padi_jumlah`, `jagung_luas_tanaman`, `jagung_luas_panen`, `jagung_rata2_produksi`, `jagung_jumlah`, `ketela_pohon_luas_tanaman`, `ketela_pohon_luas_panen`, `ketela_pohon_rata2_produksi`, `ketela_pohon_jumlah`, `ketela_rambat_luas_tanaman`, `ketela_rambat_luas_panen`, `ketela_rambat_rata2_produksi`, `ketela_rambat_jumlah`, `kacang_tanah_luas_tanaman`, `kacang_tanah_luas_panen`, `kacang_tanah_rata2_produksi`, `kacang_tanah_jumlah`, `kedelai_luas_tanaman`, `kedelai_luas_panen`, `kedelai_rata2_produksi`, `kedelai_jumlah`, `sayur_luas_tanaman`, `sayur_luas_panen`, `sayur_rata2_produksi`, `sayur_jumlah`, `buah_luas_tanaman`, `buah_luas_panen`, `buah_rata2_produksi`, `buah_jumlah`, `lain_luas_tanaman`, `lain_luas_panen`, `lain_rata2_produksi`, `lain_jumlah`, `cengkeh_blm_produksi`, `created_at`, `updated_at`, `cengkeh_produksi`, `cengkeh_tak_produksi`, `cengkeh_jml_produksi`, `pala_blm_produksi`, `pala_produksi`, `pala_tak_produksi`, `pala_jml_produksi`, `tembakau_blm_produksi`, `tembakau_produksi`, `tembakau_tak_produksi`, `tembakau_jml_produksi`, `kelapa_blm_produksi`, `kelapa_produksi`, `kelapa_tak_produksi`, `kelapa_jml_produksi`, `kelapa_sawit_blm_produksi`, `kelapa_sawit_produksi`, `kelapa_sawit_tak_produksi`, `kelapa_sawit_jml_produksi`, `kopi_blm_produksi`, `kopi_produksi`, `kopi_tak_produksi`, `kopi_jml_produksi`, `coklat_blm_produksi`, `coklat_produksi`, `coklat_tak_produksi`, `coklat_jml_produksi`, `panili_blm_produksi`, `panili_produksi`, `panili_tak_produksi`, `panili_jml_produksi`, `lain_blm_produksi`, `lain_produksi`, `lain_tak_produksi`, `lain_jml_produksi`) VALUES
+(1, 1, 3, '2021-01-08', '1', 7939, 7997, 53273, NULL, 4, 4, NULL, NULL, 80, 44, 1036, NULL, 2, 1, 20, NULL, 27, 34, 57, NULL, 518, 518, 653, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-12 02:39:42', '2021-01-12 23:01:58', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 1, 1, '2020-12-17', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2021-01-12 22:59:55', '2021-01-12 23:02:06', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36);
 
 -- --------------------------------------------------------
 
@@ -1224,6 +1309,14 @@ CREATE TABLE `transportasi` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `transportasi`
+--
+
+INSERT INTO `transportasi` (`id`, `user_id`, `periode_id`, `tanggal`, `semester`, `sepeda`, `dokar`, `gerobak`, `becak`, `roda3`, `motor`, `oplet`, `taksi`, `mobil_dinas`, `mobil_pribadi`, `truck`, `bus_umum`, `bus_kota`, `perahu_dayung`, `perahu_motor`, `perahu_layar`, `lainnya`, `tv_umum`, `telp_umum`, `kantor_pos`, `orari`, `pemancar_radio`, `listrik_pln`, `listrik_non_pln`, `pdm`, `badan_pengelola_air`, `pompa`, `sumur`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, '2020-12-24', '2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27123', '28123asd', '2021-01-13 22:52:27', '2021-01-13 22:59:27'),
+(2, 1, 3, '2021-01-16', '1', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '262222', '271', '281', '2021-01-13 22:56:53', '2021-01-13 22:57:29');
+
 -- --------------------------------------------------------
 
 --
@@ -1248,7 +1341,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `email`, `email_verified_at`, `password`, `alamat`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Petugas', 'Administrator', 'admin@gmail.com', NULL, '$2y$10$ghY4BC4mZr.1L0OiHSUw5./KLtx4R6NkS1cjXl3jBEQghqEDnOX8i', 'Mengwi', 'OxGzDACdXyPNbnJfKu4dDk3FgYbZvRifMvlhVUyJDhstlgYx1l6pkhvDK78s', '2020-09-07 23:57:33', '2020-09-07 23:57:33'),
+(1, 'Petugas', 'Administrator', 'admin@gmail.com', NULL, '$2y$10$ghY4BC4mZr.1L0OiHSUw5./KLtx4R6NkS1cjXl3jBEQghqEDnOX8i', 'Mengwi', '97mYW65aox8LttrWINRQXCzCc3lITfuwoHmduGhjQKYtjNyiL4e7ZZtkLJst', '2020-09-07 23:57:33', '2020-09-07 23:57:33'),
 (2, 'Kadis', 'Kepala Dinas', 'kadis@gmail.com', NULL, '$2y$10$zm6IXOd3zuoQ/f9DusCmr.D.IbksHGlr/pGnpw6pL5JxwjdqiCDcq', 'Mengwi', 'rWX6HnDBL89q4jwDEPsrzsXGs0yHkNNUlPjpeyno9afDiUDmbF6FfJHtD0Uz', '2020-09-13 06:43:35', '2020-09-13 06:43:35'),
 (3, 'Masyarakat', 'Masyarakat Umum', 'masumum@gmail.com', NULL, '$2y$10$DBvJ0XfgPoQvPx7Y3aw7i.8F10jSZBFErZRlBuhOYw12arbQCdOVS', 'Mengwi', 'gVvG69S58K0ZTL90CA4SDV2zJx6cR0F0r99vkg6GelKRL21rlnsDuD59riZm', '2020-09-13 06:46:12', '2020-09-13 06:46:12'),
 (4, 'Petugas', 'Testing', 'testing@gmail.com', NULL, '$2y$10$VRA.uU44Qan4z.2BVLjkSuHwgWY7xOLDMdIvI8mdbBfrTxqKDy7PK', 'testing alamat', 'WbBK2sl5EDMwENJSVwMJJD2DFNO6JNuDuiZdYNfTUV8qi9HKSMKmBKMbHIGu', '2020-09-13 06:50:04', '2020-09-13 06:50:04'),
@@ -1466,13 +1559,13 @@ ALTER TABLE `kapal`
 -- AUTO_INCREMENT for table `keagrariaan`
 --
 ALTER TABLE `keagrariaan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `kependudukan`
 --
 ALTER TABLE `kependudukan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `kumum`
@@ -1496,13 +1589,13 @@ ALTER TABLE `luas_daerah`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `pangan`
 --
 ALTER TABLE `pangan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pembangunan`
@@ -1556,7 +1649,7 @@ ALTER TABLE `perekonomian`
 -- AUTO_INCREMENT for table `perikanan`
 --
 ALTER TABLE `perikanan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `periode`
@@ -1586,7 +1679,7 @@ ALTER TABLE `pjgjalan`
 -- AUTO_INCREMENT for table `polkam`
 --
 ALTER TABLE `polkam`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `prasarana`
@@ -1598,19 +1691,19 @@ ALTER TABLE `prasarana`
 -- AUTO_INCREMENT for table `saranasosbud`
 --
 ALTER TABLE `saranasosbud`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tanaman`
 --
 ALTER TABLE `tanaman`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `transportasi`
 --
 ALTER TABLE `transportasi`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

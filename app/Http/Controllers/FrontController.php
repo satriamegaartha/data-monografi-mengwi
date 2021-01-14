@@ -21,6 +21,10 @@ use App\Pemkecamatan;
 use App\Pengangkutan;
 use App\Perekonomian;
 use App\Saranasosbud;
+use App\Pangan;
+use App\Perikanan;
+use App\Transportasi;
+use App\Polkam;
 use Illuminate\Http\Request;
 
 
@@ -368,6 +372,10 @@ class FrontController extends Controller
         $kependudukan = Kependudukan::where($matchThese)->first();
         $keagrariaan = Keagrariaan::where($matchThese)->first();
         $tanaman = Tanaman::where($matchThese)->first();
+        $pangan = Pangan::where($matchThese)->first();
+        $perikanan = Perikanan::where($matchThese)->first();
+        $transportasi = Transportasi::where($matchThese)->first();
+        $polkam = Polkam::where($matchThese)->first();
 
         // dd($pemdesa);
 
@@ -403,43 +411,56 @@ class FrontController extends Controller
                                                     if ($kependudukan) {
                                                         if ($keagrariaan) {
                                                             if ($tanaman) {
-                                                                // $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
-                                                                //     'kumum' => $kumum,
-                                                                //     'ldaerah' => $ldaerah,
-                                                                //     'pemdesa' => $pemdesa,
-                                                                //     'prasarana' => $prasarana,
-                                                                //     'pemkec' => $pemkec,
-                                                                //     'pengangkutan' => $pengangkutan,
-                                                                //     'pjgjalan' => $pjgjalan,
-                                                                //     'perekonomian' => $perekonomian,
-                                                                //     'jumlahusaha' => $jumlahusaha,
-                                                                //     'saranasosbud' => $saranasosbud,
-                                                                //     'pemkecamatan' => $pemkecamatan,
-                                                                //     'kependudukan' => $kependudukan,
-                                                                //     'keagrariaan' => $keagrariaan,
-                                                                //     'tanaman' => $tanaman,
-                                                                //     'sem' => $sem,
-                                                                // ]);
-                                                                // return $pdf->download('Data Monografi.pdf');
+                                                                if ($pangan) {
+                                                                    if ($perikanan) {
+                                                                        if ($transportasi) {
+                                                                            if ($polkam) {
 
-                                                                $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
-                                                                    'kumum' => $kumum,
-                                                                    'ldaerah' => $ldaerah,
-                                                                    'pemdesa' => $pemdesa,
-                                                                    'prasarana' => $prasarana,
-                                                                    'pemkec' => $pemkec,
-                                                                    'pengangkutan' => $pengangkutan,
-                                                                    'pjgjalan' => $pjgjalan,
-                                                                    'perekonomian' => $perekonomian,
-                                                                    'jumlahusaha' => $jumlahusaha,
-                                                                    'saranasosbud' => $saranasosbud,
-                                                                    'pemkecamatan' => $pemkecamatan,
-                                                                    'kependudukan' => $kependudukan,
-                                                                    'keagrariaan' => $keagrariaan,
-                                                                    'tanaman' => $tanaman,
-                                                                    'sem' => $sem,
-                                                                ]);
-                                                                return view('front.monografi', compact('kumum', 'ldaerah', 'pemdesa', 'prasarana', 'pemkec', 'pengangkutan', 'pjgjalan', 'perekonomian', 'jumlahusaha', 'saranasosbud', 'pemkecamatan', 'kependudukan', 'keagrariaan', 'tanaman', 'sem'));
+                                                                                // $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
+                                                                                //     'kumum' => $kumum,
+                                                                                //     'ldaerah' => $ldaerah,
+                                                                                //     'pemdesa' => $pemdesa,
+                                                                                //     'prasarana' => $prasarana,
+                                                                                //     'pemkec' => $pemkec,
+                                                                                //     'pengangkutan' => $pengangkutan,
+                                                                                //     'pjgjalan' => $pjgjalan,
+                                                                                //     'perekonomian' => $perekonomian,
+                                                                                //     'jumlahusaha' => $jumlahusaha,
+                                                                                //     'saranasosbud' => $saranasosbud,
+                                                                                //     'pemkecamatan' => $pemkecamatan,
+                                                                                //     'kependudukan' => $kependudukan,
+                                                                                //     'keagrariaan' => $keagrariaan,
+                                                                                //     'tanaman' => $tanaman,
+                                                                                //     'sem' => $sem,
+                                                                                // ]);
+                                                                                // return $pdf->download('Data Monografi.pdf');
+
+                                                                                $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
+                                                                                    'kumum' => $kumum,
+                                                                                    'ldaerah' => $ldaerah,
+                                                                                    'pemdesa' => $pemdesa,
+                                                                                    'prasarana' => $prasarana,
+                                                                                    'pemkec' => $pemkec,
+                                                                                    'pengangkutan' => $pengangkutan,
+                                                                                    'pjgjalan' => $pjgjalan,
+                                                                                    'perekonomian' => $perekonomian,
+                                                                                    'jumlahusaha' => $jumlahusaha,
+                                                                                    'saranasosbud' => $saranasosbud,
+                                                                                    'pemkecamatan' => $pemkecamatan,
+                                                                                    'kependudukan' => $kependudukan,
+                                                                                    'keagrariaan' => $keagrariaan,
+                                                                                    'tanaman' => $tanaman,
+                                                                                    'perikanan' => $perikanan,
+                                                                                    'pangan' => $pangan,
+                                                                                    'transportasi' => $transportasi,
+                                                                                    'polkam' => $polkam,
+                                                                                    'sem' => $sem,
+                                                                                ]);
+                                                                                return view('front.monografi', compact('kumum', 'ldaerah', 'pemdesa', 'prasarana', 'pemkec', 'pengangkutan', 'pjgjalan', 'perekonomian', 'jumlahusaha', 'saranasosbud', 'pemkecamatan', 'kependudukan', 'keagrariaan', 'tanaman', 'pangan', 'transportasi', 'polkam', 'perikanan', 'sem'));
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }

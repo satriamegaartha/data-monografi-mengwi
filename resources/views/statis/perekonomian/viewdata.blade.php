@@ -26,7 +26,7 @@
 
                                     @csrf
 
-                                    <label for="">10.1. Koperasi : </label>
+                                    <label for="">9.1. Koperasi : </label>
                                     <div class="form-group {{$errors->has('ksp') ? 'has-error' : ''}} ">
                                         <label for="ksp">
                                             <h5>a. Koperasi Simpan Pinjam</h5>
@@ -110,7 +110,7 @@
                                         <span class="help-block">{{$errors->first('kop_lain')}}</span>
                                         @endif
                                     </div>
-                                    <label for="">10.2. Jumlah Pasar Selapan/Umum :</label>
+                                    <label for="">9.2. Jumlah Pasar Selapan/Umum :</label>
                                     <div class="form-group {{$errors->has('pasar_umum') ? 'has-error' : ''}} ">
                                         <label for="pasar_umum">
                                             <h5>a. Umum</h5>
@@ -146,7 +146,7 @@
                                     </div>
                                     <div
                                         class="form-group {{$errors->has('pasar_bangunan_permanen') ? 'has-error' : ''}} ">
-                                        <label for="pasar_bangunan_permanen"> 10.3. Pasar Bangunan Permanen/Semi
+                                        <label for="pasar_bangunan_permanen"> 9.3. Pasar Bangunan Permanen/Semi
                                             Permanen </label>
                                         <input name="pasar_bangunan_permanen" type="text" class="form-control"
                                             id="pasar_bangunan_permanen" aria-describedby="" placeholder="Buah"
@@ -157,7 +157,7 @@
                                     </div>
                                     <div
                                         class="form-group {{$errors->has('pasar_tanpa_bangunan_permanen') ? 'has-error' : ''}} ">
-                                        <label for="pasar_tanpa_bangunan_permanen">10.4. Pasar tanpa bangunan semi
+                                        <label for="pasar_tanpa_bangunan_permanen">9.4. Pasar tanpa bangunan semi
                                             permanen</label>
                                         <input name="pasar_tanpa_bangunan_permanen" type="text" class="form-control"
                                             id="pasar_tanpa_bangunan_permanen" aria-describedby="" placeholder="Buah"
@@ -168,7 +168,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('jumlah_toko') ? 'has-error' : ''}} ">
-                                        <label for="jumlah_toko">10.5. Jumlah toko/kios/warung</label>
+                                        <label for="jumlah_toko">9.5. Jumlah toko/kios/warung</label>
                                         <input name="jumlah_toko" type="text" class="form-control" id="jumlah_toko"
                                             aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->jumlah_toko}}">
@@ -177,7 +177,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('bank') ? 'has-error' : ''}} ">
-                                        <label for="bank">10.6. Bank</label>
+                                        <label for="bank">9.6. Bank</label>
                                         <input name="bank" type="text" class="form-control" id="bank"
                                             aria-describedby="" placeholder="Buah" value="{{$perekonomian->bank}}">
                                         @if ($errors->has('bank'))
@@ -185,7 +185,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('jumlah_lumbung_desa') ? 'has-error' : ''}} ">
-                                        <label for="jumlah_lumbung_desa">10.7. Jumlah Lumbung Desa</label>
+                                        <label for="jumlah_lumbung_desa">9.7. Jumlah Lumbung Desa</label>
                                         <input name="jumlah_lumbung_desa" type="text" class="form-control"
                                             id="jumlah_lumbung_desa" aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->jumlah_lumbung_desa}}">
@@ -194,7 +194,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('stasiun_udara') ? 'has-error' : ''}} ">
-                                        <label for="stasiun_udara">10.8. Stasiun Kapal Udara</label>
+                                        <label for="stasiun_udara">9.8. Stasiun Kapal Udara</label>
                                         <input name="stasiun_udara" type="text" class="form-control" id="stasiun_udara"
                                             aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->stasiun_udara}}">
@@ -203,7 +203,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('stasiun_laut') ? 'has-error' : ''}} ">
-                                        <label for="stasiun_laut">10.9. Stasiun Kapal Laut </label>
+                                        <label for="stasiun_laut">9.9. Stasiun Kapal Laut </label>
                                         <input name="stasiun_laut" type="text" class="form-control" id="stasiun_laut"
                                             aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->stasiun_laut}}">
@@ -212,7 +212,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('stasiun_kereta') ? 'has-error' : ''}} ">
-                                        <label for="stasiun_kereta">10.10. Stasiun Kereta Api</label>
+                                        <label for="stasiun_kereta">9.10. Stasiun Kereta Api</label>
                                         <input name="stasiun_kereta" type="text" class="form-control"
                                             id="stasiun_kereta" aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->stasiun_kereta}}">
@@ -221,7 +221,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('stasiun_bis') ? 'has-error' : ''}} ">
-                                        <label for="stasiun_bis">10.11. Stasiun Bis </label>
+                                        <label for="stasiun_bis">9.11. Stasiun Bis </label>
                                         <input name="stasiun_bis" type="text" class="form-control" id="stasiun_bis"
                                             aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->stasiun_bis}}">
@@ -230,7 +230,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('stasiun_oplet') ? 'has-error' : ''}} ">
-                                        <label for="stasiun_oplet">10.12. Stasiun Oplet/Bemo/Taksi</label>
+                                        <label for="stasiun_oplet">9.12. Stasiun Oplet/Bemo/Taksi</label>
                                         <input name="stasiun_oplet" type="text" class="form-control" id="stasiun_oplet"
                                             aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->stasiun_oplet}}">
@@ -239,7 +239,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group {{$errors->has('jumlah_telp_umum') ? 'has-error' : ''}} ">
-                                        <label for="jumlah_telp_umum">10.13. Jumlah Telepon Umum</label>
+                                        <label for="jumlah_telp_umum">9.13. Jumlah Telepon Umum</label>
                                         <input name="jumlah_telp_umum" type="text" class="form-control"
                                             id="jumlah_telp_umum" aria-describedby="" placeholder="Buah"
                                             value="{{$perekonomian->jumlah_telp_umum}}">

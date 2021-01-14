@@ -21,7 +21,7 @@
 
                         </div>
                         <div class="panel-body">
-                            <form method="POST" action="#">
+                            <form method="POST" action="/dinamis/kependudukan/{{$kependudukan->id}}/update">
                                 <fieldset disabled="disabled">
                                     @csrf
                                     <div class="row">
@@ -177,7 +177,8 @@
                                     <div class="form-group {{$errors->has('jml_penganut_aliran') ? 'has-error' : ''}} ">
                                         <label for="jml_penganut_aliran">
                                             <h5><strong>5. Penganut Aliran Kepercayaan kepada Tuhan Yang Maha Esa
-                                                    :</strong></h5>
+                                                    :</strong>
+                                            </h5>
                                         </label>
                                         <input name="jml_penganut_aliran" type="text" class="form-control"
                                             id="jml_penganut_aliran" aria-describedby="" placeholder=""
@@ -190,96 +191,176 @@
                                     <label for="">
                                         <h5><strong>6. Penduduk menurut usia </strong></h5>
                                     </label>
-                                    <div class="form-group {{$errors->has('jml_b_0_4') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_0_4">
-                                            <h5>b. 0 - 4 tahun </h5>
+                                    <div class="form-group {{$errors->has('jml_0_4') ? 'has-error' : ''}} ">
+                                        <label for="jml_0_4">
+                                            <h5>0 - 4 tahun </h5>
                                         </label>
-                                        <input name="jml_b_0_4" type="text" class="form-control" id="jml_b_0_4"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_0_4}}">
-                                        @if ($errors->has('jml_b_0_4'))
-                                        <span class="help-block">{{$errors->first('jml_b_0_4')}}</span>
+                                        <input name="jml_0_4" type="text" class="form-control" id="jml_0_4"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_0_4}}">
+                                        @if ($errors->has('jml_0_4'))
+                                        <span class="help-block">{{$errors->first('jml_0_4')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_5_9') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_5_9">
+                                    <div class="form-group {{$errors->has('jml_5_9') ? 'has-error' : ''}} ">
+                                        <label for="jml_5_9">
                                             <h5>5 - 9 tahun </h5>
                                         </label>
-                                        <input name="jml_b_5_9" type="text" class="form-control" id="jml_b_5_9"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_5_9}}">
-                                        @if ($errors->has('jml_b_5_9'))
-                                        <span class="help-block">{{$errors->first('jml_b_5_9')}}</span>
+                                        <input name="jml_5_9" type="text" class="form-control" id="jml_5_9"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_5_9}}">
+                                        @if ($errors->has('jml_5_9'))
+                                        <span class="help-block">{{$errors->first('jml_5_9')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_10_14') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_10_14">
+                                    <div class="form-group {{$errors->has('jml_10_14') ? 'has-error' : ''}} ">
+                                        <label for="jml_10_14">
                                             <h5>10 - 14 tahun</h5>
                                         </label>
-                                        <input name="jml_b_10_14" type="text" class="form-control" id="jml_b_10_14"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_10_14}}">
-                                        @if ($errors->has('jml_b_10_14'))
-                                        <span class="help-block">{{$errors->first('jml_b_10_14')}}</span>
+                                        <input name="jml_10_14" type="text" class="form-control" id="jml_10_14"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_10_14}}">
+                                        @if ($errors->has('jml_10_14'))
+                                        <span class="help-block">{{$errors->first('jml_10_14')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_15_19') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_15_19">
+                                    <div class="form-group {{$errors->has('jml_15_19') ? 'has-error' : ''}} ">
+                                        <label for="jml_15_19">
                                             <h5>15 - 19 tahun</h5>
                                         </label>
-                                        <input name="jml_b_15_19" type="text" class="form-control" id="jml_b_15_19"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_15_19}}">
-                                        @if ($errors->has('jml_b_15_19'))
-                                        <span class="help-block">{{$errors->first('jml_b_15_19')}}</span>
+                                        <input name="jml_15_19" type="text" class="form-control" id="jml_15_19"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_15_19}}">
+                                        @if ($errors->has('jml_15_19'))
+                                        <span class="help-block">{{$errors->first('jml_15_19')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_20_24') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_20_24">
+                                    <div class="form-group {{$errors->has('jml_20_24') ? 'has-error' : ''}} ">
+                                        <label for="jml_20_24">
                                             <h5>20 - 24 tahun </h5>
                                         </label>
-                                        <input name="jml_b_20_24" type="text" class="form-control" id="jml_b_20_24"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_20_24}}">
-                                        @if ($errors->has('jml_b_20_24'))
-                                        <span class="help-block">{{$errors->first('jml_b_20_24')}}</span>
+                                        <input name="jml_20_24" type="text" class="form-control" id="jml_20_24"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_20_24}}">
+                                        @if ($errors->has('jml_20_24'))
+                                        <span class="help-block">{{$errors->first('jml_20_24')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_25_29') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_25_29">
+                                    <div class="form-group {{$errors->has('jml_25_29') ? 'has-error' : ''}} ">
+                                        <label for="jml_25_29">
                                             <h5>25 - 29 tahun </h5>
                                         </label>
-                                        <input name="jml_b_25_29" type="text" class="form-control" id="jml_b_25_29"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_25_29}}">
-                                        @if ($errors->has('jml_b_25_29'))
-                                        <span class="help-block">{{$errors->first('jml_b_25_29')}}</span>
+                                        <input name="jml_25_29" type="text" class="form-control" id="jml_25_29"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_25_29}}">
+                                        @if ($errors->has('jml_25_29'))
+                                        <span class="help-block">{{$errors->first('jml_25_29')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_30_34') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_30_34">
+                                    <div class="form-group {{$errors->has('jml_30_34') ? 'has-error' : ''}} ">
+                                        <label for="jml_30_34">
                                             <h5>30 - 34 tahun</h5>
                                         </label>
-                                        <input name="jml_b_30_34" type="text" class="form-control" id="jml_b_30_34"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_30_34}}">
-                                        @if ($errors->has('jml_b_30_34'))
-                                        <span class="help-block">{{$errors->first('jml_b_30_34')}}</span>
+                                        <input name="jml_30_34" type="text" class="form-control" id="jml_30_34"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_30_34}}">
+                                        @if ($errors->has('jml_30_34'))
+                                        <span class="help-block">{{$errors->first('jml_30_34')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_35_39') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_35_39">
+                                    <div class="form-group {{$errors->has('jml_35_39') ? 'has-error' : ''}} ">
+                                        <label for="jml_35_39">
                                             <h5>35 - 39 tahun </h5>
                                         </label>
-                                        <input name="jml_b_35_39" type="text" class="form-control" id="jml_b_35_39"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_35_39}}">
-                                        @if ($errors->has('jml_b_35_39'))
-                                        <span class="help-block">{{$errors->first('jml_b_35_39')}}</span>
+                                        <input name="jml_35_39" type="text" class="form-control" id="jml_35_39"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_35_39}}">
+                                        @if ($errors->has('jml_35_39'))
+                                        <span class="help-block">{{$errors->first('jml_35_39')}}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group {{$errors->has('jml_b_40_up') ? 'has-error' : ''}} ">
-                                        <label for="jml_b_40_up">
-                                            <h5>40 tahun ke atas</h5>
+
+                                    <div class="form-group {{$errors->has('jml_40_44') ? 'has-error' : ''}} ">
+                                        <label for="jml_40_44">
+                                            <h5>40 - 44 tahun</h5>
                                         </label>
-                                        <input name="jml_b_40_up" type="text" class="form-control" id="jml_b_40_up"
-                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_b_40_up}}">
-                                        @if ($errors->has('jml_b_40_up'))
-                                        <span class="help-block">{{$errors->first('jml_b_40_up')}}</span>
+                                        <input name="jml_40_44" type="text" class="form-control" id="jml_40_44"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_40_44}}">
+                                        @if ($errors->has('jml_40_44'))
+                                        <span class="help-block">{{$errors->first('jml_40_44')}}</span>
                                         @endif
                                     </div>
+                                    <div class="form-group {{$errors->has('jml_45_49') ? 'has-error' : ''}} ">
+                                        <label for="jml_45_49">
+                                            <h5>45 - 49 tahun</h5>
+                                        </label>
+                                        <input name="jml_45_49" type="text" class="form-control" id="jml_45_49"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_45_49}}">
+                                        @if ($errors->has('jml_45_49'))
+                                        <span class="help-block">{{$errors->first('jml_45_49')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_50_54') ? 'has-error' : ''}} ">
+                                        <label for="jml_50_54">
+                                            <h5>50 - 54 tahun</h5>
+                                        </label>
+                                        <input name="jml_50_54" type="text" class="form-control" id="jml_50_54"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_50_54}}">
+                                        @if ($errors->has('jml_50_54'))
+                                        <span class="help-block">{{$errors->first('jml_50_54')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_55_59') ? 'has-error' : ''}} ">
+                                        <label for="jml_55_59">
+                                            <h5>55 - 59 tahun</h5>
+                                        </label>
+                                        <input name="jml_55_59" type="text" class="form-control" id="jml_55_59"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_55_59}}">
+                                        @if ($errors->has('jml_55_59'))
+                                        <span class="help-block">{{$errors->first('jml_55_59')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_60_64') ? 'has-error' : ''}} ">
+                                        <label for="jml_60_64">
+                                            <h5>60 - 64 tahun</h5>
+                                        </label>
+                                        <input name="jml_60_64" type="text" class="form-control" id="jml_60_64"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_60_64}}">
+                                        @if ($errors->has('jml_60_64'))
+                                        <span class="help-block">{{$errors->first('jml_60_64')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_65_69') ? 'has-error' : ''}} ">
+                                        <label for="jml_65_69">
+                                            <h5>65 - 69 tahun</h5>
+                                        </label>
+                                        <input name="jml_65_69" type="text" class="form-control" id="jml_65_69"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_65_69}}">
+                                        @if ($errors->has('jml_65_69'))
+                                        <span class="help-block">{{$errors->first('jml_65_69')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_70_74') ? 'has-error' : ''}} ">
+                                        <label for="jml_70_74">
+                                            <h5>70 - 74 tahun</h5>
+                                        </label>
+                                        <input name="jml_70_74" type="text" class="form-control" id="jml_70_74"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_70_74}}">
+                                        @if ($errors->has('jml_70_74'))
+                                        <span class="help-block">{{$errors->first('jml_70_74')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('jml_75_up') ? 'has-error' : ''}} ">
+                                        <label for="jml_75_up">
+                                            <h5>75 tahun ke atas</h5>
+                                        </label>
+                                        <input name="jml_75_up" type="text" class="form-control" id="jml_75_up"
+                                            aria-describedby="" placeholder="" value="{{$kependudukan->jml_75_up}}">
+                                        @if ($errors->has('jml_75_up'))
+                                        <span class="help-block">{{$errors->first('jml_75_up')}}</span>
+                                        @endif
+                                    </div>
+
+
+
+
+
+
+
+
+
 
                                     <label for="kepadatan">
                                         <h5><strong>7. Mutasi Penduduk</strong></h5>
@@ -439,6 +520,13 @@
                             </div>
                         </div>
 
+
+
+
+
+
+
+
                         <div class="form-group {{$errors->has('kepadatan') ? 'has-error' : ''}} ">
                             <label for="kepadatan">
                                 <h5><strong>10. Kepadatan Penduduk </strong></h5>
@@ -449,6 +537,62 @@
                             <span class="help-block">{{$errors->first('kepadatan')}}</span>
                             @endif
                         </div>
+                        <div class="form-group {{$errors->has('penyebaran') ? 'has-error' : ''}} ">
+                            <label for="penyebaran">
+                                <h5><strong>11. Penyebaran Penduduk </strong></h5>
+                            </label>
+                            <input name="penyebaran" type="text" class="form-control" id="penyebaran"
+                                aria-describedby="" placeholder="per Km2" value="{{$kependudukan->penyebaran}}">
+                            @if ($errors->has('penyebaran'))
+                            <span class="help-block">{{$errors->first('penyebaran')}}</span>
+                            @endif
+                        </div>
+
+                        <label for="">
+                            <h5><strong>12. Angka NTCR</strong></h5>
+                        </label><br>
+
+                        <div class="form-group {{$errors->has('ntcr_nikah') ? 'has-error' : ''}} ">
+                            <label for="ntcr_nikah">
+                                <h5>- Nikah</h5>
+                            </label>
+                            <input name="ntcr_nikah" type="text" class="form-control" id="ntcr_nikah"
+                                aria-describedby="" placeholder="" value="{{$kependudukan->ntcr_nikah}}">
+                            @if ($errors->has('ntcr_nikah'))
+                            <span class="help-block">{{$errors->first('ntcr_nikah')}}</span>
+                            @endif
+                        </div>
+                        <div class="form-group {{$errors->has('ntcr_talak') ? 'has-error' : ''}} ">
+                            <label for="ntcr_talak">
+                                <h5>- Talak</h5>
+                            </label>
+                            <input name="ntcr_talak" type="text" class="form-control" id="ntcr_talak"
+                                aria-describedby="" placeholder="" value="{{$kependudukan->ntcr_talak}}">
+                            @if ($errors->has('ntcr_talak'))
+                            <span class="help-block">{{$errors->first('ntcr_talak')}}</span>
+                            @endif
+                        </div>
+                        <div class="form-group {{$errors->has('ntcr_cerai') ? 'has-error' : ''}} ">
+                            <label for="ntcr_cerai">
+                                <h5>- Cerai</h5>
+                            </label>
+                            <input name="ntcr_cerai" type="text" class="form-control" id="ntcr_cerai"
+                                aria-describedby="" placeholder="" value="{{$kependudukan->ntcr_cerai}}">
+                            @if ($errors->has('ntcr_cerai'))
+                            <span class="help-block">{{$errors->first('ntcr_cerai')}}</span>
+                            @endif
+                        </div>
+                        <div class="form-group {{$errors->has('ntcr_rujuk') ? 'has-error' : ''}} ">
+                            <label for="ntcr_rujuk">
+                                <h5>- Rujuk</h5>
+                            </label>
+                            <input name="ntcr_rujuk" type="text" class="form-control" id="ntcr_rujuk"
+                                aria-describedby="" placeholder="" value="{{$kependudukan->ntcr_rujuk}}">
+                            @if ($errors->has('ntcr_rujuk'))
+                            <span class="help-block">{{$errors->first('ntcr_rujuk')}}</span>
+                            @endif
+                        </div>
+
 
                         <label for="">
                             <h5><strong>13. Penduduk menurut Mata Pencaharian</strong></h5>
@@ -691,11 +835,15 @@
                         </div>
 
 
+
+
+
+
+
                         </fieldset>
                         </form>
                         <a href="/dinamis/kependudukan/{{$kependudukan->id}}/edit"
                             class="btn btn-warning btn-sm">Edit</a>
-
                     </div>
                 </div>
 

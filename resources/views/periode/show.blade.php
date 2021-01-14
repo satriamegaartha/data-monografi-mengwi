@@ -74,8 +74,7 @@
                             </form>
 
                             <a href="/periode/{{$periode->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="/periode/{{$periode->id}}/destroy" class="btn btn-danger btn-sm"
-                                onclick="return confirm('Data akan dihapus?')">Delete</a>
+
                         </div>
                     </div>
 

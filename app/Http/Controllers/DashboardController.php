@@ -19,6 +19,10 @@ use App\Pemkecamatan;
 use App\Pengangkutan;
 use App\Perekonomian;
 use App\Saranasosbud;
+use App\Pangan;
+use App\Perikanan;
+use App\Transportasi;
+use App\Polkam;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -436,6 +440,10 @@ class DashboardController extends Controller
         $kependudukan = Kependudukan::where($matchThese)->first();
         $keagrariaan = Keagrariaan::where($matchThese)->first();
         $tanaman = Tanaman::where($matchThese)->first();
+        $pangan = pangan::where($matchThese)->first();
+        $perikanan = perikanan::where($matchThese)->first();
+        $transportasi = transportasi::where($matchThese)->first();
+        $polkam = polkam::where($matchThese)->first();
 
         // dd($pemdesa);
 
@@ -471,24 +479,36 @@ class DashboardController extends Controller
                                                     if ($kependudukan) {
                                                         if ($keagrariaan) {
                                                             if ($tanaman) {
-                                                                $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
-                                                                    'kumum' => $kumum,
-                                                                    'ldaerah' => $ldaerah,
-                                                                    'pemdesa' => $pemdesa,
-                                                                    'prasarana' => $prasarana,
-                                                                    'pemkec' => $pemkec,
-                                                                    'pengangkutan' => $pengangkutan,
-                                                                    'pjgjalan' => $pjgjalan,
-                                                                    'perekonomian' => $perekonomian,
-                                                                    'jumlahusaha' => $jumlahusaha,
-                                                                    'saranasosbud' => $saranasosbud,
-                                                                    'pemkecamatan' => $pemkecamatan,
-                                                                    'kependudukan' => $kependudukan,
-                                                                    'keagrariaan' => $keagrariaan,
-                                                                    'tanaman' => $tanaman,
-                                                                    'sem' => $sem,
-                                                                ]);
-                                                                return $pdf->download('Data Monografi.pdf');
+                                                                if ($pangan) {
+                                                                    if ($perikanan) {
+                                                                        if ($transportasi) {
+                                                                            if ($polkam) {
+                                                                                $pdf = PDF::loadVIEW('dashboard.export.exportpdf', [
+                                                                                    'kumum' => $kumum,
+                                                                                    'ldaerah' => $ldaerah,
+                                                                                    'pemdesa' => $pemdesa,
+                                                                                    'prasarana' => $prasarana,
+                                                                                    'pemkec' => $pemkec,
+                                                                                    'pengangkutan' => $pengangkutan,
+                                                                                    'pjgjalan' => $pjgjalan,
+                                                                                    'perekonomian' => $perekonomian,
+                                                                                    'jumlahusaha' => $jumlahusaha,
+                                                                                    'saranasosbud' => $saranasosbud,
+                                                                                    'pemkecamatan' => $pemkecamatan,
+                                                                                    'kependudukan' => $kependudukan,
+                                                                                    'keagrariaan' => $keagrariaan,
+                                                                                    'tanaman' => $tanaman,
+                                                                                    'perikanan' => $perikanan,
+                                                                                    'pangan' => $pangan,
+                                                                                    'transportasi' => $transportasi,
+                                                                                    'polkam' => $polkam,
+                                                                                    'sem' => $sem,
+                                                                                ]);
+                                                                                return $pdf->download('Data Monografi.pdf');
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }

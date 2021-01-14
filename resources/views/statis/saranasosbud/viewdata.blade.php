@@ -43,74 +43,139 @@
                                     {{-- tk --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.1. Pendidikan</strong></h5>
+                                            <h5><strong>11.1. Pendidikan</strong></h5>
+                                        </label><br>
+
+                                        <label for="">
+                                            <h5><strong>11.1.1. TK</strong></h5>
                                         </label><br>
                                         <label for="">
-                                            <h5><strong>13.1.1. TK</strong></h5>
-                                        </label>
-                                        <div class="form-group {{$errors->has('tk_sekolah') ? 'has-error' : ''}} ">
-                                            <label for="tk_sekolah">
+                                            <h5><strong>a. TK Negeri</strong></h5>
+                                        </label><br>
+                                        <div class="form-group {{$errors->has('tkn_sekolah') ? 'has-error' : ''}} ">
+                                            <label for="tkn_sekolah">
                                                 <h5>- Jumlah Sekolah</h5>
                                             </label>
-                                            <input name="tk_sekolah" type="text" class="form-control" id="tk_sekolah"
+                                            <input name="tkn_sekolah" type="text" class="form-control" id="tkn_sekolah"
                                                 aria-describedby="" placeholder="Buah"
-                                                value="{{$saranasosbud->tk_sekolah}}">
-                                            @if ($errors->has('tk_sekolah'))
-                                            <span class="help-block">{{$errors->first('tk_sekolah')}}</span>
+                                                value="{{$saranasosbud->tkn_sekolah}}">
+                                            @if ($errors->has('tkn_sekolah'))
+                                            <span class="help-block">{{$errors->first('tkn_sekolah')}}</span>
                                             @endif
                                         </div>
-                                        <div class="form-group {{$errors->has('tk_murid') ? 'has-error' : ''}} ">
-                                            <label for="tk_murid">
+                                        <div class="form-group {{$errors->has('tkn_murid') ? 'has-error' : ''}} ">
+                                            <label for="tkn_murid">
                                                 <h5>- Jumlah Murid </h5>
                                             </label>
-                                            <input name="tk_murid" type="text" class="form-control" id="tk_murid"
+                                            <input name="tkn_murid" type="text" class="form-control" id="tkn_murid"
                                                 aria-describedby="" placeholder="Orang"
-                                                value="{{$saranasosbud->tk_murid}}">
-                                            @if ($errors->has('tk_murid'))
-                                            <span class="help-block">{{$errors->first('tk_murid')}}</span>
+                                                value="{{$saranasosbud->tkn_murid}}">
+                                            @if ($errors->has('tkn_murid'))
+                                            <span class="help-block">{{$errors->first('tkn_murid')}}</span>
                                             @endif
                                         </div>
-                                        <div class="form-group {{$errors->has('tk_guru') ? 'has-error' : ''}} ">
-                                            <label for="tk_guru">
+                                        <div class="form-group {{$errors->has('tkn_guru') ? 'has-error' : ''}} ">
+                                            <label for="tkn_guru">
                                                 <h5>- Jumlah Guru/Pengajar</h5>
                                             </label>
-                                            <input name="tk_guru" type="text" class="form-control" id="tk_guru"
+                                            <input name="tkn_guru" type="text" class="form-control" id="tkn_guru"
                                                 aria-describedby="" placeholder="Orang"
-                                                value="{{$saranasosbud->tk_guru}}">
-                                            @if ($errors->has('tk_guru'))
-                                            <span class="help-block">{{$errors->first('tk_guru')}}</span>
+                                                value="{{$saranasosbud->tkn_guru}}">
+                                            @if ($errors->has('tkn_guru'))
+                                            <span class="help-block">{{$errors->first('tkn_guru')}}</span>
                                             @endif
                                         </div>
-                                        <div class="form-group {{$errors->has('tk_prasarana') ? 'has-error' : ''}} ">
-                                            <label for="tk_prasarana">
+                                        <div class="form-group {{$errors->has('tkn_prasarana') ? 'has-error' : ''}} ">
+                                            <label for="tkn_prasarana">
                                                 <h5>- Prasarana fisik</h5>
                                             </label>
-                                            <input name="tk_prasarana" type="text" class="form-control"
-                                                id="tk_prasarana" aria-describedby="" placeholder="Lokal"
-                                                value="{{$saranasosbud->tk_prasarana}}">
-                                            @if ($errors->has('tk_prasarana'))
-                                            <span class="help-block">{{$errors->first('tk_prasarana')}}</span>
+                                            <input name="tkn_prasarana" type="text" class="form-control"
+                                                id="tkn_prasarana" aria-describedby="" placeholder="Lokal"
+                                                value="{{$saranasosbud->tkn_prasarana}}">
+                                            @if ($errors->has('tkn_prasarana'))
+                                            <span class="help-block">{{$errors->first('tkn_prasarana')}}</span>
                                             @endif
                                         </div>
-                                        <div class="form-group {{$errors->has('tk_perpustakaan') ? 'has-error' : ''}} ">
-                                            <label for="tk_perpustakaan">
+                                        <div
+                                            class="form-group {{$errors->has('tkn_perpustakaan') ? 'has-error' : ''}} ">
+                                            <label for="tkn_perpustakaan">
                                                 <h5>- Perpustakaan</h5>
                                             </label>
-                                            <input name="tk_perpustakaan" type="text" class="form-control"
-                                                id="tk_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
-                                                value="{{$saranasosbud->tk_perpustakaan}}">
-                                            @if ($errors->has('tk_perpustakaan'))
-                                            <span class="help-block">{{$errors->first('tk_perpustakaan')}}</span>
+                                            <input name="tkn_perpustakaan" type="text" class="form-control"
+                                                id="tkn_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->tkn_perpustakaan}}">
+                                            @if ($errors->has('tkn_perpustakaan'))
+                                            <span class="help-block">{{$errors->first('tkn_perpustakaan')}}</span>
                                             @endif
                                         </div>
                                     </div>
+
+                                    <label for="">
+                                        <h5><strong>b. TK Swasta Umum</strong></h5>
+                                    </label><br>
+                                    <div class="form-group {{$errors->has('tksu_sekolah') ? 'has-error' : ''}} ">
+                                        <label for="tksu_sekolah">
+                                            <h5>- Jumlah Sekolah</h5>
+                                        </label>
+                                        <input name="tksu_sekolah" type="text" class="form-control" id="tksu_sekolah"
+                                            aria-describedby="" placeholder="Buah"
+                                            value="{{$saranasosbud->tksu_sekolah}}">
+                                        @if ($errors->has('tksu_sekolah'))
+                                        <span class="help-block">{{$errors->first('tksu_sekolah')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('tksu_murid') ? 'has-error' : ''}} ">
+                                        <label for="tksu_murid">
+                                            <h5>- Jumlah Murid </h5>
+                                        </label>
+                                        <input name="tksu_murid" type="text" class="form-control" id="tksu_murid"
+                                            aria-describedby="" placeholder="Orang"
+                                            value="{{$saranasosbud->tksu_murid}}">
+                                        @if ($errors->has('tksu_murid'))
+                                        <span class="help-block">{{$errors->first('tksu_murid')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('tksu_guru') ? 'has-error' : ''}} ">
+                                        <label for="tksu_guru">
+                                            <h5>- Jumlah Guru/Pengajar</h5>
+                                        </label>
+                                        <input name="tksu_guru" type="text" class="form-control" id="tksu_guru"
+                                            aria-describedby="" placeholder="Orang"
+                                            value="{{$saranasosbud->tksu_guru}}">
+                                        @if ($errors->has('tksu_guru'))
+                                        <span class="help-block">{{$errors->first('tksu_guru')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('tksu_prasarana') ? 'has-error' : ''}} ">
+                                        <label for="tksu_prasarana">
+                                            <h5>- Prasarana fisik</h5>
+                                        </label>
+                                        <input name="tksu_prasarana" type="text" class="form-control"
+                                            id="tksu_prasarana" aria-describedby="" placeholder="Lokal"
+                                            value="{{$saranasosbud->tksu_prasarana}}">
+                                        @if ($errors->has('tksu_prasarana'))
+                                        <span class="help-block">{{$errors->first('tksu_prasarana')}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group {{$errors->has('tksu_perpustakaan') ? 'has-error' : ''}} ">
+                                        <label for="tksu_perpustakaan">
+                                            <h5>- Perpustakaan</h5>
+                                        </label>
+                                        <input name="tksu_perpustakaan" type="text" class="form-control"
+                                            id="tksu_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
+                                            value="{{$saranasosbud->tksu_perpustakaan}}">
+                                        @if ($errors->has('tksu_perpustakaan'))
+                                        <span class="help-block">{{$errors->first('tksu_perpustakaan')}}</span>
+                                        @endif
+                                    </div>
+                                    {{-- </div> --}}
 
                                     {{-- sdn --}}
                                     <div>
 
                                         <label for="">
-                                            <h5><strong>13.1.2. Sekolah Dasar</strong></h5>
-                                        </label>
+                                            <h5><strong>11.1.2. Sekolah Dasar</strong></h5>
+                                        </label><br>
                                         <label for="">
                                             <h5><strong>a. Sekolah Dasar Negeri</strong></h5>
                                         </label>
@@ -170,13 +235,73 @@
                                             <span class="help-block">{{$errors->first('sdn_perpustakaan')}}</span>
                                             @endif
                                         </div>
+
+                                        <label for="">
+                                            <h5><strong>b. Sekolah Dasar Swasta Umum</strong></h5>
+                                        </label>
+                                        <div class="form-group {{$errors->has('sdsu_sekolah') ? 'has-error' : ''}} ">
+                                            <label for="sdsu_sekolah">
+                                                <h5>- Jumlah Sekolah</h5>
+                                            </label>
+                                            <input name="sdsu_sekolah" type="text" class="form-control"
+                                                id="sdsu_sekolah" aria-describedby="" placeholder="Buah"
+                                                value="{{$saranasosbud->sdsu_sekolah}}">
+                                            @if ($errors->has('sdsu_sekolah'))
+                                            <span class="help-block">{{$errors->first('sdsu_sekolah')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('sdsu_murid') ? 'has-error' : ''}} ">
+                                            <label for="sdsu_murid">
+                                                <h5>- Jumlah Murid </h5>
+                                            </label>
+                                            <input name="sdsu_murid" type="text" class="form-control" id="sdsu_murid"
+                                                aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->sdsu_murid}}">
+                                            @if ($errors->has('sdsu_murid'))
+                                            <span class="help-block">{{$errors->first('sdsu_murid')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('sdsu_guru') ? 'has-error' : ''}} ">
+                                            <label for="sdsu_guru">
+                                                <h5>- Jumlah Guru/Pengajar</h5>
+                                            </label>
+                                            <input name="sdsu_guru" type="text" class="form-control" id="sdsu_guru"
+                                                aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->sdsu_guru}}">
+                                            @if ($errors->has('sdsu_guru'))
+                                            <span class="help-block">{{$errors->first('sdsu_guru')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('sdsu_prasarana') ? 'has-error' : ''}} ">
+                                            <label for="sdsu_prasarana">
+                                                <h5>- Prasarana fisik</h5>
+                                            </label>
+                                            <input name="sdsu_prasarana" type="text" class="form-control"
+                                                id="sdsu_prasarana" aria-describedby="" placeholder="Lokal"
+                                                value="{{$saranasosbud->sdsu_prasarana}}">
+                                            @if ($errors->has('sdsu_prasarana'))
+                                            <span class="help-block">{{$errors->first('sdsu_prasarana')}}</span>
+                                            @endif
+                                        </div>
+                                        <div
+                                            class="form-group {{$errors->has('sdsu_perpustakaan') ? 'has-error' : ''}} ">
+                                            <label for="sdsu_perpustakaan">
+                                                <h5>- Perpustakaan</h5>
+                                            </label>
+                                            <input name="sdsu_perpustakaan" type="text" class="form-control"
+                                                id="sdsu_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->sdsu_perpustakaan}}">
+                                            @if ($errors->has('sdsu_perpustakaan'))
+                                            <span class="help-block">{{$errors->first('sdsu_perpustakaan')}}</span>
+                                            @endif
+                                        </div>
                                     </div>
 
                                     {{-- sltp smtp negeri --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.1.3. Sekolah Lanjutan Pertama (SLTP)</strong></h5>
-                                        </label>
+                                            <h5><strong>11.1.3. Sekolah Lanjutan Pertama (SLTP)</strong></h5>
+                                        </label><br>
                                         <label for="">
                                             <h5><strong>a. SMTP Negeri</strong></h5>
                                         </label>
@@ -241,8 +366,8 @@
                                     {{-- sltp smtp swasta umum--}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>c. SMTP Swasta Umum </strong></h5>
-                                        </label>
+                                            <h5><strong>b. SMTP Swasta Umum </strong></h5>
+                                        </label><br>
                                         <div class="form-group {{$errors->has('smtpsu_sekolah') ? 'has-error' : ''}} ">
                                             <label for="smtpsu_sekolah">
                                                 <h5>- Jumlah Sekolah</h5>
@@ -305,8 +430,8 @@
                                     {{-- smta negeri --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.1.4. Sekolah Menengah Tingkat Atas</strong></h5>
-                                        </label>
+                                            <h5><strong>11.1.4. Sekolah Menengah Tingkat Atas</strong></h5>
+                                        </label><br>
                                         <label for="">
                                             <h5><strong>a. SMTA Negeri</strong></h5>
                                         </label>
@@ -383,7 +508,7 @@
                                     <div>
 
                                         <label for="">
-                                            <h5><strong>a. SMTA Swasta Umum</strong></h5>
+                                            <h5><strong>b. SMTA Swasta Umum</strong></h5>
                                         </label>
                                         <div class="form-group {{$errors->has('smtasu_sekolah') ? 'has-error' : ''}} ">
                                             <label for="smtasu_sekolah">
@@ -456,10 +581,170 @@
                                     </div>
 
 
+
+
+
+
+                                    {{-- ptn --}}
+                                    <div>
+                                        <label for="">
+                                            <h5><strong>11.1.5. Perguruan Tinggi</strong></h5>
+                                        </label><br>
+                                        <label for="">
+                                            <h5><strong>a. Perguruan Tinggi Negeri</strong></h5>
+                                        </label>
+                                        <div class="form-group {{$errors->has('ptn_jumlah') ? 'has-error' : ''}} ">
+                                            <label for="ptn_jumlah">
+                                                <h5>- Jumlah</h5>
+                                            </label>
+                                            <input name="ptn_jumlah" type="text" class="form-control" id="ptn_jumlah"
+                                                aria-describedby="" placeholder="Buah"
+                                                value="{{$saranasosbud->ptn_jumlah}}">
+                                            @if ($errors->has('ptn_jumlah'))
+                                            <span class="help-block">{{$errors->first('ptn_jumlah')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptn_mahasiswa') ? 'has-error' : ''}} ">
+                                            <label for="ptn_mahasiswa">
+                                                <h5>- Jumlah Mahasiswa</h5>
+                                            </label>
+                                            <input name="ptn_mahasiswa" type="text" class="form-control"
+                                                id="ptn_mahasiswa" aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->ptn_mahasiswa}}">
+                                            @if ($errors->has('ptn_mahasiswa'))
+                                            <span class="help-block">{{$errors->first('ptn_mahasiswa')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptn_dosen') ? 'has-error' : ''}} ">
+                                            <label for="ptn_dosen">
+                                                <h5>- Jumlah Dosen/Pengajar</h5>
+                                            </label>
+                                            <input name="ptn_dosen" type="text" class="form-control" id="ptn_dosen"
+                                                aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->ptn_dosen}}">
+                                            @if ($errors->has('ptn_dosen'))
+                                            <span class="help-block">{{$errors->first('ptn_dosen')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptn_prasarana') ? 'has-error' : ''}} ">
+                                            <label for="ptn_prasarana">
+                                                <h5>- Prasarana fisik</h5>
+                                            </label>
+                                            <input name="ptn_prasarana" type="text" class="form-control"
+                                                id="ptn_prasarana" aria-describedby="" placeholder="Lokal"
+                                                value="{{$saranasosbud->ptn_prasarana}}">
+                                            @if ($errors->has('ptn_prasarana'))
+                                            <span class="help-block">{{$errors->first('ptn_prasarana')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptn_lab') ? 'has-error' : ''}} ">
+                                            <label for="ptn_lab">
+                                                <h5>- Fasilitas Laboratorium</h5>
+                                            </label>
+                                            <input name="ptn_lab" type="text" class="form-control" id="ptn_lab"
+                                                aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->ptn_lab}}">
+                                            @if ($errors->has('ptn_lab'))
+                                            <span class="help-block">{{$errors->first('ptn_lab')}}</span>
+                                            @endif
+                                        </div>
+                                        <div
+                                            class="form-group {{$errors->has('ptn_perpustakaan') ? 'has-error' : ''}} ">
+                                            <label for="ptn_perpustakaan">
+                                                <h5>- Perpustakaan</h5>
+                                            </label>
+                                            <input name="ptn_perpustakaan" type="text" class="form-control"
+                                                id="ptn_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->ptn_perpustakaan}}">
+                                            @if ($errors->has('ptn_perpustakaan'))
+                                            <span class="help-block">{{$errors->first('ptn_perpustakaan')}}</span>
+                                            @endif
+                                        </div>
+                                    </div>
+
+
+                                    {{-- ptsu --}}
+                                    <div>
+
+                                        <label for="">
+                                            <h5><strong>b. Perguruan Tinggi Swasta</strong></h5>
+                                        </label>
+                                        <div class="form-group {{$errors->has('ptsu_jumlah') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_jumlah">
+                                                <h5>- Jumlah</h5>
+                                            </label>
+                                            <input name="ptsu_jumlah" type="text" class="form-control" id="ptsu_jumlah"
+                                                aria-describedby="" placeholder="Buah"
+                                                value="{{$saranasosbud->ptsu_jumlah}}">
+                                            @if ($errors->has('ptsu_jumlah'))
+                                            <span class="help-block">{{$errors->first('ptsu_jumlah')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptsu_mahasiswa') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_mahasiswa">
+                                                <h5>- Jumlah Mahasiswa</h5>
+                                            </label>
+                                            <input name="ptsu_mahasiswa" type="text" class="form-control"
+                                                id="ptsu_mahasiswa" aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->ptsu_mahasiswa}}">
+                                            @if ($errors->has('ptsu_mahasiswa'))
+                                            <span class="help-block">{{$errors->first('ptsu_mahasiswa')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptsu_dosen') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_dosen">
+                                                <h5>- Jumlah Dosen/Pengajar</h5>
+                                            </label>
+                                            <input name="ptsu_dosen" type="text" class="form-control" id="ptsu_dosen"
+                                                aria-describedby="" placeholder="Orang"
+                                                value="{{$saranasosbud->ptsu_dosen}}">
+                                            @if ($errors->has('ptsu_dosen'))
+                                            <span class="help-block">{{$errors->first('ptsu_dosen')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptsu_prasarana') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_prasarana">
+                                                <h5>- Prasarana fisik</h5>
+                                            </label>
+                                            <input name="ptsu_prasarana" type="text" class="form-control"
+                                                id="ptsu_prasarana" aria-describedby="" placeholder="Lokal"
+                                                value="{{$saranasosbud->ptsu_prasarana}}">
+                                            @if ($errors->has('ptsu_prasarana'))
+                                            <span class="help-block">{{$errors->first('ptsu_prasarana')}}</span>
+                                            @endif
+                                        </div>
+                                        <div class="form-group {{$errors->has('ptsu_lab') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_lab">
+                                                <h5>- Fasilitas Laboratorium</h5>
+                                            </label>
+                                            <input name="ptsu_lab" type="text" class="form-control" id="ptsu_lab"
+                                                aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->ptsu_lab}}">
+                                            @if ($errors->has('ptsu_lab'))
+                                            <span class="help-block">{{$errors->first('ptsu_lab')}}</span>
+                                            @endif
+                                        </div>
+                                        <div
+                                            class="form-group {{$errors->has('ptsu_perpustakaan') ? 'has-error' : ''}} ">
+                                            <label for="ptsu_perpustakaan">
+                                                <h5>- Perpustakaan</h5>
+                                            </label>
+                                            <input name="ptsu_perpustakaan" type="text" class="form-control"
+                                                id="ptsu_perpustakaan" aria-describedby="" placeholder="Ada/Tidak Ada"
+                                                value="{{$saranasosbud->ptsu_perpustakaan}}">
+                                            @if ($errors->has('ptsu_perpustakaan'))
+                                            <span class="help-block">{{$errors->first('ptsu_perpustakaan')}}</span>
+                                            @endif
+                                        </div>
+                                    </div>
+
+
+
+
                                     {{-- tempat ibadah --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.2. Jumlah tempat ibadah </strong></h5>
+                                            <h5><strong>11.2. Jumlah tempat ibadah </strong></h5>
                                         </label>
                                         <div class="form-group {{$errors->has('masjid') ? 'has-error' : ''}} ">
                                             <label for="masjid">
@@ -508,7 +793,7 @@
                                     {{-- pariwisata , tempat rekreasi --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.4. Pariwisata</strong></h5>
+                                            <h5><strong>11.4. Pariwisata</strong></h5>
                                         </label><br>
                                         <label for="">
                                             <h5><strong>a. Tempat Rekreasi </strong></h5>
@@ -671,7 +956,7 @@
                                     {{-- kesehatan rumah sakit umum --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.5. Kesehatan</strong></h5>
+                                            <h5><strong>11.5. Kesehatan</strong></h5>
                                         </label> <br>
                                         <label for="">
                                             <h5><strong>a. Rumah Sakit Umum</strong></h5>
@@ -847,7 +1132,6 @@
 
                                     {{-- kesehatan c. Rumah Bersalin/BKIA   --}}
                                     <div>
-
                                         <div class="form-group {{$errors->has('bersalin') ? 'has-error' : ''}} ">
                                             <label for="bersalin">
                                                 <h5><strong>c. Rumah Bersalin/BKIA</strong></h5>
@@ -1203,10 +1487,10 @@
                                         </div>
                                     </div>
 
-                                    {{-- 13.6. Keluarga Berencana (KB)  --}}
+                                    {{-- 11.6. Keluarga Berencana (KB)  --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.6. Keluarga Berencana (KB)</strong></h5>
+                                            <h5><strong>11.6. Keluarga Berencana (KB)</strong></h5>
                                         </label>
                                         <div class="form-group {{$errors->has('jumlah_pos_kb') ? 'has-error' : ''}} ">
                                             <label for="jumlah_pos_kb">
@@ -1350,10 +1634,10 @@
                                         </div>
                                     </div>
 
-                                    {{-- 13.7. Penderita Cacat  --}}
+                                    {{-- 11.7. Penderita Cacat  --}}
                                     <div>
                                         <label for="">
-                                            <h5><strong>13.7. Penderita Cacat </strong></h5>
+                                            <h5><strong>11.7. Penderita Cacat </strong></h5>
                                         </label>
                                         <div class="form-group {{$errors->has('cacat_fisik') ? 'has-error' : ''}} ">
                                             <label for="cacat_fisik">
